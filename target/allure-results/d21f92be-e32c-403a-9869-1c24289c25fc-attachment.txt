@@ -1,0 +1,55 @@
+17:46:10,556  INFO storeLog:checkInventory:40 - start check inventory test
+17:46:10,587  INFO storeLog:<init>:16 - connecting to http://petstore.swagger.io/v2/user
+17:46:10,587  INFO storeLog:getInventory:26 - start getting inventory
+17:46:10,587  INFO storeLog:getInventory:21 - send request to get inventory
+Request path:	http://petstore.swagger.io/v2/store/inventory
+Request method:	GET
+Response body: 
+{
+    "laboris ": 1,
+    "'%20and%201=2%20--": 1,
+    "string": 7451,
+    "Operated": 4,
+    "unavailable": 2,
+    "pending": 57,
+    "Not-Operated": 11,
+    "'--": 1,
+    "available": 3419,
+    "/*!10000%201/0%20*/": 1,
+    "test￯﾿ﾽ%20UNION%20select%201,%20@@version,%201,%201;￯﾿ﾽ": 1,
+    "test￯﾿ﾽ UNION select 1, @@version, 1, 1;￯﾿ﾽ": 1,
+    "avilable": 1,
+    "Unavailable": 2,
+    "1/0": 1,
+    "' and 1=2 --": 1,
+    "Sold": 1,
+    "1'": 1,
+    "qui eiusmod comm": 1,
+    "disponivel": 10,
+    "Available": 1,
+    "StringValue": 1,
+    "ok": 1,
+    "/*!10000 1/0 */": 1,
+    "reprehenderit nisi ul": 1,
+    "sold": 51,
+    "venta": 1,
+    "admin'--": 1,
+    "test": 1,
+    "'%20o/**/r%201/0%20--": 1,
+    "aute anim ": 1,
+    "Offline": 1,
+    "aaaaaa": 2,
+    "xzcxz": 1,
+    "AVAILABLE": 3,
+    "sed do ": 1,
+    "1": 2,
+    "s": 18,
+    "ipsum labore velit": 1,
+    "stillavailable": 1,
+    ";": 1,
+    "Lorem adipisicing a": 1,
+    "status": 29,
+    "' or '1'='1": 1,
+    "' o/**/r 1/0 --": 1
+}
+17:46:10,940  INFO storeLog:getInventory:29 - inventory has been gotten

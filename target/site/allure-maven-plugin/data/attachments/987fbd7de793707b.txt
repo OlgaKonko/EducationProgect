@@ -1,0 +1,119 @@
+17:46:30,352  INFO userLog:<init>:20 - connecting to http://petstore.swagger.io/v2/user
+17:46:30,352  INFO userLog:updateUser:63 - start update user test
+17:46:30,352  INFO userLog:createUser:36 - start creating user, username : CsGojHfhPn
+17:46:30,352  INFO userLog:isUserExist:78 - start check user exist, username : CsGojHfhPn
+17:46:30,352  INFO userLog:getUser:60 - send request to get user
+Request path:	http://petstore.swagger.io/v2/user/CsGojHfhPn
+Request method:	GET
+Response body: 
+{
+    "code": 1,
+    "type": "error",
+    "message": "User not found"
+}
+17:46:30,705  INFO userLog:isUserExist:83 - user CsGojHfhPn is not exist
+17:46:30,705  INFO userLog:createUser:26 - send request to create user
+Request path:	http://petstore.swagger.io/v2/user
+Request method:	POST
+Body:
+{
+    "id": 99,
+    "username": "CsGojHfhPn",
+    "firstName": "lcRIqDZWXT",
+    "lastName": "iZQyZJrxkP",
+    "email": "bSKNuIXANX",
+    "password": "RzcIZXplPB",
+    "phone": "hRoIOjOetC",
+    "userStatus": 51
+}
+17:46:31,089  INFO userLog:getUser:59 - start getting user, username : CsGojHfhPn
+17:46:31,089  INFO userLog:getUser:60 - send request to get user
+Request path:	http://petstore.swagger.io/v2/user/CsGojHfhPn
+Request method:	GET
+Response body: 
+{
+    "id": 99,
+    "username": "CsGojHfhPn",
+    "firstName": "lcRIqDZWXT",
+    "lastName": "iZQyZJrxkP",
+    "email": "bSKNuIXANX",
+    "password": "RzcIZXplPB",
+    "phone": "hRoIOjOetC",
+    "userStatus": 51
+}
+17:46:31,437  INFO userLog:getUser:62 - user CsGojHfhPn has been gotten
+17:46:31,437  INFO userLog:createUser:46 - user has been created, username : CsGojHfhPn
+17:46:31,437  INFO userLog:logIn:94 - start login in user, username : CsGojHfhPn password : RzcIZXplPB
+17:46:31,437  INFO userLog:logIn:46 - send request to log in
+Request path:	http://petstore.swagger.io/v2/user/login?username=CsGojHfhPn&password=RzcIZXplPB
+Request method:	GET
+Response body: 
+logged in user session:1516895192448
+17:46:31,774  INFO userLog:logIn:97 - user has been logged in, username : CsGojHfhPn
+17:46:31,789  INFO userLog:updateUser:122 - start update user, username : CsGojHfhPn
+17:46:31,789  INFO userLog:updateUser:66 - send request to update user
+Request path:	http://petstore.swagger.io/v2/user/CsGojHfhPn
+Request method:	PUT
+Body:
+{
+    "id": 99,
+    "username": "CsGojHfhPn",
+    "firstName": "lcRIqDZWXT",
+    "lastName": "yzplwYnjpy",
+    "email": "bSKNuIXANX",
+    "password": "RzcIZXplPB",
+    "phone": "jKENAVtCQV",
+    "userStatus": 51
+}
+17:46:32,136  INFO userLog:getUser:59 - start getting user, username : CsGojHfhPn
+17:46:32,136  INFO userLog:getUser:60 - send request to get user
+Request path:	http://petstore.swagger.io/v2/user/CsGojHfhPn
+Request method:	GET
+Response body: 
+{
+    "id": 99,
+    "username": "CsGojHfhPn",
+    "firstName": "lcRIqDZWXT",
+    "lastName": "yzplwYnjpy",
+    "email": "bSKNuIXANX",
+    "password": "RzcIZXplPB",
+    "phone": "jKENAVtCQV",
+    "userStatus": 51
+}
+17:46:32,473  INFO userLog:getUser:62 - user CsGojHfhPn has been gotten
+17:46:32,489  INFO userLog:updateUser:128 - user has been updated, username : CsGojHfhPn
+17:46:32,489  INFO userLog:logOut:108 - start user logout, username : CsGojHfhPn
+17:46:32,489  INFO userLog:logOut:53 - send request to log out
+Request path:	http://petstore.swagger.io/v2/user/logout
+Request method:	GET
+17:46:32,821  INFO userLog:logOut:111 - user has been logout, username : CsGojHfhPn
+17:46:32,821  INFO userLog:logIn:94 - start login in user, username : CsGojHfhPn password : RzcIZXplPB
+17:46:32,821  INFO userLog:logIn:46 - send request to log in
+Request path:	http://petstore.swagger.io/v2/user/login?username=CsGojHfhPn&password=RzcIZXplPB
+Request method:	GET
+Response body: 
+logged in user session:1516895193845
+17:46:33,174  INFO userLog:logIn:97 - user has been logged in, username : CsGojHfhPn
+17:46:33,190  INFO userLog:deleteUser:140 - start delete user, username : CsGojHfhPn
+17:46:33,190  INFO userLog:logIn:94 - start login in user, username : CsGojHfhPn password : RzcIZXplPB
+17:46:33,190  INFO userLog:logIn:46 - send request to log in
+Request path:	http://petstore.swagger.io/v2/user/login?username=CsGojHfhPn&password=RzcIZXplPB
+Request method:	GET
+Response body: 
+logged in user session:1516895194206
+17:46:33,538  INFO userLog:logIn:97 - user has been logged in, username : CsGojHfhPn
+17:46:33,553  INFO userLog:deleteUser:73 - send request to delete user
+Request path:	http://petstore.swagger.io/v2/user/CsGojHfhPn
+Request method:	DELETE
+17:46:33,891  INFO userLog:isUserExist:78 - start check user exist, username : CsGojHfhPn
+17:46:33,891  INFO userLog:getUser:60 - send request to get user
+Request path:	http://petstore.swagger.io/v2/user/CsGojHfhPn
+Request method:	GET
+Response body: 
+{
+    "code": 1,
+    "type": "error",
+    "message": "User not found"
+}
+17:46:34,238  INFO userLog:isUserExist:83 - user CsGojHfhPn is not exist
+17:46:34,238  INFO userLog:deleteUser:145 - user has been deleted, username : CsGojHfhPn

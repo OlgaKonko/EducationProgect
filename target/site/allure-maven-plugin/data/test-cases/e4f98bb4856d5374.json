@@ -1,0 +1,237 @@
+{
+  "uid" : "e4f98bb4856d5374",
+  "name" : "User create and delete",
+  "fullName" : "simpleTests.UserTests.simpleUser",
+  "historyId" : "7a4f8f88f2244a10703729ac5e68b87b",
+  "time" : {
+    "start" : 1516895187802,
+    "stop" : 1516895190336,
+    "duration" : 2534
+  },
+  "status" : "passed",
+  "description" : "Create user and delete him",
+  "descriptionHtml" : "<p>Create user and delete him</p>",
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Create user",
+      "time" : {
+        "start" : 1516895187802,
+        "stop" : 1516895188918,
+        "duration" : 1116
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 5,
+      "steps" : [ {
+        "name" : "Check if user exist",
+        "time" : {
+          "start" : 1516895187802,
+          "stop" : 1516895188202,
+          "duration" : 400
+        },
+        "status" : "passed",
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "stepsCount" : 1,
+        "steps" : [ {
+          "name" : "get user",
+          "time" : {
+            "start" : 1516895187802,
+            "stop" : 1516895188202,
+            "duration" : 400
+          },
+          "status" : "passed",
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 0,
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ]
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      }, {
+        "name" : "createUser[model.user.User@4b35a0]",
+        "time" : {
+          "start" : 1516895188202,
+          "stop" : 1516895188570,
+          "duration" : 368
+        },
+        "status" : "passed",
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      }, {
+        "name" : "Get user",
+        "time" : {
+          "start" : 1516895188571,
+          "stop" : 1516895188918,
+          "duration" : 347
+        },
+        "status" : "passed",
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "stepsCount" : 1,
+        "steps" : [ {
+          "name" : "get user",
+          "time" : {
+            "start" : 1516895188571,
+            "stop" : 1516895188918,
+            "duration" : 347
+          },
+          "status" : "passed",
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 0,
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ]
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Login",
+      "time" : {
+        "start" : 1516895188918,
+        "stop" : 1516895189272,
+        "duration" : 354
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Delete user",
+      "time" : {
+        "start" : 1516895189272,
+        "stop" : 1516895190336,
+        "duration" : 1064
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 3,
+      "steps" : [ {
+        "name" : "Login",
+        "time" : {
+          "start" : 1516895189272,
+          "stop" : 1516895189619,
+          "duration" : 347
+        },
+        "status" : "passed",
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      }, {
+        "name" : "Check if user exist",
+        "time" : {
+          "start" : 1516895189989,
+          "stop" : 1516895190336,
+          "duration" : 347
+        },
+        "status" : "passed",
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "stepsCount" : 1,
+        "steps" : [ {
+          "name" : "get user",
+          "time" : {
+            "start" : 1516895189989,
+            "stop" : 1516895190336,
+            "duration" : 347
+          },
+          "status" : "passed",
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 0,
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ]
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    } ],
+    "attachments" : [ {
+      "uid" : "323231636f873f5d",
+      "name" : "log",
+      "source" : "323231636f873f5d.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "fcb707bb167280b0",
+      "name" : "log",
+      "source" : "fcb707bb167280b0.txt",
+      "type" : "text/plain",
+      "size" : 3214
+    } ],
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "stepsCount" : 11
+  },
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "User"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "EPUALVIW0697"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "story",
+    "value" : "Operations with user"
+  }, {
+    "name" : "testClass",
+    "value" : "simpleTests.UserTests"
+  }, {
+    "name" : "testGroup",
+    "value" : "EducationProgect"
+  }, {
+    "name" : "testMethod",
+    "value" : "simpleUser"
+  }, {
+    "name" : "testSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "thread",
+    "value" : "4816@EPUALVIW0697.main(1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "EducationProgect"
+  }, {
+    "name" : "subSuite",
+    "value" : "simpleTests.UserTests"
+  }, {
+    "name" : "package",
+    "value" : "simpleTests.UserTests"
+  } ],
+  "parameters" : [ ],
+  "hidden" : true,
+  "extra" : { }
+}

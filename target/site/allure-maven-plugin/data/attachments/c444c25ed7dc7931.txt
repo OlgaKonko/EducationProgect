@@ -1,0 +1,171 @@
+17:49:22,425  INFO petLog:updatePet:48 - start update pet test
+17:49:22,425  INFO petLog:createPet:33 - start creating pet, pet id : 77
+17:49:22,425  INFO petLog:isPetExist:70 - start checking pet, pet id : 77
+17:49:22,425  INFO petLog:getPet:48 - send request to get pet
+Request path:	http://petstore.swagger.io/v2/pet/77
+Request method:	GET
+Response body: 
+{
+    "code": 1,
+    "type": "error",
+    "message": "Pet not found"
+}
+17:49:22,772  INFO petLog:isPetExist:76 - pet with id :77 is not exist
+17:49:22,772  INFO petLog:createPet:27 - send request to create pet
+Request path:	http://petstore.swagger.io/v2/pet
+Request method:	POST
+Body:
+{
+    "id": 77,
+    "category": {
+        "id": 76,
+        "name": "kGnSKesipW"
+    },
+    "name": "aaGjWCacIk",
+    "photoUrls": [
+        "FYrUBfSmSo",
+        "PVtyKsNLDE"
+    ],
+    "tags": [
+        {
+            "id": 45670,
+            "name": "small"
+        },
+        {
+            "id": 45672,
+            "name": "white"
+        }
+    ],
+    "status": "available"
+}
+Response body: 
+{
+    "id": 77,
+    "category": {
+        "id": 76,
+        "name": "kGnSKesipW"
+    },
+    "name": "aaGjWCacIk",
+    "photoUrls": [
+        "FYrUBfSmSo",
+        "PVtyKsNLDE"
+    ],
+    "tags": [
+        {
+            "id": 45670,
+            "name": "small"
+        },
+        {
+            "id": 45672,
+            "name": "white"
+        }
+    ],
+    "status": "available"
+}
+17:49:23,173  INFO petLog:getPet:55 - start getting pet, pet id : 77
+17:49:23,173  INFO petLog:getPet:48 - send request to get pet
+Request path:	http://petstore.swagger.io/v2/pet/77
+Request method:	GET
+Response body: 
+{
+    "id": 77,
+    "category": {
+        "id": 76,
+        "name": "kGnSKesipW"
+    },
+    "name": "aaGjWCacIk",
+    "photoUrls": [
+        "FYrUBfSmSo",
+        "PVtyKsNLDE"
+    ],
+    "tags": [
+        {
+            "id": 45670,
+            "name": "small"
+        },
+        {
+            "id": 45672,
+            "name": "white"
+        }
+    ],
+    "status": "available"
+}
+17:49:23,527  INFO petLog:getPet:58 - pet with id : 77 has been gotten
+17:49:23,542  INFO petLog:createPet:43 - pet has been created, pet id : 77
+17:49:23,542  INFO petLog:updatePet:88 - start updating pet, pet id : 77
+17:49:23,542  INFO petLog:updatePetData:34 - send request to update pet
+Request path:	http://petstore.swagger.io/v2/pet
+Request method:	PUT
+Body:
+{
+    "id": 77,
+    "category": {
+        "id": 76,
+        "name": "kGnSKesipW"
+    },
+    "name": "Blacky",
+    "photoUrls": [
+        "FYrUBfSmSo",
+        "PVtyKsNLDE"
+    ],
+    "tags": [
+        {
+            "id": 45670,
+            "name": "small"
+        },
+        {
+            "id": 45672,
+            "name": "white"
+        },
+        {
+            "id": 45673,
+            "name": "black"
+        }
+    ],
+    "status": "available"
+}
+Response body: 
+{
+    "id": 77,
+    "category": {
+        "id": 76,
+        "name": "kGnSKesipW"
+    },
+    "name": "Blacky",
+    "photoUrls": [
+        "FYrUBfSmSo",
+        "PVtyKsNLDE"
+    ],
+    "tags": [
+        {
+            "id": 45670,
+            "name": "small"
+        },
+        {
+            "id": 45672,
+            "name": "white"
+        },
+        {
+            "id": 45673,
+            "name": "black"
+        }
+    ],
+    "status": "available"
+}
+17:49:23,897  INFO petLog:updatePet:93 - pet with id : 77 has been updated
+17:49:23,897  INFO petLog:deletePet:145 - start deleting pet image, pet id : 77
+17:49:23,897  INFO petLog:deletePet:62 - send request to delete pet
+Request path:	http://petstore.swagger.io/v2/pet/77
+Request method:	DELETE
+17:49:24,260  INFO petLog:isPetExist:70 - start checking pet, pet id : 77
+17:49:24,260  INFO petLog:getPet:48 - send request to get pet
+Request path:	http://petstore.swagger.io/v2/pet/77
+Request method:	GET
+Response body: 
+{
+    "code": 1,
+    "type": "error",
+    "message": "Pet not found"
+}
+17:49:24,614  INFO petLog:isPetExist:76 - pet with id :77 is not exist
+17:49:24,614  INFO petLog:deletePet:149 - pet has been deleted, pet id : 77

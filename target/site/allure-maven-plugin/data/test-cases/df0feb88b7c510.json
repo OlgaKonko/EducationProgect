@@ -1,0 +1,164 @@
+{
+  "uid" : "df0feb88b7c510",
+  "name" : "Pet update",
+  "fullName" : "simpleTests.PetTests.updatePet",
+  "historyId" : "5dcf0b546509fd5660b6f6aea96198b4",
+  "time" : {
+    "start" : 1516895072506,
+    "stop" : 1516895074711,
+    "duration" : 2205
+  },
+  "status" : "passed",
+  "description" : "Create pet and update his name and tags",
+  "descriptionHtml" : "<p>Create pet and update his name and tags</p>",
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Create pet",
+      "time" : {
+        "start" : 1516895072506,
+        "stop" : 1516895073608,
+        "duration" : 1102
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 2,
+      "steps" : [ {
+        "name" : "Check if pet exist",
+        "time" : {
+          "start" : 1516895072506,
+          "stop" : 1516895072885,
+          "duration" : 379
+        },
+        "status" : "passed",
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      }, {
+        "name" : "Get pet",
+        "time" : {
+          "start" : 1516895073254,
+          "stop" : 1516895073608,
+          "duration" : 354
+        },
+        "status" : "passed",
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Update pet",
+      "time" : {
+        "start" : 1516895073608,
+        "stop" : 1516895073971,
+        "duration" : 363
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Delete pet",
+      "time" : {
+        "start" : 1516895073971,
+        "stop" : 1516895074707,
+        "duration" : 736
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "steps" : [ {
+        "name" : "Check if pet exist",
+        "time" : {
+          "start" : 1516895074341,
+          "stop" : 1516895074707,
+          "duration" : 366
+        },
+        "status" : "passed",
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    } ],
+    "attachments" : [ {
+      "uid" : "c0896333f4c57a75",
+      "name" : "log",
+      "source" : "c0896333f4c57a75.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "7b370cc2a97c6fc0",
+      "name" : "log",
+      "source" : "7b370cc2a97c6fc0.txt",
+      "type" : "text/plain",
+      "size" : 4072
+    } ],
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "stepsCount" : 6
+  },
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Pet"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "EPUALVIW0697"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "story",
+    "value" : "Operations with user pet"
+  }, {
+    "name" : "testClass",
+    "value" : "simpleTests.PetTests"
+  }, {
+    "name" : "testGroup",
+    "value" : "EducationProgect"
+  }, {
+    "name" : "testMethod",
+    "value" : "updatePet"
+  }, {
+    "name" : "testSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "thread",
+    "value" : "4816@EPUALVIW0697.main(1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "EducationProgect"
+  }, {
+    "name" : "subSuite",
+    "value" : "simpleTests.PetTests"
+  }, {
+    "name" : "package",
+    "value" : "simpleTests.PetTests"
+  } ],
+  "parameters" : [ ],
+  "hidden" : true,
+  "extra" : { }
+}

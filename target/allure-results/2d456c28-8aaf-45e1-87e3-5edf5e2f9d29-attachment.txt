@@ -1,0 +1,166 @@
+17:49:27,103  INFO petLog:uploadPetPhoto:72 - start upload pet photo test
+17:49:27,103  INFO petLog:createPet:33 - start creating pet, pet id : 77
+17:49:27,103  INFO petLog:isPetExist:70 - start checking pet, pet id : 77
+17:49:27,103  INFO petLog:getPet:48 - send request to get pet
+Request path:	http://petstore.swagger.io/v2/pet/77
+Request method:	GET
+Response body: 
+{
+    "code": 1,
+    "type": "error",
+    "message": "Pet not found"
+}
+17:49:27,465  INFO petLog:isPetExist:76 - pet with id :77 is not exist
+17:49:27,465  INFO petLog:createPet:27 - send request to create pet
+Request path:	http://petstore.swagger.io/v2/pet
+Request method:	POST
+Body:
+{
+    "id": 77,
+    "category": {
+        "id": 76,
+        "name": "kGnSKesipW"
+    },
+    "name": "Blacky",
+    "photoUrls": [
+        "FYrUBfSmSo",
+        "PVtyKsNLDE"
+    ],
+    "tags": [
+        {
+            "id": 45670,
+            "name": "small"
+        },
+        {
+            "id": 45672,
+            "name": "white"
+        },
+        {
+            "id": 45673,
+            "name": "black"
+        }
+    ],
+    "status": "available"
+}
+Response body: 
+{
+    "id": 77,
+    "category": {
+        "id": 76,
+        "name": "kGnSKesipW"
+    },
+    "name": "Blacky",
+    "photoUrls": [
+        "FYrUBfSmSo",
+        "PVtyKsNLDE"
+    ],
+    "tags": [
+        {
+            "id": 45670,
+            "name": "small"
+        },
+        {
+            "id": 45672,
+            "name": "white"
+        },
+        {
+            "id": 45673,
+            "name": "black"
+        }
+    ],
+    "status": "available"
+}
+17:49:27,819  INFO petLog:getPet:55 - start getting pet, pet id : 77
+17:49:27,819  INFO petLog:getPet:48 - send request to get pet
+Request path:	http://petstore.swagger.io/v2/pet/77
+Request method:	GET
+Response body: 
+{
+    "id": 77,
+    "category": {
+        "id": 76,
+        "name": "kGnSKesipW"
+    },
+    "name": "Blacky",
+    "photoUrls": [
+        "FYrUBfSmSo",
+        "PVtyKsNLDE"
+    ],
+    "tags": [
+        {
+            "id": 45670,
+            "name": "small"
+        },
+        {
+            "id": 45672,
+            "name": "white"
+        },
+        {
+            "id": 45673,
+            "name": "black"
+        }
+    ],
+    "status": "available"
+}
+17:49:28,166  INFO petLog:getPet:58 - pet with id : 77 has been gotten
+17:49:28,166  INFO petLog:createPet:43 - pet has been created, pet id : 77
+17:49:28,166  INFO petLog:uploadPetImage:126 - start uploading pet image, pet id : 77 image file name: cat.jpg
+17:49:28,166  INFO petLog:uploadPetImage:68 - send request to upload pet image
+Request path:	http://petstore.swagger.io/v2/pet/77/uploadImage
+Request method:	POST
+17:50:58,595 ERROR petLog:uploadPetImage:132 - pet image can't be uploaded, pet id : 77 image file name: cat.jpg
+17:50:58,648  INFO storeLog:checkInventory:40 - start check inventory test
+17:50:58,648  INFO storeLog:<init>:16 - connecting to http://petstore.swagger.io/v2/user
+17:50:58,648  INFO storeLog:getInventory:26 - start getting inventory
+17:50:58,648  INFO storeLog:getInventory:21 - send request to get inventory
+Request path:	http://petstore.swagger.io/v2/store/inventory
+Request method:	GET
+Response body: 
+{
+    "laboris ": 1,
+    "'%20and%201=2%20--": 1,
+    "string": 7453,
+    "Operated": 4,
+    "unavailable": 2,
+    "pending": 57,
+    "Not-Operated": 11,
+    "'--": 1,
+    "available": 3421,
+    "/*!10000%201/0%20*/": 1,
+    "test￯﾿ﾽ%20UNION%20select%201,%20@@version,%201,%201;￯﾿ﾽ": 1,
+    "test￯﾿ﾽ UNION select 1, @@version, 1, 1;￯﾿ﾽ": 1,
+    "avilable": 1,
+    "Unavailable": 2,
+    "1/0": 1,
+    "' and 1=2 --": 1,
+    "Sold": 1,
+    "1'": 1,
+    "qui eiusmod comm": 1,
+    "disponivel": 10,
+    "Available": 1,
+    "StringValue": 1,
+    "ok": 1,
+    "/*!10000 1/0 */": 1,
+    "reprehenderit nisi ul": 1,
+    "sold": 51,
+    "venta": 1,
+    "admin'--": 1,
+    "test": 1,
+    "'%20o/**/r%201/0%20--": 1,
+    "aute anim ": 1,
+    "Offline": 1,
+    "aaaaaa": 2,
+    "xzcxz": 1,
+    "AVAILABLE": 3,
+    "sed do ": 1,
+    "1": 2,
+    "s": 18,
+    "ipsum labore velit": 1,
+    "stillavailable": 1,
+    ";": 1,
+    "Lorem adipisicing a": 1,
+    "status": 29,
+    "' or '1'='1": 1,
+    "' o/**/r 1/0 --": 1
+}
+17:50:59,011  INFO storeLog:getInventory:29 - inventory has been gotten

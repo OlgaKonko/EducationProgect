@@ -1,0 +1,277 @@
+{
+  "statistic" : {
+    "failed" : 0,
+    "broken" : 1,
+    "skipped" : 0,
+    "passed" : 11,
+    "unknown" : 0,
+    "total" : 12
+  },
+  "time" : {
+    "minDuration" : 517,
+    "maxDuration" : 91545,
+    "sumDuration" : 128363,
+    "start" : 1516895354626,
+    "stop" : 1516895483053,
+    "duration" : 128427
+  },
+  "children" : [ {
+    "uid" : "a72d8b0c266ddc79",
+    "name" : "Default Suite",
+    "time" : {
+      "minDuration" : 517,
+      "maxDuration" : 91545,
+      "sumDuration" : 128363,
+      "start" : 1516895354626,
+      "stop" : 1516895483053,
+      "duration" : 128427
+    },
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 11,
+      "unknown" : 0,
+      "total" : 12
+    },
+    "type" : "TestGroupNode",
+    "children" : [ {
+      "uid" : "242e3f0a4b056566",
+      "name" : "EducationProgect",
+      "time" : {
+        "minDuration" : 517,
+        "maxDuration" : 91545,
+        "sumDuration" : 128363,
+        "start" : 1516895354626,
+        "stop" : 1516895483053,
+        "duration" : 128427
+      },
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 11,
+        "unknown" : 0,
+        "total" : 12
+      },
+      "type" : "TestGroupNode",
+      "children" : [ {
+        "uid" : "77c9586f09215ff7",
+        "name" : "simpleTests.PetTests",
+        "time" : {
+          "minDuration" : 1988,
+          "maxDuration" : 91545,
+          "sumDuration" : 103990,
+          "start" : 1516895354626,
+          "stop" : 1516895458648,
+          "duration" : 104022
+        },
+        "statistic" : {
+          "failed" : 0,
+          "broken" : 1,
+          "skipped" : 0,
+          "passed" : 4,
+          "unknown" : 0,
+          "total" : 5
+        },
+        "type" : "TestGroupNode",
+        "children" : [ {
+          "uid" : "9f8fad2339520858",
+          "name" : "Pet status update",
+          "time" : {
+            "start" : 1516895364630,
+            "stop" : 1516895367103,
+            "duration" : 2473
+          },
+          "status" : "passed",
+          "flaky" : true,
+          "type" : "TestCaseNode"
+        }, {
+          "uid" : "4ae8ef36716e5ccc",
+          "name" : "Get pets",
+          "time" : {
+            "start" : 1516895354626,
+            "stop" : 1516895360405,
+            "duration" : 5779
+          },
+          "status" : "passed",
+          "flaky" : true,
+          "type" : "TestCaseNode"
+        }, {
+          "uid" : "e3dd3b5417fae157",
+          "name" : "Pet's photo upload",
+          "time" : {
+            "start" : 1516895367103,
+            "stop" : 1516895458648,
+            "duration" : 91545
+          },
+          "status" : "broken",
+          "flaky" : true,
+          "type" : "TestCaseNode"
+        }, {
+          "uid" : "a617b83512af7b9d",
+          "name" : "Pet update",
+          "time" : {
+            "start" : 1516895362425,
+            "stop" : 1516895364630,
+            "duration" : 2205
+          },
+          "status" : "passed",
+          "flaky" : true,
+          "type" : "TestCaseNode"
+        }, {
+          "uid" : "81b949a8642dc595",
+          "name" : "Pet create and delete",
+          "time" : {
+            "start" : 1516895360421,
+            "stop" : 1516895362409,
+            "duration" : 1988
+          },
+          "status" : "passed",
+          "flaky" : true,
+          "type" : "TestCaseNode"
+        } ]
+      }, {
+        "uid" : "26e42849d3e57ce3",
+        "name" : "simpleTests.UserTests",
+        "time" : {
+          "minDuration" : 2474,
+          "maxDuration" : 3890,
+          "sumDuration" : 9515,
+          "start" : 1516895473538,
+          "stop" : 1516895483053,
+          "duration" : 9515
+        },
+        "statistic" : {
+          "failed" : 0,
+          "broken" : 0,
+          "skipped" : 0,
+          "passed" : 3,
+          "unknown" : 0,
+          "total" : 3
+        },
+        "type" : "TestGroupNode",
+        "children" : [ {
+          "uid" : "29050247a350f4ff",
+          "name" : "Login and logout",
+          "time" : {
+            "start" : 1516895473538,
+            "stop" : 1516895476689,
+            "duration" : 3151
+          },
+          "status" : "passed",
+          "flaky" : true,
+          "type" : "TestCaseNode"
+        }, {
+          "uid" : "c44207646cb71b06",
+          "name" : "User create and delete",
+          "time" : {
+            "start" : 1516895476689,
+            "stop" : 1516895479163,
+            "duration" : 2474
+          },
+          "status" : "passed",
+          "flaky" : true,
+          "type" : "TestCaseNode"
+        }, {
+          "uid" : "7c9446d78af75fbc",
+          "name" : "Update user",
+          "time" : {
+            "start" : 1516895479163,
+            "stop" : 1516895483053,
+            "duration" : 3890
+          },
+          "status" : "passed",
+          "flaky" : true,
+          "type" : "TestCaseNode"
+        } ]
+      }, {
+        "uid" : "e78694f22b75bd78",
+        "name" : "simpleTests.UsersTest",
+        "time" : {
+          "minDuration" : 5778,
+          "maxDuration" : 6777,
+          "sumDuration" : 12555,
+          "start" : 1516895460967,
+          "stop" : 1516895473538,
+          "duration" : 12571
+        },
+        "statistic" : {
+          "failed" : 0,
+          "broken" : 0,
+          "skipped" : 0,
+          "passed" : 2,
+          "unknown" : 0,
+          "total" : 2
+        },
+        "type" : "TestGroupNode",
+        "children" : [ {
+          "uid" : "5000c191a94b8611",
+          "name" : "Users from array",
+          "time" : {
+            "start" : 1516895460967,
+            "stop" : 1516895466745,
+            "duration" : 5778
+          },
+          "status" : "passed",
+          "flaky" : true,
+          "type" : "TestCaseNode"
+        }, {
+          "uid" : "74b51e3973f56d92",
+          "name" : "Users from list",
+          "time" : {
+            "start" : 1516895466761,
+            "stop" : 1516895473538,
+            "duration" : 6777
+          },
+          "status" : "passed",
+          "flaky" : true,
+          "type" : "TestCaseNode"
+        } ]
+      }, {
+        "uid" : "c7c8c3ab7b9b6203",
+        "name" : "simpleTests.StoreTest",
+        "time" : {
+          "minDuration" : 517,
+          "maxDuration" : 1786,
+          "sumDuration" : 2303,
+          "start" : 1516895458648,
+          "stop" : 1516895460951,
+          "duration" : 2303
+        },
+        "statistic" : {
+          "failed" : 0,
+          "broken" : 0,
+          "skipped" : 0,
+          "passed" : 2,
+          "unknown" : 0,
+          "total" : 2
+        },
+        "type" : "TestGroupNode",
+        "children" : [ {
+          "uid" : "fd44e1221f30157a",
+          "name" : "Get inventory",
+          "time" : {
+            "start" : 1516895458648,
+            "stop" : 1516895459165,
+            "duration" : 517
+          },
+          "status" : "passed",
+          "flaky" : true,
+          "type" : "TestCaseNode"
+        }, {
+          "uid" : "25a814ba6b4d3c07",
+          "name" : "Order create and delete",
+          "time" : {
+            "start" : 1516895459165,
+            "stop" : 1516895460951,
+            "duration" : 1786
+          },
+          "status" : "passed",
+          "flaky" : true,
+          "type" : "TestCaseNode"
+        } ]
+      } ]
+    } ]
+  } ]
+}

@@ -1,0 +1,173 @@
+{
+  "uid" : "a617b83512af7b9d",
+  "name" : "Pet update",
+  "fullName" : "simpleTests.PetTests.updatePet",
+  "historyId" : "5dcf0b546509fd5660b6f6aea96198b4",
+  "time" : {
+    "start" : 1516895362425,
+    "stop" : 1516895364630,
+    "duration" : 2205
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : true
+  },
+  "description" : "Create pet and update his name and tags",
+  "descriptionHtml" : "<p>Create pet and update his name and tags</p>",
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Create pet",
+      "time" : {
+        "start" : 1516895362425,
+        "stop" : 1516895363542,
+        "duration" : 1117
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 2,
+      "steps" : [ {
+        "name" : "Check if pet exist",
+        "time" : {
+          "start" : 1516895362425,
+          "stop" : 1516895362772,
+          "duration" : 347
+        },
+        "status" : "passed",
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      }, {
+        "name" : "Get pet",
+        "time" : {
+          "start" : 1516895363173,
+          "stop" : 1516895363542,
+          "duration" : 369
+        },
+        "status" : "passed",
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Update pet",
+      "time" : {
+        "start" : 1516895363542,
+        "stop" : 1516895363897,
+        "duration" : 355
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Delete pet",
+      "time" : {
+        "start" : 1516895363897,
+        "stop" : 1516895364614,
+        "duration" : 717
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "steps" : [ {
+        "name" : "Check if pet exist",
+        "time" : {
+          "start" : 1516895364260,
+          "stop" : 1516895364614,
+          "duration" : 354
+        },
+        "status" : "passed",
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    } ],
+    "attachments" : [ {
+      "uid" : "c444c25ed7dc7931",
+      "name" : "log",
+      "source" : "c444c25ed7dc7931.txt",
+      "type" : "text/plain",
+      "size" : 4072
+    } ],
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "stepsCount" : 6
+  },
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Pet"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "EPUALVIW0697"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "story",
+    "value" : "Operations with user pet"
+  }, {
+    "name" : "testClass",
+    "value" : "simpleTests.PetTests"
+  }, {
+    "name" : "testGroup",
+    "value" : "EducationProgect"
+  }, {
+    "name" : "testMethod",
+    "value" : "updatePet"
+  }, {
+    "name" : "testSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "thread",
+    "value" : "8768@EPUALVIW0697.main(1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "EducationProgect"
+  }, {
+    "name" : "subSuite",
+    "value" : "simpleTests.PetTests"
+  }, {
+    "name" : "package",
+    "value" : "simpleTests.PetTests"
+  } ],
+  "parameters" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "df0feb88b7c510",
+      "status" : "passed",
+      "time" : {
+        "start" : 1516895072506,
+        "stop" : 1516895074711,
+        "duration" : 2205
+      }
+    } ],
+    "categories" : [ ]
+  }
+}

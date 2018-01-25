@@ -1,0 +1,176 @@
+{
+  "uid" : "81b949a8642dc595",
+  "name" : "Pet create and delete",
+  "fullName" : "simpleTests.PetTests.simplePet",
+  "historyId" : "bb30f5f2e67cb84a34f1c19b21f0b45e",
+  "time" : {
+    "start" : 1516895360421,
+    "stop" : 1516895362409,
+    "duration" : 1988
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : true
+  },
+  "description" : "Create pet and delete it",
+  "descriptionHtml" : "<p>Create pet and delete it</p>",
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Create pet",
+      "time" : {
+        "start" : 1516895360421,
+        "stop" : 1516895361708,
+        "duration" : 1287
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 3,
+      "steps" : [ {
+        "name" : "Check if pet exist",
+        "time" : {
+          "start" : 1516895360421,
+          "stop" : 1516895360790,
+          "duration" : 369
+        },
+        "status" : "passed",
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      }, {
+        "name" : "Update pet",
+        "time" : {
+          "start" : 1516895360805,
+          "stop" : 1516895361322,
+          "duration" : 517
+        },
+        "status" : "passed",
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      }, {
+        "name" : "Get pet",
+        "time" : {
+          "start" : 1516895361322,
+          "stop" : 1516895361708,
+          "duration" : 386
+        },
+        "status" : "passed",
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Delete pet",
+      "time" : {
+        "start" : 1516895361708,
+        "stop" : 1516895362409,
+        "duration" : 701
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "steps" : [ {
+        "name" : "Check if pet exist",
+        "time" : {
+          "start" : 1516895362071,
+          "stop" : 1516895362409,
+          "duration" : 338
+        },
+        "status" : "passed",
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    } ],
+    "attachments" : [ {
+      "uid" : "15901fff6c558de6",
+      "name" : "log",
+      "source" : "15901fff6c558de6.txt",
+      "type" : "text/plain",
+      "size" : 3203
+    } ],
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "stepsCount" : 6
+  },
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Pet"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "EPUALVIW0697"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "story",
+    "value" : "Operations with user pet"
+  }, {
+    "name" : "testClass",
+    "value" : "simpleTests.PetTests"
+  }, {
+    "name" : "testGroup",
+    "value" : "EducationProgect"
+  }, {
+    "name" : "testMethod",
+    "value" : "simplePet"
+  }, {
+    "name" : "testSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "thread",
+    "value" : "8768@EPUALVIW0697.main(1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "EducationProgect"
+  }, {
+    "name" : "subSuite",
+    "value" : "simpleTests.PetTests"
+  }, {
+    "name" : "package",
+    "value" : "simpleTests.PetTests"
+  } ],
+  "parameters" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ {
+      "uid" : "b8321634f06bdb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1516895070498,
+        "stop" : 1516895072506,
+        "duration" : 2008
+      }
+    } ],
+    "categories" : [ ]
+  }
+}

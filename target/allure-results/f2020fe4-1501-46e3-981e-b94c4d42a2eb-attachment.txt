@@ -1,0 +1,87 @@
+17:51:13,538  INFO userLog:<init>:20 - connecting to http://petstore.swagger.io/v2/user
+17:51:13,538  INFO userLog:login:50 - start login and logout test
+17:51:13,538  INFO userLog:createUser:36 - start creating user, username : ktnBTKFJEF
+17:51:13,538  INFO userLog:isUserExist:78 - start check user exist, username : ktnBTKFJEF
+17:51:13,538  INFO userLog:getUser:60 - send request to get user
+Request path:	http://petstore.swagger.io/v2/user/ktnBTKFJEF
+Request method:	GET
+Response body: 
+{
+    "code": 1,
+    "type": "error",
+    "message": "User not found"
+}
+17:51:13,886  INFO userLog:isUserExist:83 - user ktnBTKFJEF is not exist
+17:51:13,886  INFO userLog:createUser:26 - send request to create user
+Request path:	http://petstore.swagger.io/v2/user
+Request method:	POST
+Body:
+{
+    "id": 57,
+    "username": "ktnBTKFJEF",
+    "firstName": "UPuXKgesxV",
+    "lastName": "UmvELtSPnG",
+    "email": "QoFnqYilpu",
+    "password": "UtShKhpOrG",
+    "phone": "lkzfjoWlcR",
+    "userStatus": 34
+}
+17:51:14,239  INFO userLog:getUser:59 - start getting user, username : ktnBTKFJEF
+17:51:14,239  INFO userLog:getUser:60 - send request to get user
+Request path:	http://petstore.swagger.io/v2/user/ktnBTKFJEF
+Request method:	GET
+Response body: 
+{
+    "id": 57,
+    "username": "ktnBTKFJEF",
+    "firstName": "UPuXKgesxV",
+    "lastName": "UmvELtSPnG",
+    "email": "QoFnqYilpu",
+    "password": "UtShKhpOrG",
+    "phone": "lkzfjoWlcR",
+    "userStatus": 34
+}
+17:51:14,570  INFO userLog:getUser:62 - user ktnBTKFJEF has been gotten
+17:51:14,586  INFO userLog:createUser:46 - user has been created, username : ktnBTKFJEF
+17:51:14,586  INFO userLog:logIn:94 - start login in user, username : ktnBTKFJEF password : UtShKhpOrG
+17:51:14,586  INFO userLog:logIn:46 - send request to log in
+Request path:	http://petstore.swagger.io/v2/user/login?username=ktnBTKFJEF&password=UtShKhpOrG
+Request method:	GET
+Response body: 
+logged in user session:1516895475596
+17:51:14,918  INFO userLog:logIn:97 - user has been logged in, username : ktnBTKFJEF
+17:51:14,918  INFO userLog:logOut:108 - start user logout, username : ktnBTKFJEF
+17:51:14,918  INFO userLog:logOut:53 - send request to log out
+Request path:	http://petstore.swagger.io/v2/user/logout
+Request method:	GET
+17:51:15,272  INFO userLog:logOut:111 - user has been logout, username : ktnBTKFJEF
+17:51:15,272  INFO userLog:logIn:94 - start login in user, username : ktnBTKFJEF password : UtShKhpOrG
+17:51:15,272  INFO userLog:logIn:46 - send request to log in
+Request path:	http://petstore.swagger.io/v2/user/login?username=ktnBTKFJEF&password=UtShKhpOrG
+Request method:	GET
+Response body: 
+logged in user session:1516895476289
+17:51:15,619  INFO userLog:logIn:97 - user has been logged in, username : ktnBTKFJEF
+17:51:15,619  INFO userLog:deleteUser:140 - start delete user, username : ktnBTKFJEF
+17:51:15,619  INFO userLog:logIn:94 - start login in user, username : ktnBTKFJEF password : UtShKhpOrG
+17:51:15,619  INFO userLog:logIn:46 - send request to log in
+Request path:	http://petstore.swagger.io/v2/user/login?username=ktnBTKFJEF&password=UtShKhpOrG
+Request method:	GET
+Response body: 
+logged in user session:1516895476643
+17:51:15,973  INFO userLog:logIn:97 - user has been logged in, username : ktnBTKFJEF
+17:51:15,973  INFO userLog:deleteUser:73 - send request to delete user
+Request path:	http://petstore.swagger.io/v2/user/ktnBTKFJEF
+Request method:	DELETE
+17:51:16,342  INFO userLog:isUserExist:78 - start check user exist, username : ktnBTKFJEF
+17:51:16,342  INFO userLog:getUser:60 - send request to get user
+Request path:	http://petstore.swagger.io/v2/user/ktnBTKFJEF
+Request method:	GET
+Response body: 
+{
+    "code": 1,
+    "type": "error",
+    "message": "User not found"
+}
+17:51:16,689  INFO userLog:isUserExist:83 - user ktnBTKFJEF is not exist
+17:51:16,689  INFO userLog:deleteUser:145 - user has been deleted, username : ktnBTKFJEF

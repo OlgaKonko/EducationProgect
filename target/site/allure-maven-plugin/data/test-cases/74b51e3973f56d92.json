@@ -1,0 +1,425 @@
+{
+  "uid" : "74b51e3973f56d92",
+  "name" : "Users from list",
+  "fullName" : "simpleTests.UsersTest.createNewUsersWithList",
+  "historyId" : "57c1143f6ea14770db1ddac2e8d71c9b",
+  "time" : {
+    "start" : 1516895466761,
+    "stop" : 1516895473538,
+    "duration" : 6777
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : true
+  },
+  "description" : "Create and delete users from list",
+  "descriptionHtml" : "<p>Create and delete users from list</p>",
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Check if user exist",
+      "time" : {
+        "start" : 1516895466761,
+        "stop" : 1516895467108,
+        "duration" : 347
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "steps" : [ {
+        "name" : "get user",
+        "time" : {
+          "start" : 1516895466761,
+          "stop" : 1516895467108,
+          "duration" : 347
+        },
+        "status" : "passed",
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Check if user exist",
+      "time" : {
+        "start" : 1516895467108,
+        "stop" : 1516895467445,
+        "duration" : 337
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "steps" : [ {
+        "name" : "get user",
+        "time" : {
+          "start" : 1516895467108,
+          "stop" : 1516895467445,
+          "duration" : 337
+        },
+        "status" : "passed",
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Check if user exist",
+      "time" : {
+        "start" : 1516895467445,
+        "stop" : 1516895467830,
+        "duration" : 385
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "steps" : [ {
+        "name" : "get user",
+        "time" : {
+          "start" : 1516895467445,
+          "stop" : 1516895467830,
+          "duration" : 385
+        },
+        "status" : "passed",
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Get user",
+      "time" : {
+        "start" : 1516895468178,
+        "stop" : 1516895468531,
+        "duration" : 353
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "steps" : [ {
+        "name" : "get user",
+        "time" : {
+          "start" : 1516895468178,
+          "stop" : 1516895468531,
+          "duration" : 353
+        },
+        "status" : "passed",
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Get user",
+      "time" : {
+        "start" : 1516895468531,
+        "stop" : 1516895468894,
+        "duration" : 363
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "steps" : [ {
+        "name" : "get user",
+        "time" : {
+          "start" : 1516895468531,
+          "stop" : 1516895468894,
+          "duration" : 363
+        },
+        "status" : "passed",
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Get user",
+      "time" : {
+        "start" : 1516895468894,
+        "stop" : 1516895469233,
+        "duration" : 339
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "steps" : [ {
+        "name" : "get user",
+        "time" : {
+          "start" : 1516895468894,
+          "stop" : 1516895469233,
+          "duration" : 339
+        },
+        "status" : "passed",
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Delete user",
+      "time" : {
+        "start" : 1516895469233,
+        "stop" : 1516895471465,
+        "duration" : 2232
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 3,
+      "steps" : [ {
+        "name" : "Login",
+        "time" : {
+          "start" : 1516895469233,
+          "stop" : 1516895469580,
+          "duration" : 347
+        },
+        "status" : "passed",
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      }, {
+        "name" : "Check if user exist",
+        "time" : {
+          "start" : 1516895469933,
+          "stop" : 1516895471465,
+          "duration" : 1532
+        },
+        "status" : "passed",
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "stepsCount" : 1,
+        "steps" : [ {
+          "name" : "get user",
+          "time" : {
+            "start" : 1516895469934,
+            "stop" : 1516895471465,
+            "duration" : 1531
+          },
+          "status" : "passed",
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 0,
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ]
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Delete user",
+      "time" : {
+        "start" : 1516895471465,
+        "stop" : 1516895472499,
+        "duration" : 1034
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 3,
+      "steps" : [ {
+        "name" : "Login",
+        "time" : {
+          "start" : 1516895471465,
+          "stop" : 1516895471813,
+          "duration" : 348
+        },
+        "status" : "passed",
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      }, {
+        "name" : "Check if user exist",
+        "time" : {
+          "start" : 1516895472151,
+          "stop" : 1516895472499,
+          "duration" : 348
+        },
+        "status" : "passed",
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "stepsCount" : 1,
+        "steps" : [ {
+          "name" : "get user",
+          "time" : {
+            "start" : 1516895472151,
+            "stop" : 1516895472499,
+            "duration" : 348
+          },
+          "status" : "passed",
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 0,
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ]
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Delete user",
+      "time" : {
+        "start" : 1516895472499,
+        "stop" : 1516895473537,
+        "duration" : 1038
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 3,
+      "steps" : [ {
+        "name" : "Login",
+        "time" : {
+          "start" : 1516895472499,
+          "stop" : 1516895472852,
+          "duration" : 353
+        },
+        "status" : "passed",
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      }, {
+        "name" : "Check if user exist",
+        "time" : {
+          "start" : 1516895473184,
+          "stop" : 1516895473537,
+          "duration" : 353
+        },
+        "status" : "passed",
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "stepsCount" : 1,
+        "steps" : [ {
+          "name" : "get user",
+          "time" : {
+            "start" : 1516895473184,
+            "stop" : 1516895473536,
+            "duration" : 352
+          },
+          "status" : "passed",
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 0,
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ]
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    } ],
+    "attachments" : [ {
+      "uid" : "68ac2a7c717afc3e",
+      "name" : "log",
+      "source" : "68ac2a7c717afc3e.txt",
+      "type" : "text/plain",
+      "size" : 7641
+    } ],
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "stepsCount" : 24
+  },
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "User"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "EPUALVIW0697"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "story",
+    "value" : "Operations with users"
+  }, {
+    "name" : "testClass",
+    "value" : "simpleTests.UsersTest"
+  }, {
+    "name" : "testGroup",
+    "value" : "EducationProgect"
+  }, {
+    "name" : "testMethod",
+    "value" : "createNewUsersWithList"
+  }, {
+    "name" : "testSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "thread",
+    "value" : "8768@EPUALVIW0697.main(1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "EducationProgect"
+  }, {
+    "name" : "subSuite",
+    "value" : "simpleTests.UsersTest"
+  }, {
+    "name" : "package",
+    "value" : "simpleTests.UsersTest"
+  } ],
+  "parameters" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "ba5a25cc6b4c792a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1516895178917,
+        "stop" : 1516895184564,
+        "duration" : 5647
+      }
+    } ],
+    "categories" : [ ]
+  }
+}

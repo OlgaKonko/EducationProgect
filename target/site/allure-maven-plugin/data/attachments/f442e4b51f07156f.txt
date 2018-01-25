@@ -1,0 +1,110 @@
+17:44:30,499  INFO petLog:simplePet:38 - start simple pet test
+17:44:30,500  INFO petLog:createPet:33 - start creating pet, pet id : 17
+17:44:30,501  INFO petLog:isPetExist:70 - start checking pet, pet id : 17
+17:44:30,501  INFO petLog:getPet:48 - send request to get pet
+Request path:	http://petstore.swagger.io/v2/pet/17
+Request method:	GET
+Response body: 
+{
+    "code": 1,
+    "type": "error",
+    "message": "Pet not found"
+}
+17:44:30,867  INFO petLog:isPetExist:76 - pet with id :17 is not exist
+17:44:30,867  INFO petLog:createPet:27 - send request to create pet
+Request path:	http://petstore.swagger.io/v2/pet
+Request method:	POST
+Body:
+{
+    "id": 17,
+    "category": {
+        "id": 65,
+        "name": "CMVaRjUrYv"
+    },
+    "name": "oxxiWWegOx",
+    "photoUrls": [
+        "DfkSqQRIvK",
+        "IWoWMiulOR"
+    ],
+    "tags": [
+        {
+            "id": 45670,
+            "name": "small"
+        },
+        {
+            "id": 45672,
+            "name": "white"
+        }
+    ],
+    "status": "available"
+}
+Response body: 
+{
+    "id": 17,
+    "category": {
+        "id": 65,
+        "name": "CMVaRjUrYv"
+    },
+    "name": "oxxiWWegOx",
+    "photoUrls": [
+        "DfkSqQRIvK",
+        "IWoWMiulOR"
+    ],
+    "tags": [
+        {
+            "id": 45670,
+            "name": "small"
+        },
+        {
+            "id": 45672,
+            "name": "white"
+        }
+    ],
+    "status": "available"
+}
+17:44:31,383  INFO petLog:getPet:55 - start getting pet, pet id : 17
+17:44:31,383  INFO petLog:getPet:48 - send request to get pet
+Request path:	http://petstore.swagger.io/v2/pet/17
+Request method:	GET
+Response body: 
+{
+    "id": 17,
+    "category": {
+        "id": 65,
+        "name": "CMVaRjUrYv"
+    },
+    "name": "oxxiWWegOx",
+    "photoUrls": [
+        "DfkSqQRIvK",
+        "IWoWMiulOR"
+    ],
+    "tags": [
+        {
+            "id": 45670,
+            "name": "small"
+        },
+        {
+            "id": 45672,
+            "name": "white"
+        }
+    ],
+    "status": "available"
+}
+17:44:31,721  INFO petLog:getPet:58 - pet with id : 17 has been gotten
+17:44:31,752  INFO petLog:createPet:43 - pet has been created, pet id : 17
+17:44:31,752  INFO petLog:deletePet:145 - start deleting pet image, pet id : 17
+17:44:31,752  INFO petLog:deletePet:62 - send request to delete pet
+Request path:	http://petstore.swagger.io/v2/pet/17
+Request method:	DELETE
+17:44:32,121  INFO petLog:isPetExist:70 - start checking pet, pet id : 17
+17:44:32,121  INFO petLog:getPet:48 - send request to get pet
+Request path:	http://petstore.swagger.io/v2/pet/17
+Request method:	GET
+Response body: 
+{
+    "code": 1,
+    "type": "error",
+    "message": "Pet not found"
+}
+17:44:32,483  INFO petLog:isPetExist:76 - pet with id :17 is not exist
+17:44:32,499  INFO petLog:deletePet:149 - pet has been deleted, pet id : 17

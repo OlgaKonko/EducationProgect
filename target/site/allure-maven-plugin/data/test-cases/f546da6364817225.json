@@ -1,0 +1,140 @@
+{
+  "uid" : "f546da6364817225",
+  "name" : "Pet's photo upload",
+  "fullName" : "simpleTests.PetTests.uploadPetPhoto",
+  "historyId" : "10c53429514bb7eb56285e5c5ae53b8a",
+  "time" : {
+    "start" : 1516895077317,
+    "stop" : 1516895170556,
+    "duration" : 93239
+  },
+  "status" : "broken",
+  "statusDetails" : {
+    "message" : "PetException: Error - cannot update pet image, pet id : 17, file name : cat.jpg",
+    "trace" : "exeptions.PetException: Error - cannot update pet image, pet id : 17, file name : cat.jpg\n\tat business.PetBO.uploadPetImage(PetBO.java:133)\n\tat business.PetBO.uploadPetImage(PetBO.java:139)\n\tat simpleTests.PetTests.uploadPetPhoto(PetTests.java:74)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:571)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:648)\n\tat org.testng.TestRunner.run(TestRunner.java:505)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:455)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:364)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1116)\n\tat org.testng.TestNG.runSuites(TestNG.java:1028)\n\tat org.testng.TestNG.run(TestNG.java:996)\n\tat org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)\n\tat org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)\nCaused by: java.net.SocketException: Software caused connection abort: socket write error\n\tat java.net.SocketOutputStream.socketWrite0(Native Method)\n\tat java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)\n\tat java.net.SocketOutputStream.write(SocketOutputStream.java:155)\n\tat org.apache.http.impl.io.AbstractSessionOutputBuffer.write(AbstractSessionOutputBuffer.java:181)\n\tat org.apache.http.impl.io.ContentLengthOutputStream.write(ContentLengthOutputStream.java:115)\n\tat org.apache.http.entity.mime.content.FileBody.writeTo(FileBody.java:121)\n\tat org.apache.http.entity.mime.AbstractMultipartForm.doWriteTo(AbstractMultipartForm.java:134)\n\tat org.apache.http.entity.mime.AbstractMultipartForm.writeTo(AbstractMultipartForm.java:157)\n\tat org.apache.http.entity.mime.MultipartFormEntity.writeTo(MultipartFormEntity.java:103)\n\tat org.apache.http.HttpEntity$writeTo$4.call(Unknown Source)\n\tat com.jayway.restassured.internal.multipart.RestAssuredMultiPartEntity.writeTo(RestAssuredMultiPartEntity.groovy:110)\n\tat org.apache.http.entity.HttpEntityWrapper.writeTo(HttpEntityWrapper.java:96)\n\tat org.apache.http.impl.client.EntityEnclosingRequestWrapper$EntityWrapper.writeTo(EntityEnclosingRequestWrapper.java:112)\n\tat org.apache.http.impl.entity.EntitySerializer.serialize(EntitySerializer.java:117)\n\tat org.apache.http.impl.AbstractHttpClientConnection.sendRequestEntity(AbstractHttpClientConnection.java:265)\n\tat org.apache.http.impl.conn.ManagedClientConnectionImpl.sendRequestEntity(ManagedClientConnectionImpl.java:203)\n\tat org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:237)\n\tat org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:122)\n\tat org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)\n\tat org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)\n\tat org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)\n\tat org.apache.http.client.HttpClient$execute$0.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)\n\tat org.apache.http.client.HttpClient$execute$0.call(Unknown Source)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:1974)\n\tat com.jayway.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:341)\n\tat com.jayway.restassured.internal.http.HTTPBuilder$post$3.call(Unknown Source)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1159)\n\tat sun.reflect.GeneratedMethodAccessor120.invoke(Unknown Source)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)\n\tat com.jayway.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)\n\tat com.jayway.restassured.filter.Filter$filter$0.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)\n\tat com.jayway.restassured.filter.Filter$filter.call(Unknown Source)\n\tat com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)\n\tat com.jayway.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)\n\tat com.jayway.restassured.filter.Filter$filter.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)\n\tat com.jayway.restassured.filter.Filter$filter.call(Unknown Source)\n\tat com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)\n\tat com.jayway.restassured.filter.log.StatusCodeBasedLoggingFilter.filter(StatusCodeBasedLoggingFilter.java:94)\n\tat com.jayway.restassured.filter.log.ResponseLoggingFilter.filter(ResponseLoggingFilter.java:31)\n\tat com.jayway.restassured.filter.Filter$filter.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)\n\tat com.jayway.restassured.filter.Filter$filter.call(Unknown Source)\n\tat com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)\n\tat com.jayway.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:101)\n\tat com.jayway.restassured.filter.Filter$filter.call(Unknown Source)\n\tat com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)\n\tat com.jayway.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:101)\n\tat com.jayway.restassured.filter.Filter$filter.call(Unknown Source)\n\tat com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)\n\tat com.jayway.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:101)\n\tat com.jayway.restassured.filter.Filter$filter.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)\n\tat com.jayway.restassured.filter.Filter$filter$0.call(Unknown Source)\n\tat com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)\n\tat com.jayway.restassured.filter.FilterContext$next.call(Unknown Source)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1596)\n\tat sun.reflect.GeneratedMethodAccessor114.invoke(Unknown Source)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:164)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)\n\tat client.PetClient.uploadPetImage(PetClient.java:74)\n\tat business.PetBO.uploadPetImage(PetBO.java:127)\n\t... 26 more\n",
+    "flaky" : false
+  },
+  "description" : "Create pet and upload image to it",
+  "descriptionHtml" : "<p>Create pet and upload image to it</p>",
+  "testStage" : {
+    "status" : "broken",
+    "statusDetails" : {
+      "message" : "PetException: Error - cannot update pet image, pet id : 17, file name : cat.jpg",
+      "trace" : "exeptions.PetException: Error - cannot update pet image, pet id : 17, file name : cat.jpg\n\tat business.PetBO.uploadPetImage(PetBO.java:133)\n\tat business.PetBO.uploadPetImage(PetBO.java:139)\n\tat simpleTests.PetTests.uploadPetPhoto(PetTests.java:74)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:571)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:648)\n\tat org.testng.TestRunner.run(TestRunner.java:505)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:455)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:364)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1116)\n\tat org.testng.TestNG.runSuites(TestNG.java:1028)\n\tat org.testng.TestNG.run(TestNG.java:996)\n\tat org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)\n\tat org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)\nCaused by: java.net.SocketException: Software caused connection abort: socket write error\n\tat java.net.SocketOutputStream.socketWrite0(Native Method)\n\tat java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)\n\tat java.net.SocketOutputStream.write(SocketOutputStream.java:155)\n\tat org.apache.http.impl.io.AbstractSessionOutputBuffer.write(AbstractSessionOutputBuffer.java:181)\n\tat org.apache.http.impl.io.ContentLengthOutputStream.write(ContentLengthOutputStream.java:115)\n\tat org.apache.http.entity.mime.content.FileBody.writeTo(FileBody.java:121)\n\tat org.apache.http.entity.mime.AbstractMultipartForm.doWriteTo(AbstractMultipartForm.java:134)\n\tat org.apache.http.entity.mime.AbstractMultipartForm.writeTo(AbstractMultipartForm.java:157)\n\tat org.apache.http.entity.mime.MultipartFormEntity.writeTo(MultipartFormEntity.java:103)\n\tat org.apache.http.HttpEntity$writeTo$4.call(Unknown Source)\n\tat com.jayway.restassured.internal.multipart.RestAssuredMultiPartEntity.writeTo(RestAssuredMultiPartEntity.groovy:110)\n\tat org.apache.http.entity.HttpEntityWrapper.writeTo(HttpEntityWrapper.java:96)\n\tat org.apache.http.impl.client.EntityEnclosingRequestWrapper$EntityWrapper.writeTo(EntityEnclosingRequestWrapper.java:112)\n\tat org.apache.http.impl.entity.EntitySerializer.serialize(EntitySerializer.java:117)\n\tat org.apache.http.impl.AbstractHttpClientConnection.sendRequestEntity(AbstractHttpClientConnection.java:265)\n\tat org.apache.http.impl.conn.ManagedClientConnectionImpl.sendRequestEntity(ManagedClientConnectionImpl.java:203)\n\tat org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:237)\n\tat org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:122)\n\tat org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)\n\tat org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)\n\tat org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)\n\tat org.apache.http.client.HttpClient$execute$0.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)\n\tat org.apache.http.client.HttpClient$execute$0.call(Unknown Source)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:1974)\n\tat com.jayway.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:341)\n\tat com.jayway.restassured.internal.http.HTTPBuilder$post$3.call(Unknown Source)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1159)\n\tat sun.reflect.GeneratedMethodAccessor120.invoke(Unknown Source)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)\n\tat com.jayway.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)\n\tat com.jayway.restassured.filter.Filter$filter$0.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)\n\tat com.jayway.restassured.filter.Filter$filter.call(Unknown Source)\n\tat com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)\n\tat com.jayway.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)\n\tat com.jayway.restassured.filter.Filter$filter.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)\n\tat com.jayway.restassured.filter.Filter$filter.call(Unknown Source)\n\tat com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)\n\tat com.jayway.restassured.filter.log.StatusCodeBasedLoggingFilter.filter(StatusCodeBasedLoggingFilter.java:94)\n\tat com.jayway.restassured.filter.log.ResponseLoggingFilter.filter(ResponseLoggingFilter.java:31)\n\tat com.jayway.restassured.filter.Filter$filter.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)\n\tat com.jayway.restassured.filter.Filter$filter.call(Unknown Source)\n\tat com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)\n\tat com.jayway.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:101)\n\tat com.jayway.restassured.filter.Filter$filter.call(Unknown Source)\n\tat com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)\n\tat com.jayway.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:101)\n\tat com.jayway.restassured.filter.Filter$filter.call(Unknown Source)\n\tat com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)\n\tat com.jayway.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:101)\n\tat com.jayway.restassured.filter.Filter$filter.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)\n\tat com.jayway.restassured.filter.Filter$filter$0.call(Unknown Source)\n\tat com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)\n\tat com.jayway.restassured.filter.FilterContext$next.call(Unknown Source)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1596)\n\tat sun.reflect.GeneratedMethodAccessor114.invoke(Unknown Source)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:164)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)\n\tat client.PetClient.uploadPetImage(PetClient.java:74)\n\tat business.PetBO.uploadPetImage(PetBO.java:127)\n\t... 26 more\n",
+      "flaky" : false
+    },
+    "steps" : [ {
+      "name" : "Create pet",
+      "time" : {
+        "start" : 1516895077317,
+        "stop" : 1516895078382,
+        "duration" : 1065
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 2,
+      "steps" : [ {
+        "name" : "Check if pet exist",
+        "time" : {
+          "start" : 1516895077317,
+          "stop" : 1516895077664,
+          "duration" : 347
+        },
+        "status" : "passed",
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      }, {
+        "name" : "Get pet",
+        "time" : {
+          "start" : 1516895078018,
+          "stop" : 1516895078382,
+          "duration" : 364
+        },
+        "status" : "passed",
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ]
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Upload pet image",
+      "time" : {
+        "start" : 1516895078382,
+        "stop" : 1516895170518,
+        "duration" : 92136
+      },
+      "status" : "broken",
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    } ],
+    "attachments" : [ {
+      "uid" : "e4025fb4ea41677e",
+      "name" : "log",
+      "source" : "e4025fb4ea41677e.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "stepsCount" : 4
+  },
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Pet"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "EPUALVIW0697"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "story",
+    "value" : "Operations with user pet"
+  }, {
+    "name" : "testClass",
+    "value" : "simpleTests.PetTests"
+  }, {
+    "name" : "testGroup",
+    "value" : "EducationProgect"
+  }, {
+    "name" : "testMethod",
+    "value" : "uploadPetPhoto"
+  }, {
+    "name" : "testSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "thread",
+    "value" : "4816@EPUALVIW0697.main(1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "EducationProgect"
+  }, {
+    "name" : "subSuite",
+    "value" : "simpleTests.PetTests"
+  }, {
+    "name" : "package",
+    "value" : "simpleTests.PetTests"
+  } ],
+  "parameters" : [ ],
+  "hidden" : true,
+  "extra" : { }
+}

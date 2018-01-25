@@ -1,0 +1,121 @@
+[ {
+  "uid" : "9f8fad2339520858",
+  "name" : "Pet status update",
+  "time" : {
+    "start" : 1516895364630,
+    "stop" : 1516895367103,
+    "duration" : 2473
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "29050247a350f4ff",
+  "name" : "Login and logout",
+  "time" : {
+    "start" : 1516895473538,
+    "stop" : 1516895476689,
+    "duration" : 3151
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "4ae8ef36716e5ccc",
+  "name" : "Get pets",
+  "time" : {
+    "start" : 1516895354626,
+    "stop" : 1516895360405,
+    "duration" : 5779
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c44207646cb71b06",
+  "name" : "User create and delete",
+  "time" : {
+    "start" : 1516895476689,
+    "stop" : 1516895479163,
+    "duration" : 2474
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "e3dd3b5417fae157",
+  "name" : "Pet's photo upload",
+  "time" : {
+    "start" : 1516895367103,
+    "stop" : 1516895458648,
+    "duration" : 91545
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "7c9446d78af75fbc",
+  "name" : "Update user",
+  "time" : {
+    "start" : 1516895479163,
+    "stop" : 1516895483053,
+    "duration" : 3890
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5000c191a94b8611",
+  "name" : "Users from array",
+  "time" : {
+    "start" : 1516895460967,
+    "stop" : 1516895466745,
+    "duration" : 5778
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a617b83512af7b9d",
+  "name" : "Pet update",
+  "time" : {
+    "start" : 1516895362425,
+    "stop" : 1516895364630,
+    "duration" : 2205
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "81b949a8642dc595",
+  "name" : "Pet create and delete",
+  "time" : {
+    "start" : 1516895360421,
+    "stop" : 1516895362409,
+    "duration" : 1988
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "fd44e1221f30157a",
+  "name" : "Get inventory",
+  "time" : {
+    "start" : 1516895458648,
+    "stop" : 1516895459165,
+    "duration" : 517
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "25a814ba6b4d3c07",
+  "name" : "Order create and delete",
+  "time" : {
+    "start" : 1516895459165,
+    "stop" : 1516895460951,
+    "duration" : 1786
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "74b51e3973f56d92",
+  "name" : "Users from list",
+  "time" : {
+    "start" : 1516895466761,
+    "stop" : 1516895473538,
+    "duration" : 6777
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

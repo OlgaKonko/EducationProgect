@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1516895027573" stop="1516895194254" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : EducationProgect</name>
+    <title>Default Suite : EducationProgect</title>
+    <test-cases>
+        <test-case start="1516895064671" stop="1516895070482" status="passed">
+            <name>getPets</name>
+            <title>Get pets</title>
+            <description>Get available pets</description>
+            <steps>
+                <step start="1516895064693" stop="1516895070382" status="passed">
+                    <name>getPetsByStatus[Available]</name>
+                    <title>Get pets</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="log" source="fae91f61-99b8-4130-a84e-5e645579c315-attachment.txt" type="text/plain"/>
+            </attachments>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="EducationProgect"/>
+                <label name="testClass" value="simpleTests.PetTests"/>
+                <label name="testMethod" value="getPets"/>
+                <label name="story" value="Operations with existing pets data"/>
+                <label name="feature" value="Pet"/>
+                <label name="host" value="EPUALVIW0697"/>
+                <label name="thread" value="4816@EPUALVIW0697.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1516895070498" stop="1516895072506" status="passed">
+            <name>simplePet</name>
+            <title>Pet create and delete</title>
+            <description>Create pet and delete it</description>
+            <steps>
+                <step start="1516895070500" stop="1516895071752" status="passed">
+                    <name>createPet[model.pet.Pet@15f2306]</name>
+                    <title>Create pet</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895070501" stop="1516895070867" status="passed">
+                            <name>isPetExist[17]</name>
+                            <title>Check if pet exist</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1516895071383" stop="1516895071737" status="passed">
+                            <name>getPet[17]</name>
+                            <title>Get pet</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895071752" stop="1516895072500" status="passed">
+                    <name>deletePet[model.pet.Pet@15f2306]</name>
+                    <title>Delete pet</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895072121" stop="1516895072499" status="passed">
+                            <name>isPetExist[17]</name>
+                            <title>Check if pet exist</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="log" source="73d1a4cc-9b51-4490-96fd-39e867972f37-attachment.txt" type="text/plain"/>
+                <attachment title="log" source="75dd7a58-bc6c-4419-ae85-1742da4f076b-attachment.txt" type="text/plain"/>
+            </attachments>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="EducationProgect"/>
+                <label name="testClass" value="simpleTests.PetTests"/>
+                <label name="testMethod" value="simplePet"/>
+                <label name="severity" value="blocker"/>
+                <label name="story" value="Operations with user pet"/>
+                <label name="feature" value="Pet"/>
+                <label name="host" value="EPUALVIW0697"/>
+                <label name="thread" value="4816@EPUALVIW0697.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1516895072506" stop="1516895074711" status="passed">
+            <name>updatePet</name>
+            <title>Pet update</title>
+            <description>Create pet and update his name and tags</description>
+            <steps>
+                <step start="1516895072506" stop="1516895073608" status="passed">
+                    <name>createPet[model.pet.Pet@15f2306]</name>
+                    <title>Create pet</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895072506" stop="1516895072885" status="passed">
+                            <name>isPetExist[17]</name>
+                            <title>Check if pet exist</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1516895073254" stop="1516895073608" status="passed">
+                            <name>getPet[17]</name>
+                            <title>Get pet</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895073608" stop="1516895073971" status="passed">
+                    <name>updatePet[model.pet.Pet@15f2306]</name>
+                    <title>Update pet</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516895073971" stop="1516895074707" status="passed">
+                    <name>deletePet[model.pet.Pet@15f2306]</name>
+                    <title>Delete pet</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895074341" stop="1516895074707" status="passed">
+                            <name>isPetExist[17]</name>
+                            <title>Check if pet exist</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="log" source="a2c61e93-3025-46dc-8f1f-cce17e54d087-attachment.txt" type="text/plain"/>
+                <attachment title="log" source="5ebaaf0a-d8f7-405a-a053-9b2a1e2e69c1-attachment.txt" type="text/plain"/>
+            </attachments>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="EducationProgect"/>
+                <label name="testClass" value="simpleTests.PetTests"/>
+                <label name="testMethod" value="updatePet"/>
+                <label name="story" value="Operations with user pet"/>
+                <label name="feature" value="Pet"/>
+                <label name="host" value="EPUALVIW0697"/>
+                <label name="thread" value="4816@EPUALVIW0697.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1516895074711" stop="1516895077314" status="passed">
+            <name>updatePetStatus</name>
+            <title>Pet status update</title>
+            <description>Create pet and update his status</description>
+            <steps>
+                <step start="1516895074711" stop="1516895075828" status="passed">
+                    <name>createPet[model.pet.Pet@15f2306]</name>
+                    <title>Create pet</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895074711" stop="1516895075074" status="passed">
+                            <name>isPetExist[17]</name>
+                            <title>Check if pet exist</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1516895075428" stop="1516895075828" status="passed">
+                            <name>getPet[17]</name>
+                            <title>Get pet</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895075828" stop="1516895076592" status="passed">
+                    <name>updatePetStatus[model.pet.Pet@15f2306, Sold, Blacky]</name>
+                    <title>Update pet status</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895076230" stop="1516895076592" status="passed">
+                            <name>getPet[17]</name>
+                            <title>Get pet</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895076592" stop="1516895077295" status="passed">
+                    <name>deletePet[model.pet.Pet@15f2306]</name>
+                    <title>Delete pet</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895076947" stop="1516895077295" status="passed">
+                            <name>isPetExist[17]</name>
+                            <title>Check if pet exist</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="log" source="a118f466-b9b7-4832-81c5-ad5b17ceaec9-attachment.txt" type="text/plain"/>
+                <attachment title="log" source="3755db71-f6d8-410d-b70f-ec0a208e6c13-attachment.txt" type="text/plain"/>
+            </attachments>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="EducationProgect"/>
+                <label name="testClass" value="simpleTests.PetTests"/>
+                <label name="testMethod" value="updatePetStatus"/>
+                <label name="story" value="Operations with user pet"/>
+                <label name="feature" value="Pet"/>
+                <label name="host" value="EPUALVIW0697"/>
+                <label name="thread" value="4816@EPUALVIW0697.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1516895077317" stop="1516895170556" status="broken">
+            <name>uploadPetPhoto</name>
+            <title>Pet's photo upload</title>
+            <description>Create pet and upload image to it</description>
+            <failure>
+                <message>PetException: Error - cannot update pet image, pet id : 17, file name : cat.jpg</message>
+                <stack-trace>exeptions.PetException: Error - cannot update pet image, pet id : 17, file name : cat.jpg
+	at business.PetBO.uploadPetImage(PetBO.java:133)
+	at business.PetBO.uploadPetImage(PetBO.java:139)
+	at simpleTests.PetTests.uploadPetPhoto(PetTests.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+Caused by: java.net.SocketException: Software caused connection abort: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.write(AbstractSessionOutputBuffer.java:181)
+	at org.apache.http.impl.io.ContentLengthOutputStream.write(ContentLengthOutputStream.java:115)
+	at org.apache.http.entity.mime.content.FileBody.writeTo(FileBody.java:121)
+	at org.apache.http.entity.mime.AbstractMultipartForm.doWriteTo(AbstractMultipartForm.java:134)
+	at org.apache.http.entity.mime.AbstractMultipartForm.writeTo(AbstractMultipartForm.java:157)
+	at org.apache.http.entity.mime.MultipartFormEntity.writeTo(MultipartFormEntity.java:103)
+	at org.apache.http.HttpEntity$writeTo$4.call(Unknown Source)
+	at com.jayway.restassured.internal.multipart.RestAssuredMultiPartEntity.writeTo(RestAssuredMultiPartEntity.groovy:110)
+	at org.apache.http.entity.HttpEntityWrapper.writeTo(HttpEntityWrapper.java:96)
+	at org.apache.http.impl.client.EntityEnclosingRequestWrapper$EntityWrapper.writeTo(EntityEnclosingRequestWrapper.java:112)
+	at org.apache.http.impl.entity.EntitySerializer.serialize(EntitySerializer.java:117)
+	at org.apache.http.impl.AbstractHttpClientConnection.sendRequestEntity(AbstractHttpClientConnection.java:265)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.sendRequestEntity(ManagedClientConnectionImpl.java:203)
+	at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:237)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:122)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+	at com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:1974)
+	at com.jayway.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:341)
+	at com.jayway.restassured.internal.http.HTTPBuilder$post$3.call(Unknown Source)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1159)
+	at sun.reflect.GeneratedMethodAccessor120.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
+	at com.jayway.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at com.jayway.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at com.jayway.restassured.filter.Filter$filter.call(Unknown Source)
+	at com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+	at com.jayway.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at com.jayway.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at com.jayway.restassured.filter.Filter$filter.call(Unknown Source)
+	at com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+	at com.jayway.restassured.filter.log.StatusCodeBasedLoggingFilter.filter(StatusCodeBasedLoggingFilter.java:94)
+	at com.jayway.restassured.filter.log.ResponseLoggingFilter.filter(ResponseLoggingFilter.java:31)
+	at com.jayway.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at com.jayway.restassured.filter.Filter$filter.call(Unknown Source)
+	at com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+	at com.jayway.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:101)
+	at com.jayway.restassured.filter.Filter$filter.call(Unknown Source)
+	at com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+	at com.jayway.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:101)
+	at com.jayway.restassured.filter.Filter$filter.call(Unknown Source)
+	at com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+	at com.jayway.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:101)
+	at com.jayway.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at com.jayway.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
+	at com.jayway.restassured.filter.FilterContext$next.call(Unknown Source)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1596)
+	at sun.reflect.GeneratedMethodAccessor114.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:164)
+	at com.jayway.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
+	at client.PetClient.uploadPetImage(PetClient.java:74)
+	at business.PetBO.uploadPetImage(PetBO.java:127)
+	... 26 more
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1516895077317" stop="1516895078382" status="passed">
+                    <name>createPet[model.pet.Pet@15f2306]</name>
+                    <title>Create pet</title>
+                    <steps>
+                        <step start="1516895077317" stop="1516895077664" status="passed">
+                            <name>isPetExist[17]</name>
+                            <title>Check if pet exist</title>
+                        </step>
+                        <step start="1516895078018" stop="1516895078382" status="passed">
+                            <name>getPet[17]</name>
+                            <title>Get pet</title>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895078382" stop="1516895170518" status="broken">
+                    <name>uploadPetImage[cat.jpg, 17, photo]</name>
+                    <title>Upload pet image</title>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="log" source="17849266-93f3-46d4-a82f-8049c5555a41-attachment.txt" type="text/plain"/>
+            </attachments>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="EducationProgect"/>
+                <label name="testClass" value="simpleTests.PetTests"/>
+                <label name="testMethod" value="uploadPetPhoto"/>
+                <label name="story" value="Operations with user pet"/>
+                <label name="feature" value="Pet"/>
+                <label name="host" value="EPUALVIW0697"/>
+                <label name="thread" value="4816@EPUALVIW0697.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1516895170556" stop="1516895171088" status="passed">
+            <name>checkInventory</name>
+            <title>Get inventory</title>
+            <description>Get store inventory</description>
+            <steps>
+                <step start="1516895170587" stop="1516895171088" status="passed">
+                    <name>getInventory</name>
+                    <title>Get inventory</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="log" source="55b2a960-10fb-4b23-a82b-1225fe6756d4-attachment.txt" type="text/plain"/>
+                <attachment title="log" source="d21f92be-e32c-403a-9869-1c24289c25fc-attachment.txt" type="text/plain"/>
+            </attachments>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="EducationProgect"/>
+                <label name="testClass" value="simpleTests.StoreTest"/>
+                <label name="testMethod" value="checkInventory"/>
+                <label name="story" value="Operations with store"/>
+                <label name="feature" value="Store"/>
+                <label name="host" value="EPUALVIW0697"/>
+                <label name="thread" value="4816@EPUALVIW0697.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1516895171104" stop="1516895172875" status="passed">
+            <name>createOrder</name>
+            <title>Order create and delete</title>
+            <description>Create order and delete it</description>
+            <steps>
+                <step start="1516895171104" stop="1516895172159" status="passed">
+                    <name>createOrder[model.order.Order@6f21c9]</name>
+                    <title>Create order</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895171104" stop="1516895171442" status="passed">
+                            <name>isOrderExist[95]</name>
+                            <title>Check if order exist</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1516895171805" stop="1516895172159" status="passed">
+                            <name>getOrder[95]</name>
+                            <title>Get order</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895172159" stop="1516895172860" status="passed">
+                    <name>deleteOrder[model.order.Order@6f21c9]</name>
+                    <title>Delete order</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895172522" stop="1516895172860" status="passed">
+                            <name>isOrderExist[95]</name>
+                            <title>Check if order exist</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="log" source="80099d4a-c106-4db1-aacb-646f4c4d63ad-attachment.txt" type="text/plain"/>
+                <attachment title="log" source="02413663-156c-4995-a727-64f6563d13b9-attachment.txt" type="text/plain"/>
+            </attachments>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="EducationProgect"/>
+                <label name="testClass" value="simpleTests.StoreTest"/>
+                <label name="testMethod" value="createOrder"/>
+                <label name="severity" value="blocker"/>
+                <label name="story" value="Operations with orders"/>
+                <label name="feature" value="Store"/>
+                <label name="host" value="EPUALVIW0697"/>
+                <label name="thread" value="4816@EPUALVIW0697.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1516895172891" stop="1516895178917" status="passed">
+            <name>createNewUsersWithArray</name>
+            <title>Users from array</title>
+            <description>Create and delete users from array</description>
+            <steps>
+                <step start="1516895172922" stop="1516895173260" status="passed">
+                    <name>isUserExist</name>
+                    <title>Check if user exist</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895172922" stop="1516895173260" status="passed">
+                            <name>getUser[gcufufyEJi]</name>
+                            <title>get user</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895173260" stop="1516895173846" status="passed">
+                    <name>isUserExist</name>
+                    <title>Check if user exist</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895173260" stop="1516895173846" status="passed">
+                            <name>getUser[hQXEChtPKs]</name>
+                            <title>get user</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895173846" stop="1516895174347" status="passed">
+                    <name>isUserExist</name>
+                    <title>Check if user exist</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895173846" stop="1516895174347" status="passed">
+                            <name>getUser[UwXZzUVMOO]</name>
+                            <title>get user</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895174710" stop="1516895175049" status="passed">
+                    <name>getUser</name>
+                    <title>Get user</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895174710" stop="1516895175049" status="passed">
+                            <name>getUser[gcufufyEJi]</name>
+                            <title>get user</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895175065" stop="1516895175397" status="passed">
+                    <name>getUser</name>
+                    <title>Get user</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895175065" stop="1516895175397" status="passed">
+                            <name>getUser[hQXEChtPKs]</name>
+                            <title>get user</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895175397" stop="1516895175750" status="passed">
+                    <name>getUser</name>
+                    <title>Get user</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895175397" stop="1516895175750" status="passed">
+                            <name>getUser[UwXZzUVMOO]</name>
+                            <title>get user</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895175750" stop="1516895176798" status="passed">
+                    <name>deleteUser</name>
+                    <title>Delete user</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895175750" stop="1516895176097" status="passed">
+                            <name>logIn</name>
+                            <title>Login</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1516895176451" stop="1516895176798" status="passed">
+                            <name>isUserExist</name>
+                            <title>Check if user exist</title>
+                            <attachments/>
+                            <steps>
+                                <step start="1516895176451" stop="1516895176798" status="passed">
+                                    <name>getUser[gcufufyEJi]</name>
+                                    <title>get user</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895176798" stop="1516895177868" status="passed">
+                    <name>deleteUser</name>
+                    <title>Delete user</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895176798" stop="1516895177152" status="passed">
+                            <name>logIn</name>
+                            <title>Login</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1516895177514" stop="1516895177868" status="passed">
+                            <name>isUserExist</name>
+                            <title>Check if user exist</title>
+                            <attachments/>
+                            <steps>
+                                <step start="1516895177514" stop="1516895177868" status="passed">
+                                    <name>getUser[hQXEChtPKs]</name>
+                                    <title>get user</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895177868" stop="1516895178901" status="passed">
+                    <name>deleteUser</name>
+                    <title>Delete user</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895177868" stop="1516895178216" status="passed">
+                            <name>logIn</name>
+                            <title>Login</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1516895178554" stop="1516895178901" status="passed">
+                            <name>isUserExist</name>
+                            <title>Check if user exist</title>
+                            <attachments/>
+                            <steps>
+                                <step start="1516895178554" stop="1516895178901" status="passed">
+                                    <name>getUser[UwXZzUVMOO]</name>
+                                    <title>get user</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="log" source="0e55356b-6f14-482b-b45a-2e27c01d008b-attachment.txt" type="text/plain"/>
+                <attachment title="log" source="3634be29-bacb-4c41-82b3-67b12d63f475-attachment.txt" type="text/plain"/>
+            </attachments>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="EducationProgect"/>
+                <label name="testClass" value="simpleTests.UsersTest"/>
+                <label name="testMethod" value="createNewUsersWithArray"/>
+                <label name="story" value="Operations with users"/>
+                <label name="feature" value="User"/>
+                <label name="host" value="EPUALVIW0697"/>
+                <label name="thread" value="4816@EPUALVIW0697.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1516895178917" stop="1516895184564" status="passed">
+            <name>createNewUsersWithList</name>
+            <title>Users from list</title>
+            <description>Create and delete users from list</description>
+            <steps>
+                <step start="1516895178933" stop="1516895179286" status="passed">
+                    <name>isUserExist</name>
+                    <title>Check if user exist</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895178933" stop="1516895179286" status="passed">
+                            <name>getUser[NDTiEVTbIc]</name>
+                            <title>get user</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895179286" stop="1516895179654" status="passed">
+                    <name>isUserExist</name>
+                    <title>Check if user exist</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895179302" stop="1516895179653" status="passed">
+                            <name>getUser[kRVdRwCmFd]</name>
+                            <title>get user</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895179654" stop="1516895180003" status="passed">
+                    <name>isUserExist</name>
+                    <title>Check if user exist</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895179654" stop="1516895180003" status="passed">
+                            <name>getUser[ecfnnolXji]</name>
+                            <title>get user</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895180335" stop="1516895180735" status="passed">
+                    <name>getUser</name>
+                    <title>Get user</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895180351" stop="1516895180720" status="passed">
+                            <name>getUser[NDTiEVTbIc]</name>
+                            <title>get user</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895180735" stop="1516895181074" status="passed">
+                    <name>getUser</name>
+                    <title>Get user</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895180735" stop="1516895181074" status="passed">
+                            <name>getUser[kRVdRwCmFd]</name>
+                            <title>get user</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895181074" stop="1516895181437" status="passed">
+                    <name>getUser</name>
+                    <title>Get user</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895181074" stop="1516895181437" status="passed">
+                            <name>getUser[ecfnnolXji]</name>
+                            <title>get user</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895181437" stop="1516895182477" status="passed">
+                    <name>deleteUser</name>
+                    <title>Delete user</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895181437" stop="1516895181776" status="passed">
+                            <name>logIn</name>
+                            <title>Login</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1516895182123" stop="1516895182462" status="passed">
+                            <name>isUserExist</name>
+                            <title>Check if user exist</title>
+                            <attachments/>
+                            <steps>
+                                <step start="1516895182123" stop="1516895182462" status="passed">
+                                    <name>getUser[NDTiEVTbIc]</name>
+                                    <title>get user</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895182477" stop="1516895183509" status="passed">
+                    <name>deleteUser</name>
+                    <title>Delete user</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895182477" stop="1516895182825" status="passed">
+                            <name>logIn</name>
+                            <title>Login</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1516895183162" stop="1516895183509" status="passed">
+                            <name>isUserExist</name>
+                            <title>Check if user exist</title>
+                            <attachments/>
+                            <steps>
+                                <step start="1516895183162" stop="1516895183509" status="passed">
+                                    <name>getUser[kRVdRwCmFd]</name>
+                                    <title>get user</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895183509" stop="1516895184561" status="passed">
+                    <name>deleteUser</name>
+                    <title>Delete user</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895183509" stop="1516895183863" status="passed">
+                            <name>logIn</name>
+                            <title>Login</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1516895184211" stop="1516895184560" status="passed">
+                            <name>isUserExist</name>
+                            <title>Check if user exist</title>
+                            <attachments/>
+                            <steps>
+                                <step start="1516895184211" stop="1516895184560" status="passed">
+                                    <name>getUser[ecfnnolXji]</name>
+                                    <title>get user</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="log" source="c267e7ac-7024-4672-8178-5e5058971106-attachment.txt" type="text/plain"/>
+                <attachment title="log" source="fdbda200-54e1-43aa-b76b-38f85f0001df-attachment.txt" type="text/plain"/>
+            </attachments>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="EducationProgect"/>
+                <label name="testClass" value="simpleTests.UsersTest"/>
+                <label name="testMethod" value="createNewUsersWithList"/>
+                <label name="story" value="Operations with users"/>
+                <label name="feature" value="User"/>
+                <label name="host" value="EPUALVIW0697"/>
+                <label name="thread" value="4816@EPUALVIW0697.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1516895184564" stop="1516895187786" status="passed">
+            <name>login</name>
+            <title>Login and logout</title>
+            <description>Login and logout to created user</description>
+            <steps>
+                <step start="1516895184564" stop="1516895185645" status="passed">
+                    <name>createUser</name>
+                    <title>Create user</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895184564" stop="1516895184912" status="passed">
+                            <name>isUserExist</name>
+                            <title>Check if user exist</title>
+                            <attachments/>
+                            <steps>
+                                <step start="1516895184564" stop="1516895184912" status="passed">
+                                    <name>getUser[RObXseSiTr]</name>
+                                    <title>get user</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start="1516895184912" stop="1516895185298" status="passed">
+                            <name>createUser[model.user.User@3ed6f1]</name>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1516895185298" stop="1516895185645" status="passed">
+                            <name>getUser</name>
+                            <title>Get user</title>
+                            <attachments/>
+                            <steps>
+                                <step start="1516895185298" stop="1516895185645" status="passed">
+                                    <name>getUser[RObXseSiTr]</name>
+                                    <title>get user</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895185645" stop="1516895186015" status="passed">
+                    <name>logIn</name>
+                    <title>Login</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516895186015" stop="1516895186369" status="passed">
+                    <name>logOut</name>
+                    <title>Logout</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516895186369" stop="1516895186732" status="passed">
+                    <name>logIn</name>
+                    <title>Login</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516895186732" stop="1516895187786" status="passed">
+                    <name>deleteUser</name>
+                    <title>Delete user</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895186732" stop="1516895187086" status="passed">
+                            <name>logIn</name>
+                            <title>Login</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1516895187433" stop="1516895187786" status="passed">
+                            <name>isUserExist</name>
+                            <title>Check if user exist</title>
+                            <attachments/>
+                            <steps>
+                                <step start="1516895187433" stop="1516895187786" status="passed">
+                                    <name>getUser[RObXseSiTr]</name>
+                                    <title>get user</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="log" source="9f0b4b03-422e-4201-80a2-251b925463c8-attachment.txt" type="text/plain"/>
+                <attachment title="log" source="9eb8390f-2abb-4c13-a224-0880f6400525-attachment.txt" type="text/plain"/>
+            </attachments>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="EducationProgect"/>
+                <label name="testClass" value="simpleTests.UserTests"/>
+                <label name="testMethod" value="login"/>
+                <label name="severity" value="blocker"/>
+                <label name="story" value="Operations with user"/>
+                <label name="feature" value="User"/>
+                <label name="host" value="EPUALVIW0697"/>
+                <label name="thread" value="4816@EPUALVIW0697.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1516895187802" stop="1516895190336" status="passed">
+            <name>simpleUser</name>
+            <title>User create and delete</title>
+            <description>Create user and delete him</description>
+            <steps>
+                <step start="1516895187802" stop="1516895188918" status="passed">
+                    <name>createUser</name>
+                    <title>Create user</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895187802" stop="1516895188202" status="passed">
+                            <name>isUserExist</name>
+                            <title>Check if user exist</title>
+                            <attachments/>
+                            <steps>
+                                <step start="1516895187802" stop="1516895188202" status="passed">
+                                    <name>getUser[jbXHGCcdeT]</name>
+                                    <title>get user</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start="1516895188202" stop="1516895188570" status="passed">
+                            <name>createUser[model.user.User@4b35a0]</name>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1516895188571" stop="1516895188918" status="passed">
+                            <name>getUser</name>
+                            <title>Get user</title>
+                            <attachments/>
+                            <steps>
+                                <step start="1516895188571" stop="1516895188918" status="passed">
+                                    <name>getUser[jbXHGCcdeT]</name>
+                                    <title>get user</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895188918" stop="1516895189272" status="passed">
+                    <name>logIn</name>
+                    <title>Login</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516895189272" stop="1516895190336" status="passed">
+                    <name>deleteUser</name>
+                    <title>Delete user</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895189272" stop="1516895189619" status="passed">
+                            <name>logIn</name>
+                            <title>Login</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1516895189989" stop="1516895190336" status="passed">
+                            <name>isUserExist</name>
+                            <title>Check if user exist</title>
+                            <attachments/>
+                            <steps>
+                                <step start="1516895189989" stop="1516895190336" status="passed">
+                                    <name>getUser[jbXHGCcdeT]</name>
+                                    <title>get user</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="log" source="f36d6b62-0697-4a06-a2c6-dd50b7b0c1df-attachment.txt" type="text/plain"/>
+                <attachment title="log" source="3fa68fc7-e736-443f-b379-d9436334f79f-attachment.txt" type="text/plain"/>
+            </attachments>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="EducationProgect"/>
+                <label name="testClass" value="simpleTests.UserTests"/>
+                <label name="testMethod" value="simpleUser"/>
+                <label name="severity" value="blocker"/>
+                <label name="story" value="Operations with user"/>
+                <label name="feature" value="User"/>
+                <label name="host" value="EPUALVIW0697"/>
+                <label name="thread" value="4816@EPUALVIW0697.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1516895190352" stop="1516895194238" status="passed">
+            <name>updateUser</name>
+            <title>Update user</title>
+            <description>Update user name and phone</description>
+            <steps>
+                <step start="1516895190352" stop="1516895191437" status="passed">
+                    <name>createUser</name>
+                    <title>Create user</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895190352" stop="1516895190705" status="passed">
+                            <name>isUserExist</name>
+                            <title>Check if user exist</title>
+                            <attachments/>
+                            <steps>
+                                <step start="1516895190352" stop="1516895190705" status="passed">
+                                    <name>getUser[CsGojHfhPn]</name>
+                                    <title>get user</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start="1516895190705" stop="1516895191089" status="passed">
+                            <name>createUser[model.user.User@cc8317]</name>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1516895191089" stop="1516895191437" status="passed">
+                            <name>getUser</name>
+                            <title>Get user</title>
+                            <attachments/>
+                            <steps>
+                                <step start="1516895191089" stop="1516895191437" status="passed">
+                                    <name>getUser[CsGojHfhPn]</name>
+                                    <title>get user</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895191437" stop="1516895191774" status="passed">
+                    <name>logIn</name>
+                    <title>Login</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516895191789" stop="1516895192489" status="passed">
+                    <name>updateUser[model.user.User@cc8317]</name>
+                    <title>Update user</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895192136" stop="1516895192489" status="passed">
+                            <name>getUser</name>
+                            <title>Get user</title>
+                            <attachments/>
+                            <steps>
+                                <step start="1516895192136" stop="1516895192473" status="passed">
+                                    <name>getUser[CsGojHfhPn]</name>
+                                    <title>get user</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1516895192489" stop="1516895192821" status="passed">
+                    <name>logOut</name>
+                    <title>Logout</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516895192821" stop="1516895193174" status="passed">
+                    <name>logIn</name>
+                    <title>Login</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1516895193190" stop="1516895194238" status="passed">
+                    <name>deleteUser</name>
+                    <title>Delete user</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516895193190" stop="1516895193553" status="passed">
+                            <name>logIn</name>
+                            <title>Login</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1516895193891" stop="1516895194238" status="passed">
+                            <name>isUserExist</name>
+                            <title>Check if user exist</title>
+                            <attachments/>
+                            <steps>
+                                <step start="1516895193891" stop="1516895194238" status="passed">
+                                    <name>getUser[CsGojHfhPn]</name>
+                                    <title>get user</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="log" source="894e027f-48d2-410e-ace4-39e6ff5ff1c8-attachment.txt" type="text/plain"/>
+                <attachment title="log" source="bed13903-d138-4edd-a824-70575cd667b9-attachment.txt" type="text/plain"/>
+            </attachments>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="EducationProgect"/>
+                <label name="testClass" value="simpleTests.UserTests"/>
+                <label name="testMethod" value="updateUser"/>
+                <label name="story" value="Operations with user"/>
+                <label name="feature" value="User"/>
+                <label name="host" value="EPUALVIW0697"/>
+                <label name="thread" value="4816@EPUALVIW0697.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
