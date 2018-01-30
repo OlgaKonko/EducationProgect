@@ -5,9 +5,11 @@ import constants.Appenders;
 import constants.DefaultTags;
 import constants.PetStatus;
 import data.PetGenerator;
+import logger.LogListener;
 import model.pet.Pet;
 import org.apache.log4j.Logger;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.*;
 import ru.yandex.qatools.allure.model.SeverityLevel;
@@ -34,7 +36,6 @@ public class PetTests extends BaseTest {
         log.info("start simple pet test");
         petBO.createPet(pet);
         petBO.deletePet(pet);
-        attachTextLog();
     }
 
     @Title("Pet update")
@@ -47,7 +48,6 @@ public class PetTests extends BaseTest {
         pet.getTags().add(DefaultTags.Black.getTag());
         petBO.updatePet(pet);
         petBO.deletePet(pet);
-        attachTextLog();
     }
 
     @Title("Pet status update")
@@ -58,7 +58,6 @@ public class PetTests extends BaseTest {
         petBO.createPet(pet);
         petBO.updatePetStatus(pet, PetStatus.Sold);
         petBO.deletePet(pet);
-        attachTextLog();
     }
 
     @Title("Pet's photo upload")
@@ -69,7 +68,6 @@ public class PetTests extends BaseTest {
         petBO.createPet(pet);
         petBO.uploadPetImage("cat.jpg", pet.getId());
         petBO.deletePet(pet);
-        attachTextLog();
     }
 
     @Title("Get pets")
@@ -78,6 +76,5 @@ public class PetTests extends BaseTest {
     public void getPets() {
         log.info("start get pets test");
         petBO.getPetsByStatus();
-        attachTextLog();
     }
 }

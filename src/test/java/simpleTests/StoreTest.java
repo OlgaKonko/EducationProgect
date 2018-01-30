@@ -27,7 +27,6 @@ public class StoreTest extends BaseTest {
         OrderBO orderBO = new OrderBO();
         orderBO.createOrder(order);
         orderBO.deleteOrder(order);
-        attachTextLog();
 
     }
 
@@ -38,6 +37,5 @@ public class StoreTest extends BaseTest {
         log.info("start check inventory test");
         StoreBO storeBO = new StoreBO();
         storeBO.getInventory();
-        attachTextLog();
     }
 }

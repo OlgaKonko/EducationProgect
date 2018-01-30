@@ -38,7 +38,6 @@ public class UsersTest extends BaseTest {
         UsersBO usersBO = new UsersBO(users);
         usersBO.createUsersWithArray();
         usersBO.deleteUsers();
-        attachTextLog();
     }
 
     @Stories("Operations with users")
@@ -49,6 +48,5 @@ public class UsersTest extends BaseTest {
         UsersBO usersBO = new UsersBO(users);
         usersBO.createUsersWithList();
         usersBO.deleteUsers();
-        attachTextLog();
     }
 }

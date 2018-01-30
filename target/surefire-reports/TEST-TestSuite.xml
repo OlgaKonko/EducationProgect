@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="TestSuite" time="20.911" errors="0" skipped="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="54.828" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2017.2.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_144\jre\bin"/>
     <property name="java.vm.version" value="25.144-b01"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="D:\Project\ver12.18.17\Aerlingus\EducationProgect"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\Project\EducationProgect"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -17,14 +17,13 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\Project\ver12.18.17\Aerlingus\EducationProgect"/>
+    <property name="user.dir" value="D:\Project\EducationProgect"/>
     <property name="java.runtime.version" value="1.8.0_144-b01"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jdk1.8.0_144\jre\lib\endorsed"/>
     <property name="os.arch" value="x86"/>
     <property name="java.io.tmpdir" value="C:\Users\OLGA_K~1\AppData\Local\Temp\"/>
-    <property name="line.separator" value="
-"/>
+    <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
@@ -62,8 +61,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase classname="simpleTests.StoreTest" name="checkInventory" time="1.688"/>
-  <testcase classname="simpleTests.StoreTest" name="createOrder" time="2.341"/>
-  <testcase classname="simpleTests.UsersTest" name="createNewUsersWithArray" time="7.427"/>
-  <testcase classname="simpleTests.UsersTest" name="createNewUsersWithList" time="9.455"/>
+  <testcase name="checkInventory" classname="simpleTests.StoreTest" time="39.485"/>
+  <testcase name="createOrder" classname="simpleTests.StoreTest" time="2.639"/>
+  <testcase name="createNewUsersWithArray" classname="simpleTests.UsersTest" time="5.895"/>
+  <testcase name="createNewUsersWithList" classname="simpleTests.UsersTest" time="5.753"/>
 </testsuite>

@@ -10,6 +10,8 @@ import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.*;
 import ru.yandex.qatools.allure.model.SeverityLevel;
 
+import java.lang.reflect.Method;
+
 import static data.RandomGenerator.randomString;
 
 @Features("User")
@@ -21,9 +23,11 @@ public class UserTests extends BaseTest {
     private UserBO userBO;
 
     @BeforeMethod
-    public void createNewUser() {
+    public void createNewUser(Method method) {
         this.user = UserGenerator.testUser();
         this.userBO = new UserBO(user);
+        Test test = method.getAnnotation(Test.class);
+        log.info("start test that" + test.description());
     }
 
     @Severity(SeverityLevel.BLOCKER)
@@ -31,11 +35,9 @@ public class UserTests extends BaseTest {
     @Title("User create and delete")
     @Test(description = "Create user and delete him")
     public void simpleUser() {
-        log.info("start simple user test");
         userBO.createUser();
         userBO.logIn();
         userBO.deleteUser();
-        attachTextLog();
 
     }
 
@@ -44,20 +46,17 @@ public class UserTests extends BaseTest {
     @Title("Login and logout")
     @Test(description = "Login and logout to created user")
     public void login() {
-        log.info("start login and logout test");
         userBO.createUser();
         userBO.logIn();
         userBO.logOut();
         userBO.logIn();
         userBO.deleteUser();
-        attachTextLog();
     }
 
     @Stories("Operations with user")
     @Title("Update user")
     @Test(description = "Update user name and phone")
     public void updateUser() {
-        log.info("start update user test");
         userBO.createUser();
         userBO.logIn();
         user.setPhone(randomString());
@@ -66,7 +65,6 @@ public class UserTests extends BaseTest {
         userBO.logOut();
         userBO.logIn();
         userBO.deleteUser();
-        attachTextLog();
     }
 
 }

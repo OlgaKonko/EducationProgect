@@ -3,7 +3,8 @@ package constants;
 public enum Appenders {
     Pet("petLog", "petLogRQ"),
     User("userLog", "userLogRQ"),
-    Store("storeLog", "storeLogRQ");
+    Store("storeLog", "storeLogRQ"),
+    Default("", "");
 
     String defaultName;
     String changedName;
