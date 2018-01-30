@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a32a960-958f-427d-9993-4b0e9cfa0ca8" name="Default" comment="Add test suite">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testng.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/petLog.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/storeLog.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/userLog.log" afterPath="" />
+    <list default="true" id="6a32a960-958f-427d-9993-4b0e9cfa0ca8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/simpleTests/BaseTest.class" afterPath="$PROJECT_DIR$/target/test-classes/simpleTests/BaseTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/logger/LogListener.java" afterPath="$PROJECT_DIR$/src/main/java/logger/LogListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" />
@@ -18,7 +13,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-simpleTests.UsersTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-simpleTests.UsersTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/logs/allureLog.log" afterPath="$PROJECT_DIR$/testng.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -424,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517304336960</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add test suite">
+      <created>1517317729800</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1517317729800</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
