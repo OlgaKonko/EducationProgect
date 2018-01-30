@@ -24,6 +24,7 @@ data\UserGenerator.class
 constants\DefaultTags.class
 logger\ResponsePrintStream.class
 client\HttpClient.class
+logger\LogListener.class
 model\pet\ApiResponse.class
 constants\Appenders.class
 model\pet\Category.class

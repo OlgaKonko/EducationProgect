@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="20944" started-at="2018-01-25T12:04:20Z" finished-at="2018-01-25T12:04:41Z">
+  <suite name="Surefire suite" duration-ms="53921" started-at="2018-01-30T08:34:58Z" finished-at="2018-01-30T08:35:52Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="20944" started-at="2018-01-25T12:04:20Z" finished-at="2018-01-25T12:04:41Z">
+    <test name="Surefire test" duration-ms="53921" started-at="2018-01-30T08:34:58Z" finished-at="2018-01-30T08:35:52Z">
       <class name="simpleTests.StoreTest">
-        <test-method status="PASS" signature="checkInventory()[pri:0, instance:simpleTests.StoreTest@146e1f4]" name="checkInventory" duration-ms="1688" started-at="2018-01-25T14:04:20Z" description="Get store inventory" finished-at="2018-01-25T14:04:22Z">
+        <test-method status="PASS" signature="checkInventory()[pri:0, instance:simpleTests.StoreTest@8cda75]" name="checkInventory" duration-ms="39413" started-at="2018-01-30T10:34:58Z" description="Get store inventory" finished-at="2018-01-30T10:35:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInventory -->
-        <test-method status="PASS" signature="createOrder()[pri:0, instance:simpleTests.StoreTest@146e1f4]" name="createOrder" duration-ms="2341" started-at="2018-01-25T14:04:22Z" description="Create order and delete it" finished-at="2018-01-25T14:04:24Z">
+        <test-method status="PASS" signature="createOrder()[pri:0, instance:simpleTests.StoreTest@8cda75]" name="createOrder" duration-ms="2641" started-at="2018-01-30T10:35:38Z" description="Create order and delete it" finished-at="2018-01-30T10:35:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createOrder -->
       </class> <!-- simpleTests.StoreTest -->
       <class name="simpleTests.UsersTest">
-        <test-method status="PASS" signature="createUsers()[pri:0, instance:simpleTests.UsersTest@756e4d]" name="createUsers" is-config="true" duration-ms="16" started-at="2018-01-25T14:04:20Z" finished-at="2018-01-25T14:04:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createUsers -->
-        <test-method status="PASS" signature="createNewUsersWithArray()[pri:0, instance:simpleTests.UsersTest@756e4d]" name="createNewUsersWithArray" duration-ms="7427" started-at="2018-01-25T14:04:24Z" description="Create and delete users from array" finished-at="2018-01-25T14:04:31Z">
+        <test-method status="PASS" signature="createNewUsersWithArray()[pri:0, instance:simpleTests.UsersTest@1049056]" name="createNewUsersWithArray" duration-ms="5895" started-at="2018-01-30T10:35:40Z" description="Create and delete users from array" finished-at="2018-01-30T10:35:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewUsersWithArray -->
-        <test-method status="PASS" signature="createNewUsersWithList()[pri:0, instance:simpleTests.UsersTest@756e4d]" name="createNewUsersWithList" duration-ms="9455" started-at="2018-01-25T14:04:31Z" description="Create and delete users from list" finished-at="2018-01-25T14:04:41Z">
+        <test-method status="PASS" signature="createUsers()[pri:0, instance:simpleTests.UsersTest@1049056]" name="createUsers" is-config="true" duration-ms="0" started-at="2018-01-30T10:35:40Z" finished-at="2018-01-30T10:35:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUsers -->
+        <test-method status="PASS" signature="createNewUsersWithList()[pri:0, instance:simpleTests.UsersTest@1049056]" name="createNewUsersWithList" duration-ms="5753" started-at="2018-01-30T10:35:46Z" description="Create and delete users from list" finished-at="2018-01-30T10:35:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewUsersWithList -->
+        <test-method status="PASS" signature="createUsers()[pri:0, instance:simpleTests.UsersTest@1049056]" name="createUsers" is-config="true" duration-ms="0" started-at="2018-01-30T10:35:46Z" finished-at="2018-01-30T10:35:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUsers -->
       </class> <!-- simpleTests.UsersTest -->
-    </test> <!-- Command line test -->
-  </suite> <!-- Command line suite -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>
