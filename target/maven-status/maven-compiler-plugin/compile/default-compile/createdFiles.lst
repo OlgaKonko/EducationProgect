@@ -32,6 +32,7 @@ constants\Appenders.class
 model\pet\Category.class
 model\user\User.class
 business\PetBO.class
+logger\LogAppender.class
 assertions\AssertDetails.class
 client\OrderClient.class
 data\RandomGenerator.class

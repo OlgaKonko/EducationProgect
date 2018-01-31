@@ -4,8 +4,8 @@ import assertions.AssertStatusCode;
 import client.StoreClient;
 import com.jayway.restassured.response.Response;
 import exeptions.StoreException;
+import io.qameta.allure.Step;
 import org.apache.log4j.Logger;
-import ru.yandex.qatools.allure.annotations.Step;
 
 import java.util.Map;
 

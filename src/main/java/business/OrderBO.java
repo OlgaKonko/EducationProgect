@@ -4,9 +4,9 @@ import client.OrderClient;
 import com.jayway.restassured.response.Response;
 import constants.ResponseCode;
 import exeptions.StoreException;
+import io.qameta.allure.Step;
 import model.order.Order;
 import org.apache.log4j.Logger;
-import ru.yandex.qatools.allure.annotations.Step;
 
 import static assertions.AssertDetails.assertOrderData;
 import static assertions.AssertStatusCode.assertStatusCodeIsOk;

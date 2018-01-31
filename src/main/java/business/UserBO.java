@@ -5,9 +5,9 @@ import client.UserClient;
 import com.jayway.restassured.response.Response;
 import constants.ResponseCode;
 import exeptions.UserException;
+import io.qameta.allure.Step;
 import model.user.User;
 import org.apache.log4j.Logger;
-import ru.yandex.qatools.allure.annotations.Step;
 
 import static assertions.AssertDetails.assertUserData;
 import static assertions.AssertStatusCode.assertStatusCodeIsOk;

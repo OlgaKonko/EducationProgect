@@ -5,10 +5,10 @@ import com.jayway.restassured.response.Response;
 import constants.PetStatus;
 import constants.ResponseCode;
 import exeptions.PetException;
+import io.qameta.allure.Step;
 import model.pet.ApiResponse;
 import model.pet.Pet;
 import org.apache.log4j.Logger;
-import ru.yandex.qatools.allure.annotations.Step;
 
 import java.io.File;
 import java.util.Arrays;
