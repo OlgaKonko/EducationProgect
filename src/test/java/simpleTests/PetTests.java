@@ -8,9 +8,7 @@ import data.PetGenerator;
 import logger.LogListener;
 import model.pet.Pet;
 import org.apache.log4j.Logger;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import ru.yandex.qatools.allure.annotations.*;
 import ru.yandex.qatools.allure.model.SeverityLevel;
 
@@ -18,11 +16,12 @@ import ru.yandex.qatools.allure.model.SeverityLevel;
 @Title("Test with pets")
 @Description("Test pet api operations")
 public class PetTests extends BaseTest {
+    //String appender = Appenders.Pet.getDefaultName();
     private static final Logger log = Logger.getLogger(Appenders.Pet.getDefaultName());
     private Pet pet;
     private PetBO petBO;
 
-    @BeforeTest
+    @BeforeMethod
     public void setData() {
         this.pet = PetGenerator.testPet();
         this.petBO = new PetBO();
@@ -33,7 +32,7 @@ public class PetTests extends BaseTest {
     @Title("Pet create and delete")
     @Test(description = "Create pet and delete it")
     public void simplePet() {
-        log.info("start simple pet test");
+        // log.info("start simple pet test");
         petBO.createPet(pet);
         petBO.deletePet(pet);
     }
@@ -42,7 +41,7 @@ public class PetTests extends BaseTest {
     @Stories("Operations with user pet")
     @Test(description = "Create pet and update his name and tags")
     public void updatePet() {
-        log.info("start update pet test");
+        //  log.info("start update pet test");
         petBO.createPet(pet);
         pet.setName("Blacky");
         pet.getTags().add(DefaultTags.Black.getTag());
@@ -54,7 +53,7 @@ public class PetTests extends BaseTest {
     @Stories("Operations with user pet")
     @Test(description = "Create pet and update his status")
     public void updatePetStatus() {
-        log.info("start update pet status test");
+        //  log.info("start update pet status test");
         petBO.createPet(pet);
         petBO.updatePetStatus(pet, PetStatus.Sold);
         petBO.deletePet(pet);
@@ -64,7 +63,7 @@ public class PetTests extends BaseTest {
     @Stories("Operations with user pet")
     @Test(description = "Create pet and upload image to it")
     public void uploadPetPhoto() {
-        log.info("start upload pet photo test");
+        //  log.info("start upload pet photo test");
         petBO.createPet(pet);
         petBO.uploadPetImage("cat.jpg", pet.getId());
         petBO.deletePet(pet);
@@ -74,7 +73,7 @@ public class PetTests extends BaseTest {
     @Stories("Operations with existing pets data")
     @Test(description = "Get available pets")
     public void getPets() {
-        log.info("start get pets test");
+        // log.info("start get pets test");
         petBO.getPetsByStatus();
     }
 }

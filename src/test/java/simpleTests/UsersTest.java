@@ -34,7 +34,7 @@ public class UsersTest extends BaseTest {
     @Title("Users from array")
     @Test(description = "Create and delete users from array")
     public void createNewUsersWithArray() {
-        log.info("start create user with array test");
+        //  log.info("start create user with array test");
         UsersBO usersBO = new UsersBO(users);
         usersBO.createUsersWithArray();
         usersBO.deleteUsers();
@@ -44,7 +44,7 @@ public class UsersTest extends BaseTest {
     @Title("Users from list")
     @Test(description = "Create and delete users from list")
     public void createNewUsersWithList() {
-        log.info("start create user with list test");
+        //  log.info("start create user with list test");
         UsersBO usersBO = new UsersBO(users);
         usersBO.createUsersWithList();
         usersBO.deleteUsers();

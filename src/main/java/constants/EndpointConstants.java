@@ -14,4 +14,6 @@ public class EndpointConstants {
     public static final String USER_LOGIN_URL = "/login";
     public static final String USER_LOGOUT_URL = "/logout";
     public static final String ID = "/{id}";
+
+    public static final String TEST_URL = "/test";
 }

@@ -22,7 +22,7 @@ public class StoreTest extends BaseTest {
     @Title("Order create and delete")
     @Test(description = "Create order and delete it")
     public void createOrder() {
-        log.info("start create order test");
+        // log.info("start create order test");
         Order order = OrderGenerator.testOrder();
         OrderBO orderBO = new OrderBO();
         orderBO.createOrder(order);
@@ -34,7 +34,7 @@ public class StoreTest extends BaseTest {
     @Title("Get inventory")
     @Test(description = "Get store inventory")
     public void checkInventory() {
-        log.info("start check inventory test");
+        // log.info("start check inventory test");
         StoreBO storeBO = new StoreBO();
         storeBO.getInventory();
     }

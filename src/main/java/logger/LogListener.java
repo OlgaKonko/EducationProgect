@@ -5,12 +5,13 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import ru.yandex.qatools.allure.annotations.Attachment;
+import ru.yandex.qatools.allure.testng.AllureTestListener;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class LogListener implements ITestListener {
+public class LogListener extends AllureTestListener implements ITestListener {
 
     public void onStart(ITestContext iTestContext) {
     }

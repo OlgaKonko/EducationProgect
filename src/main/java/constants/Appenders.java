@@ -4,7 +4,7 @@ public enum Appenders {
     Pet("petLog", "petLogRQ"),
     User("userLog", "userLogRQ"),
     Store("storeLog", "storeLogRQ"),
-    Default("", "");
+    Default("defaultLog", "defaultLogRQ");
 
     String defaultName;
     String changedName;

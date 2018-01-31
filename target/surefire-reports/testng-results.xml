@@ -1,126 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
+<testng-results skipped="0" failed="1" ignored="0" total="13" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Test" duration-ms="67736" started-at="2018-01-30T13:06:03Z" finished-at="2018-01-30T13:07:10Z">
+  <suite name="Test" duration-ms="66301" started-at="2018-01-31T10:41:09Z" finished-at="2018-01-31T10:42:15Z">
     <groups>
     </groups>
-    <test name="All tests" duration-ms="67736" started-at="2018-01-30T13:06:03Z" finished-at="2018-01-30T13:07:10Z">
+    <test name="All tests" duration-ms="66301" started-at="2018-01-31T10:41:09Z" finished-at="2018-01-31T10:42:15Z">
       <class name="simpleTests.PetTests">
-        <test-method status="PASS" signature="setData()[pri:0, instance:simpleTests.PetTests@7a8af2]" name="setData" is-config="true" duration-ms="20754" started-at="2018-01-30T15:06:03Z" finished-at="2018-01-30T15:06:23Z">
+        <test-method status="PASS" signature="setData()[pri:0, instance:simpleTests.PetTests@4b31de]" name="setData" is-config="true" duration-ms="31" started-at="2018-01-31T12:41:31Z" finished-at="2018-01-31T12:41:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setData -->
-        <test-method status="PASS" signature="createNewUser(java.lang.reflect.Method)[pri:0, instance:simpleTests.PetTests@7a8af2]" name="createNewUser" is-config="true" duration-ms="2" started-at="2018-01-30T15:06:23Z" finished-at="2018-01-30T15:06:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void simpleTests.PetTests.getPets()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createNewUser -->
-        <test-method status="PASS" signature="getPets()[pri:0, instance:simpleTests.PetTests@7a8af2]" name="getPets" duration-ms="11973" started-at="2018-01-30T15:06:23Z" description="Get available pets" finished-at="2018-01-30T15:06:35Z">
+        <test-method status="PASS" signature="getPets()[pri:0, instance:simpleTests.PetTests@4b31de]" name="getPets" duration-ms="10654" started-at="2018-01-31T12:41:31Z" description="Get available pets" finished-at="2018-01-31T12:41:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getPets -->
-        <test-method status="PASS" signature="simplePet()[pri:0, instance:simpleTests.PetTests@7a8af2]" name="simplePet" duration-ms="2071" started-at="2018-01-30T15:06:35Z" description="Create pet and delete it" finished-at="2018-01-30T15:06:38Z">
+        <test-method status="PASS" signature="simplePet()[pri:0, instance:simpleTests.PetTests@4b31de]" name="simplePet" duration-ms="1950" started-at="2018-01-31T12:41:42Z" description="Create pet and delete it" finished-at="2018-01-31T12:41:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- simplePet -->
-        <test-method status="PASS" signature="createNewUser(java.lang.reflect.Method)[pri:0, instance:simpleTests.PetTests@7a8af2]" name="createNewUser" is-config="true" duration-ms="0" started-at="2018-01-30T15:06:35Z" finished-at="2018-01-30T15:06:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void simpleTests.PetTests.simplePet()]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="setData()[pri:0, instance:simpleTests.PetTests@4b31de]" name="setData" is-config="true" duration-ms="0" started-at="2018-01-31T12:41:42Z" finished-at="2018-01-31T12:41:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createNewUser -->
-        <test-method status="PASS" signature="createNewUser(java.lang.reflect.Method)[pri:0, instance:simpleTests.PetTests@7a8af2]" name="createNewUser" is-config="true" duration-ms="1" started-at="2018-01-30T15:06:38Z" finished-at="2018-01-30T15:06:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void simpleTests.PetTests.updatePet()]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="setData()[pri:0, instance:simpleTests.PetTests@4b31de]" name="setData" is-config="true" duration-ms="0" started-at="2018-01-31T12:41:44Z" finished-at="2018-01-31T12:41:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createNewUser -->
-        <test-method status="PASS" signature="updatePet()[pri:0, instance:simpleTests.PetTests@7a8af2]" name="updatePet" duration-ms="2138" started-at="2018-01-30T15:06:38Z" description="Create pet and update his name and tags" finished-at="2018-01-30T15:06:40Z">
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="updatePet()[pri:0, instance:simpleTests.PetTests@4b31de]" name="updatePet" duration-ms="2238" started-at="2018-01-31T12:41:44Z" description="Create pet and update his name and tags" finished-at="2018-01-31T12:41:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updatePet -->
-        <test-method status="PASS" signature="createNewUser(java.lang.reflect.Method)[pri:0, instance:simpleTests.PetTests@7a8af2]" name="createNewUser" is-config="true" duration-ms="1" started-at="2018-01-30T15:06:40Z" finished-at="2018-01-30T15:06:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void simpleTests.PetTests.updatePetStatus()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createNewUser -->
-        <test-method status="PASS" signature="updatePetStatus()[pri:0, instance:simpleTests.PetTests@7a8af2]" name="updatePetStatus" duration-ms="3048" started-at="2018-01-30T15:06:40Z" description="Create pet and update his status" finished-at="2018-01-30T15:06:43Z">
+        <test-method status="PASS" signature="updatePetStatus()[pri:0, instance:simpleTests.PetTests@4b31de]" name="updatePetStatus" duration-ms="2518" started-at="2018-01-31T12:41:46Z" description="Create pet and update his status" finished-at="2018-01-31T12:41:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updatePetStatus -->
-        <test-method status="PASS" signature="createNewUser(java.lang.reflect.Method)[pri:0, instance:simpleTests.PetTests@7a8af2]" name="createNewUser" is-config="true" duration-ms="1" started-at="2018-01-30T15:06:43Z" finished-at="2018-01-30T15:06:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void simpleTests.PetTests.uploadPetPhoto()]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="setData()[pri:0, instance:simpleTests.PetTests@4b31de]" name="setData" is-config="true" duration-ms="0" started-at="2018-01-31T12:41:46Z" finished-at="2018-01-31T12:41:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createNewUser -->
-        <test-method status="PASS" signature="uploadPetPhoto()[pri:0, instance:simpleTests.PetTests@7a8af2]" name="uploadPetPhoto" duration-ms="2733" started-at="2018-01-30T15:06:43Z" description="Create pet and upload image to it" finished-at="2018-01-30T15:06:45Z">
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="setData()[pri:0, instance:simpleTests.PetTests@4b31de]" name="setData" is-config="true" duration-ms="0" started-at="2018-01-31T12:41:49Z" finished-at="2018-01-31T12:41:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="uploadPetPhoto()[pri:0, instance:simpleTests.PetTests@4b31de]" name="uploadPetPhoto" duration-ms="2689" started-at="2018-01-31T12:41:49Z" description="Create pet and upload image to it" finished-at="2018-01-31T12:41:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uploadPetPhoto -->
       </class> <!-- simpleTests.PetTests -->
       <class name="simpleTests.StoreTest">
-        <test-method status="PASS" signature="checkInventory()[pri:0, instance:simpleTests.StoreTest@c07b8d]" name="checkInventory" duration-ms="690" started-at="2018-01-30T15:06:45Z" description="Get store inventory" finished-at="2018-01-30T15:06:46Z">
+        <test-method status="PASS" signature="checkInventory()[pri:0, instance:simpleTests.StoreTest@152dd31]" name="checkInventory" duration-ms="684" started-at="2018-01-31T12:41:51Z" description="Get store inventory" finished-at="2018-01-31T12:41:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInventory -->
-        <test-method status="PASS" signature="createNewUser(java.lang.reflect.Method)[pri:0, instance:simpleTests.StoreTest@c07b8d]" name="createNewUser" is-config="true" duration-ms="0" started-at="2018-01-30T15:06:45Z" finished-at="2018-01-30T15:06:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void simpleTests.StoreTest.checkInventory()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createNewUser -->
-        <test-method status="PASS" signature="createNewUser(java.lang.reflect.Method)[pri:0, instance:simpleTests.StoreTest@c07b8d]" name="createNewUser" is-config="true" duration-ms="0" started-at="2018-01-30T15:06:46Z" finished-at="2018-01-30T15:06:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void simpleTests.StoreTest.createOrder()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createNewUser -->
-        <test-method status="PASS" signature="createOrder()[pri:0, instance:simpleTests.StoreTest@c07b8d]" name="createOrder" duration-ms="1806" started-at="2018-01-30T15:06:46Z" description="Create order and delete it" finished-at="2018-01-30T15:06:48Z">
+        <test-method status="PASS" signature="createOrder()[pri:0, instance:simpleTests.StoreTest@152dd31]" name="createOrder" duration-ms="1753" started-at="2018-01-31T12:41:52Z" description="Create order and delete it" finished-at="2018-01-31T12:41:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createOrder -->
       </class> <!-- simpleTests.StoreTest -->
+      <class name="simpleTests.UsersTest">
+        <test-method status="PASS" signature="createUsers()[pri:0, instance:simpleTests.UsersTest@2909ae]" name="createUsers" is-config="true" duration-ms="0" started-at="2018-01-31T12:41:54Z" finished-at="2018-01-31T12:41:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUsers -->
+        <test-method status="PASS" signature="createNewUsersWithArray()[pri:0, instance:simpleTests.UsersTest@2909ae]" name="createNewUsersWithArray" duration-ms="5786" started-at="2018-01-31T12:41:54Z" description="Create and delete users from array" finished-at="2018-01-31T12:41:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewUsersWithArray -->
+        <test-method status="PASS" signature="createUsers()[pri:0, instance:simpleTests.UsersTest@2909ae]" name="createUsers" is-config="true" duration-ms="0" started-at="2018-01-31T12:41:59Z" finished-at="2018-01-31T12:41:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUsers -->
+        <test-method status="PASS" signature="createNewUsersWithList()[pri:0, instance:simpleTests.UsersTest@2909ae]" name="createNewUsersWithList" duration-ms="6066" started-at="2018-01-31T12:41:59Z" description="Create and delete users from list" finished-at="2018-01-31T12:42:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewUsersWithList -->
+      </class> <!-- simpleTests.UsersTest -->
       <class name="simpleTests.UserTests">
-        <test-method status="PASS" signature="createNewUser(java.lang.reflect.Method)[pri:0, instance:simpleTests.UserTests@bc645]" name="createNewUser" is-config="true" duration-ms="2" started-at="2018-01-30T15:06:59Z" finished-at="2018-01-30T15:06:59Z">
+        <test-method status="PASS" signature="createNewUser(java.lang.reflect.Method)[pri:0, instance:simpleTests.UserTests@42c99]" name="createNewUser" is-config="true" duration-ms="15" started-at="2018-01-31T12:42:06Z" finished-at="2018-01-31T12:42:06Z">
           <params>
             <param index="0">
               <value>
@@ -131,11 +88,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewUser -->
-        <test-method status="PASS" signature="login()[pri:0, instance:simpleTests.UserTests@bc645]" name="login" duration-ms="3775" started-at="2018-01-30T15:06:59Z" description="Login and logout to created user" finished-at="2018-01-30T15:07:03Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:simpleTests.UserTests@42c99]" name="login" duration-ms="3201" started-at="2018-01-31T12:42:06Z" description="Login and logout to created user" finished-at="2018-01-31T12:42:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="createNewUser(java.lang.reflect.Method)[pri:0, instance:simpleTests.UserTests@bc645]" name="createNewUser" is-config="true" duration-ms="1" started-at="2018-01-30T15:07:03Z" finished-at="2018-01-30T15:07:03Z">
+        <test-method status="PASS" signature="createNewUser(java.lang.reflect.Method)[pri:0, instance:simpleTests.UserTests@42c99]" name="createNewUser" is-config="true" duration-ms="16" started-at="2018-01-31T12:42:09Z" finished-at="2018-01-31T12:42:09Z">
           <params>
             <param index="0">
               <value>
@@ -146,11 +103,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewUser -->
-        <test-method status="PASS" signature="simpleUser()[pri:0, instance:simpleTests.UserTests@bc645]" name="simpleUser" duration-ms="3149" started-at="2018-01-30T15:07:03Z" description="Create user and delete him" finished-at="2018-01-30T15:07:06Z">
+        <test-method status="PASS" signature="simpleUser()[pri:0, instance:simpleTests.UserTests@42c99]" name="simpleUser" duration-ms="2452" started-at="2018-01-31T12:42:09Z" description="Create user and delete him" finished-at="2018-01-31T12:42:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- simpleUser -->
-        <test-method status="PASS" signature="createNewUser(java.lang.reflect.Method)[pri:0, instance:simpleTests.UserTests@bc645]" name="createNewUser" is-config="true" duration-ms="1" started-at="2018-01-30T15:07:06Z" finished-at="2018-01-30T15:07:06Z">
+        <test-method status="PASS" signature="updateUser()[pri:0, instance:simpleTests.UserTests@42c99]" name="updateUser" duration-ms="3884" started-at="2018-01-31T12:42:11Z" description="Update user name and phone" finished-at="2018-01-31T12:42:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUser -->
+        <test-method status="PASS" signature="createNewUser(java.lang.reflect.Method)[pri:0, instance:simpleTests.UserTests@42c99]" name="createNewUser" is-config="true" duration-ms="0" started-at="2018-01-31T12:42:11Z" finished-at="2018-01-31T12:42:11Z">
           <params>
             <param index="0">
               <value>
@@ -161,51 +122,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewUser -->
-        <test-method status="PASS" signature="updateUser()[pri:0, instance:simpleTests.UserTests@bc645]" name="updateUser" duration-ms="3910" started-at="2018-01-30T15:07:06Z" description="Update user name and phone" finished-at="2018-01-30T15:07:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateUser -->
       </class> <!-- simpleTests.UserTests -->
-      <class name="simpleTests.UsersTest">
-        <test-method status="PASS" signature="createNewUser(java.lang.reflect.Method)[pri:0, instance:simpleTests.UsersTest@bf653]" name="createNewUser" is-config="true" duration-ms="1" started-at="2018-01-30T15:06:48Z" finished-at="2018-01-30T15:06:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void simpleTests.UsersTest.createNewUsersWithArray()]]>
-              </value>
-            </param>
-          </params>
+      <class name="simpleTests.FallTest">
+        <test-method status="PASS" signature="setData()[pri:0, instance:simpleTests.FallTest@18667fd]" name="setData" is-config="true" duration-ms="20543" started-at="2018-01-31T12:41:09Z" finished-at="2018-01-31T12:41:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createNewUser -->
-        <test-method status="PASS" signature="createUsers()[pri:0, instance:simpleTests.UsersTest@bf653]" name="createUsers" is-config="true" duration-ms="4" started-at="2018-01-30T15:06:48Z" finished-at="2018-01-30T15:06:48Z">
+        </test-method> <!-- setData -->
+        <test-method status="FAIL" signature="nonExistFunctionFailTest()[pri:0, instance:simpleTests.FallTest@18667fd]" name="nonExistFunctionFailTest" duration-ms="1557" started-at="2018-01-31T12:41:29Z" description="Call non-exist function" finished-at="2018-01-31T12:41:31Z">
+          <exception class="exeptions.BaseException">
+            <message>
+              <![CDATA[get non-existent function]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[exeptions.BaseException: get non-existent functionat business.TestBO.callNonExistentFunction(TestBO.java:32)at simpleTests.FallTest.nonExistFunctionFailTest(FallTest.java:28)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)Caused by: java.lang.AssertionError: 1 expectation failed.Expected status code <200> doesn't match actual status code <404>.at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)at java.lang.reflect.Constructor.newInstance(Constructor.java:423)at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)at com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:760)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)at com.jayway.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)at assertions.AssertStatusCode.assertStatusCodeIsOk(AssertStatusCode.java:11)at business.TestBO.callNonExistentFunction(TestBO.java:27)... 29 more]]>
+            </full-stacktrace>
+          </exception> <!-- exeptions.BaseException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createUsers -->
-        <test-method status="PASS" signature="createNewUsersWithArray()[pri:0, instance:simpleTests.UsersTest@bf653]" name="createNewUsersWithArray" duration-ms="5695" started-at="2018-01-30T15:06:48Z" description="Create and delete users from array" finished-at="2018-01-30T15:06:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createNewUsersWithArray -->
-        <test-method status="PASS" signature="createNewUser(java.lang.reflect.Method)[pri:0, instance:simpleTests.UsersTest@bf653]" name="createNewUser" is-config="true" duration-ms="1" started-at="2018-01-30T15:06:54Z" finished-at="2018-01-30T15:06:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void simpleTests.UsersTest.createNewUsersWithList()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createNewUser -->
-        <test-method status="PASS" signature="createUsers()[pri:0, instance:simpleTests.UsersTest@bf653]" name="createUsers" is-config="true" duration-ms="0" started-at="2018-01-30T15:06:54Z" finished-at="2018-01-30T15:06:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createUsers -->
-        <test-method status="PASS" signature="createNewUsersWithList()[pri:0, instance:simpleTests.UsersTest@bf653]" name="createNewUsersWithList" duration-ms="5666" started-at="2018-01-30T15:06:54Z" description="Create and delete users from list" finished-at="2018-01-30T15:06:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createNewUsersWithList -->
-      </class> <!-- simpleTests.UsersTest -->
+        </test-method> <!-- nonExistFunctionFailTest -->
+      </class> <!-- simpleTests.FallTest -->
     </test> <!-- All tests -->
   </suite> <!-- Test -->
 </testng-results>

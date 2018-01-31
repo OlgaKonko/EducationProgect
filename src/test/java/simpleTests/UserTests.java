@@ -27,7 +27,7 @@ public class UserTests extends BaseTest {
         this.user = UserGenerator.testUser();
         this.userBO = new UserBO(user);
         Test test = method.getAnnotation(Test.class);
-        log.info("start test that" + test.description());
+        //    log.info("start test that" + test.description());
     }
 
     @Severity(SeverityLevel.BLOCKER)

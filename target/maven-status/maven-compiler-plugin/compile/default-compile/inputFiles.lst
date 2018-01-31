@@ -21,12 +21,14 @@ D:\Project\EducationProgect\src\main\java\model\order\Order.java
 D:\Project\EducationProgect\src\main\java\model\pet\Pet.java
 D:\Project\EducationProgect\src\main\java\client\PetClient.java
 D:\Project\EducationProgect\src\main\java\data\UserGenerator.java
+D:\Project\EducationProgect\src\main\java\client\TestClient.java
 D:\Project\EducationProgect\src\main\java\constants\DefaultTags.java
 D:\Project\EducationProgect\src\main\java\model\bulder\UserBuilder.java
 D:\Project\EducationProgect\src\main\java\business\OrderBO.java
 D:\Project\EducationProgect\src\main\java\model\bulder\OrderBuilder.java
 D:\Project\EducationProgect\src\main\java\logger\LogListener.java
 D:\Project\EducationProgect\src\main\java\logger\ResponsePrintStream.java
+D:\Project\EducationProgect\src\main\java\business\TestBO.java
 D:\Project\EducationProgect\src\main\java\data\OrderGenerator.java
 D:\Project\EducationProgect\src\main\java\constants\OrderStatus.java
 D:\Project\EducationProgect\src\main\java\client\HttpClient.java
