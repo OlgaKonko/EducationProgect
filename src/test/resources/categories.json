@@ -11,7 +11,7 @@
       "broken",
       "failed"
     ],
-    "traceRegex": ".*404.*"
+    "traceRegex": ".*BaseException.*"
   },
   {
     "name": "Server side defects",
