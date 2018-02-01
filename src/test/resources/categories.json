@@ -7,11 +7,11 @@
   },
   {
     "name": "Client side defects",
+    "traceRegex": ".*BaseException.*",
     "matchedStatuses": [
       "broken",
       "failed"
-    ],
-    "traceRegex": ".*BaseException.*"
+    ]
   },
   {
     "name": "Server side defects",
