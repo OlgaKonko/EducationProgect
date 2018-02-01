@@ -28,12 +28,6 @@
     ]
   },
   {
-    "name": "Test defects",
-    "matchedStatuses": [
-      "broken"
-    ]
-  },
-  {
     "name": "Unknown defect",
     "matchedStatuses": [
       "unknown"
