@@ -1,11 +1,17 @@
 [
   {
+    "name": "Ignored tests",
+    "matchedStatuses": [
+      "skipped"
+    ]
+  },
+  {
     "name": "Client side defects",
     "matchedStatuses": [
       "broken",
       "failed"
     ],
-    "traceRegex": ".*<4[0-9][0-9]>.*"
+    "traceRegex": ".*404.*"
   },
   {
     "name": "Server side defects",
@@ -13,6 +19,24 @@
       "broken",
       "failed"
     ],
-    "traceRegex": ".*<5[0-9][0-9]>.*"
+    "traceRegex": ".*<5\d\d>.*"
+  },
+  {
+    "name": "Product defects",
+    "matchedStatuses": [
+      "failed"
+    ]
+  },
+  {
+    "name": "Test defects",
+    "matchedStatuses": [
+      "broken"
+    ]
+  },
+  {
+    "name": "Unknown defect",
+    "matchedStatuses": [
+      "unknown"
+    ]
   }
 ]
