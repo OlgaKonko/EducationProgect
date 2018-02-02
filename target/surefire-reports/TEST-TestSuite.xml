@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="44.125" tests="13" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="46.954" tests="13" errors="0" skipped="0" failures="1">
   <properties>
     <property name="idea.version" value="2017.2.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -61,7 +61,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase name="nonExistFunctionFailTest" classname="simpleTests.FallTest" time="1.471">
+  <testcase name="nonExistFunctionFailTest" classname="simpleTests.FallTest" time="1.487">
     <failure message="get non-existent function" type="exeptions.BaseException"><![CDATA[exeptions.BaseException: get non-existent function
 	at simpleTests.FallTest.nonExistFunctionFailTest(FallTest.java:32)
 Caused by: java.lang.AssertionError: 
@@ -70,10 +70,10 @@ Expected status code <200> doesn't match actual status code <404>.
 
 	at simpleTests.FallTest.nonExistFunctionFailTest(FallTest.java:32)
 ]]></failure>
-    <system-out><![CDATA[17:18:46,648  INFO TestClient:<init>:17 - connecting to http://petstore.swagger.io/v2/test
-17:18:46,749  INFO LogListener:onTestStart:31 - start nonExistFunctionFailTest test
-17:18:46,818  INFO TestBO:callNonExistentFunction_aroundBody0:25 - start calling non-existent function
-17:18:46,818  INFO TestClient:nonExistentFunction:22 - send request non-existent function
+    <system-out><![CDATA[12:26:48,966  INFO TestClient:<init>:17 - connecting to http://petstore.swagger.io/v2/test
+12:26:49,082  INFO LogListener:onTestStart:33 - start nonExistFunctionFailTest test
+12:26:49,145  INFO TestBO:callNonExistentFunction_aroundBody0:25 - start calling non-existent function
+12:26:49,145  INFO TestClient:nonExistentFunction:22 - send request non-existent function
 Request path:	http://petstore.swagger.io/v2/test
 Request method:	GET
 Response body: 
@@ -82,24 +82,24 @@ Response body:
     "type": "unknown",
     "message": "null for uri: http://petstore.swagger.io/v2/test"
 }
-17:18:48,205 ERROR TestBO:callNonExistentFunction_aroundBody0:31 - non-existent function can't be got
-17:18:48,205  INFO LogListener:onTestFailure:42 - null finish and fail
+12:26:50,547 ERROR TestBO:callNonExistentFunction_aroundBody0:31 - non-existent function can't be got
+12:26:50,564  INFO LogListener:onTestFailure:44 - null finish and fail
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="getPets" classname="simpleTests.PetTests" time="5.071"/>
-  <testcase name="simplePet" classname="simpleTests.PetTests" time="1.919"/>
-  <testcase name="updatePet" classname="simpleTests.PetTests" time="3.188"/>
-  <testcase name="updatePetStatus" classname="simpleTests.PetTests" time="3.639"/>
-  <testcase name="uploadPetPhoto" classname="simpleTests.PetTests" time="2.787"/>
-  <testcase name="checkInventory" classname="simpleTests.StoreTest" time="0.733"/>
-  <testcase name="createOrder" classname="simpleTests.StoreTest" time="1.837"/>
-  <testcase name="createNewUsersWithArray" classname="simpleTests.UsersTest" time="5.725"/>
-  <testcase name="createNewUsersWithList" classname="simpleTests.UsersTest" time="5.688"/>
-  <testcase name="login" classname="simpleTests.UserTests" time="2.87"/>
-  <testcase name="simpleUser" classname="simpleTests.UserTests" time="3.216"/>
-  <testcase name="updateUser" classname="simpleTests.UserTests" time="3.521"/>
+  <testcase name="getPets" classname="simpleTests.PetTests" time="10.31"/>
+  <testcase name="simplePet" classname="simpleTests.PetTests" time="1.754"/>
+  <testcase name="updatePet" classname="simpleTests.PetTests" time="1.973"/>
+  <testcase name="updatePetStatus" classname="simpleTests.PetTests" time="2.717"/>
+  <testcase name="uploadPetPhoto" classname="simpleTests.PetTests" time="3.756"/>
+  <testcase name="checkInventory" classname="simpleTests.StoreTest" time="0.618"/>
+  <testcase name="createOrder" classname="simpleTests.StoreTest" time="1.602"/>
+  <testcase name="createNewUsersWithArray" classname="simpleTests.UsersTest" time="6.506"/>
+  <testcase name="createNewUsersWithList" classname="simpleTests.UsersTest" time="5.122"/>
+  <testcase name="login" classname="simpleTests.UserTests" time="2.557"/>
+  <testcase name="simpleUser" classname="simpleTests.UserTests" time="3.088"/>
+  <testcase name="updateUser" classname="simpleTests.UserTests" time="3.201"/>
 </testsuite>
