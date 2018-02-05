@@ -2,112 +2,112 @@
 <testng-results skipped="0" failed="1" ignored="0" total="13" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Test" duration-ms="45784" started-at="2018-02-02T10:26:48Z" finished-at="2018-02-02T10:27:33Z">
+  <suite name="Test" duration-ms="60068" started-at="2018-02-02T11:11:17Z" finished-at="2018-02-02T11:12:17Z">
     <groups>
     </groups>
-    <test name="All tests" duration-ms="45784" started-at="2018-02-02T10:26:48Z" finished-at="2018-02-02T10:27:33Z">
+    <test name="All tests" duration-ms="60068" started-at="2018-02-02T11:11:17Z" finished-at="2018-02-02T11:12:17Z">
       <class name="simpleTests.PetTests">
-        <test-method status="PASS" signature="setData()[pri:0, instance:simpleTests.PetTests@1850751]" name="setData" is-config="true" duration-ms="32" started-at="2018-02-02T12:26:50Z" finished-at="2018-02-02T12:26:50Z">
+        <test-method status="PASS" signature="setData()[pri:0, instance:simpleTests.PetTests@56e013]" name="setData" is-config="true" duration-ms="69" started-at="2018-02-02T13:11:20Z" finished-at="2018-02-02T13:11:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setData -->
-        <test-method status="PASS" signature="getPets()[pri:0, instance:simpleTests.PetTests@1850751]" name="getPets" duration-ms="10279" started-at="2018-02-02T12:26:50Z" description="Get available pets" finished-at="2018-02-02T12:27:00Z">
+        <test-method status="PASS" signature="getPets()[pri:0, instance:simpleTests.PetTests@56e013]" name="getPets" duration-ms="20053" started-at="2018-02-02T13:11:20Z" description="Get available pets" finished-at="2018-02-02T13:11:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getPets -->
-        <test-method status="PASS" signature="setData()[pri:0, instance:simpleTests.PetTests@1850751]" name="setData" is-config="true" duration-ms="0" started-at="2018-02-02T12:27:00Z" finished-at="2018-02-02T12:27:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setData -->
-        <test-method status="PASS" signature="simplePet()[pri:0, instance:simpleTests.PetTests@1850751]" name="simplePet" duration-ms="1740" started-at="2018-02-02T12:27:00Z" description="Create pet and delete it" finished-at="2018-02-02T12:27:02Z">
+        <test-method status="PASS" signature="simplePet()[pri:0, instance:simpleTests.PetTests@56e013]" name="simplePet" duration-ms="1804" started-at="2018-02-02T13:11:40Z" description="Create pet and delete it" finished-at="2018-02-02T13:11:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- simplePet -->
-        <test-method status="PASS" signature="setData()[pri:0, instance:simpleTests.PetTests@1850751]" name="setData" is-config="true" duration-ms="0" started-at="2018-02-02T12:27:02Z" finished-at="2018-02-02T12:27:02Z">
+        <test-method status="PASS" signature="setData()[pri:0, instance:simpleTests.PetTests@56e013]" name="setData" is-config="true" duration-ms="0" started-at="2018-02-02T13:11:40Z" finished-at="2018-02-02T13:11:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setData -->
-        <test-method status="PASS" signature="updatePet()[pri:0, instance:simpleTests.PetTests@1850751]" name="updatePet" duration-ms="1957" started-at="2018-02-02T12:27:02Z" description="Create pet and update its name and tags" finished-at="2018-02-02T12:27:04Z">
+        <test-method status="PASS" signature="setData()[pri:0, instance:simpleTests.PetTests@56e013]" name="setData" is-config="true" duration-ms="15" started-at="2018-02-02T13:11:42Z" finished-at="2018-02-02T13:11:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="updatePet()[pri:0, instance:simpleTests.PetTests@56e013]" name="updatePet" duration-ms="3191" started-at="2018-02-02T13:11:42Z" description="Create pet and update its name and tags" finished-at="2018-02-02T13:11:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updatePet -->
-        <test-method status="PASS" signature="updatePetStatus()[pri:0, instance:simpleTests.PetTests@1850751]" name="updatePetStatus" duration-ms="2701" started-at="2018-02-02T12:27:04Z" description="Create pet and update his status" finished-at="2018-02-02T12:27:07Z">
+        <test-method status="PASS" signature="setData()[pri:0, instance:simpleTests.PetTests@56e013]" name="setData" is-config="true" duration-ms="0" started-at="2018-02-02T13:11:45Z" finished-at="2018-02-02T13:11:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="updatePetStatus()[pri:0, instance:simpleTests.PetTests@56e013]" name="updatePetStatus" duration-ms="3448" started-at="2018-02-02T13:11:45Z" description="Create pet and update his status" finished-at="2018-02-02T13:11:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updatePetStatus -->
-        <test-method status="PASS" signature="setData()[pri:0, instance:simpleTests.PetTests@1850751]" name="setData" is-config="true" duration-ms="0" started-at="2018-02-02T12:27:04Z" finished-at="2018-02-02T12:27:04Z">
+        <test-method status="PASS" signature="setData()[pri:0, instance:simpleTests.PetTests@56e013]" name="setData" is-config="true" duration-ms="0" started-at="2018-02-02T13:11:48Z" finished-at="2018-02-02T13:11:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setData -->
-        <test-method status="PASS" signature="uploadPetPhoto()[pri:0, instance:simpleTests.PetTests@1850751]" name="uploadPetPhoto" duration-ms="3734" started-at="2018-02-02T12:27:07Z" description="Create pet and upload image to it" finished-at="2018-02-02T12:27:11Z">
+        <test-method status="PASS" signature="uploadPetPhoto()[pri:0, instance:simpleTests.PetTests@56e013]" name="uploadPetPhoto" duration-ms="2504" started-at="2018-02-02T13:11:48Z" description="Create pet and upload image to it" finished-at="2018-02-02T13:11:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uploadPetPhoto -->
-        <test-method status="PASS" signature="setData()[pri:0, instance:simpleTests.PetTests@1850751]" name="setData" is-config="true" duration-ms="0" started-at="2018-02-02T12:27:07Z" finished-at="2018-02-02T12:27:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setData -->
       </class> <!-- simpleTests.PetTests -->
       <class name="simpleTests.StoreTest">
-        <test-method status="PASS" signature="checkInventory()[pri:0, instance:simpleTests.StoreTest@e3db41]" name="checkInventory" duration-ms="618" started-at="2018-02-02T12:27:11Z" description="Get store inventory" finished-at="2018-02-02T12:27:11Z">
+        <test-method status="PASS" signature="checkInventory()[pri:0, instance:simpleTests.StoreTest@1c9dfc5]" name="checkInventory" duration-ms="633" started-at="2018-02-02T13:11:51Z" description="Get store inventory" finished-at="2018-02-02T13:11:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInventory -->
-        <test-method status="PASS" signature="createOrder()[pri:0, instance:simpleTests.StoreTest@e3db41]" name="createOrder" duration-ms="1586" started-at="2018-02-02T12:27:11Z" description="Create order and delete it" finished-at="2018-02-02T12:27:13Z">
+        <test-method status="PASS" signature="createOrder()[pri:0, instance:simpleTests.StoreTest@1c9dfc5]" name="createOrder" duration-ms="2288" started-at="2018-02-02T13:11:51Z" description="Create order and delete it" finished-at="2018-02-02T13:11:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createOrder -->
       </class> <!-- simpleTests.StoreTest -->
       <class name="simpleTests.UsersTest">
-        <test-method status="PASS" signature="createNewUsersWithArray()[pri:0, instance:simpleTests.UsersTest@df9a61]" name="createNewUsersWithArray" duration-ms="6507" started-at="2018-02-02T12:27:13Z" description="Create and delete users from array" finished-at="2018-02-02T12:27:19Z">
+        <test-method status="PASS" signature="createUsers()[pri:0, instance:simpleTests.UsersTest@258c2f]" name="createUsers" is-config="true" duration-ms="0" started-at="2018-02-02T13:11:54Z" finished-at="2018-02-02T13:11:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUsers -->
+        <test-method status="PASS" signature="createNewUsersWithArray()[pri:0, instance:simpleTests.UsersTest@258c2f]" name="createNewUsersWithArray" duration-ms="8310" started-at="2018-02-02T13:11:54Z" description="Create and delete users from array" finished-at="2018-02-02T13:12:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewUsersWithArray -->
-        <test-method status="PASS" signature="createUsers()[pri:0, instance:simpleTests.UsersTest@df9a61]" name="createUsers" is-config="true" duration-ms="0" started-at="2018-02-02T12:27:13Z" finished-at="2018-02-02T12:27:13Z">
+        <test-method status="PASS" signature="createUsers()[pri:0, instance:simpleTests.UsersTest@258c2f]" name="createUsers" is-config="true" duration-ms="0" started-at="2018-02-02T13:12:02Z" finished-at="2018-02-02T13:12:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUsers -->
-        <test-method status="PASS" signature="createUsers()[pri:0, instance:simpleTests.UsersTest@df9a61]" name="createUsers" is-config="true" duration-ms="0" started-at="2018-02-02T12:27:19Z" finished-at="2018-02-02T12:27:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createUsers -->
-        <test-method status="PASS" signature="createNewUsersWithList()[pri:0, instance:simpleTests.UsersTest@df9a61]" name="createNewUsersWithList" duration-ms="5107" started-at="2018-02-02T12:27:19Z" description="Create and delete users from list" finished-at="2018-02-02T12:27:25Z">
+        <test-method status="PASS" signature="createNewUsersWithList()[pri:0, instance:simpleTests.UsersTest@258c2f]" name="createNewUsersWithList" duration-ms="6665" started-at="2018-02-02T13:12:02Z" description="Create and delete users from list" finished-at="2018-02-02T13:12:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewUsersWithList -->
       </class> <!-- simpleTests.UsersTest -->
       <class name="simpleTests.UserTests">
-        <test-method status="PASS" signature="createNewUser()[pri:0, instance:simpleTests.UserTests@1602954]" name="createNewUser" is-config="true" duration-ms="0" started-at="2018-02-02T12:27:25Z" finished-at="2018-02-02T12:27:25Z">
+        <test-method status="PASS" signature="createNewUser()[pri:0, instance:simpleTests.UserTests@ac4385]" name="createNewUser" is-config="true" duration-ms="0" started-at="2018-02-02T13:12:09Z" finished-at="2018-02-02T13:12:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewUser -->
-        <test-method status="PASS" signature="login()[pri:0, instance:simpleTests.UserTests@1602954]" name="login" duration-ms="2557" started-at="2018-02-02T12:27:25Z" description="Login and logout to created user" finished-at="2018-02-02T12:27:27Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:simpleTests.UserTests@ac4385]" name="login" duration-ms="2690" started-at="2018-02-02T13:12:09Z" description="Login and logout to created user" finished-at="2018-02-02T13:12:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="createNewUser()[pri:0, instance:simpleTests.UserTests@1602954]" name="createNewUser" is-config="true" duration-ms="0" started-at="2018-02-02T12:27:27Z" finished-at="2018-02-02T12:27:27Z">
+        <test-method status="PASS" signature="createNewUser()[pri:0, instance:simpleTests.UserTests@ac4385]" name="createNewUser" is-config="true" duration-ms="15" started-at="2018-02-02T13:12:11Z" finished-at="2018-02-02T13:12:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewUser -->
-        <test-method status="PASS" signature="simpleUser()[pri:0, instance:simpleTests.UserTests@1602954]" name="simpleUser" duration-ms="3088" started-at="2018-02-02T12:27:27Z" description="Create user and delete him" finished-at="2018-02-02T12:27:30Z">
+        <test-method status="PASS" signature="simpleUser()[pri:0, instance:simpleTests.UserTests@ac4385]" name="simpleUser" duration-ms="2157" started-at="2018-02-02T13:12:11Z" description="Create user and delete him" finished-at="2018-02-02T13:12:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- simpleUser -->
-        <test-method status="PASS" signature="createNewUser()[pri:0, instance:simpleTests.UserTests@1602954]" name="createNewUser" is-config="true" duration-ms="0" started-at="2018-02-02T12:27:30Z" finished-at="2018-02-02T12:27:30Z">
+        <test-method status="PASS" signature="createNewUser()[pri:0, instance:simpleTests.UserTests@ac4385]" name="createNewUser" is-config="true" duration-ms="0" started-at="2018-02-02T13:12:14Z" finished-at="2018-02-02T13:12:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewUser -->
-        <test-method status="PASS" signature="updateUser()[pri:0, instance:simpleTests.UserTests@1602954]" name="updateUser" duration-ms="3185" started-at="2018-02-02T12:27:30Z" description="Update user name and phone" finished-at="2018-02-02T12:27:33Z">
+        <test-method status="PASS" signature="updateUser()[pri:0, instance:simpleTests.UserTests@ac4385]" name="updateUser" duration-ms="3483" started-at="2018-02-02T13:12:14Z" description="Update user name and phone" finished-at="2018-02-02T13:12:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateUser -->
       </class> <!-- simpleTests.UserTests -->
       <class name="simpleTests.FallTest">
-        <test-method status="PASS" signature="setData()[pri:0, instance:simpleTests.FallTest@f57b3d]" name="setData" is-config="true" duration-ms="717" started-at="2018-02-02T12:26:48Z" finished-at="2018-02-02T12:26:48Z">
+        <test-method status="PASS" signature="setData()[pri:0, instance:simpleTests.FallTest@75c20c]" name="setData" is-config="true" duration-ms="771" started-at="2018-02-02T13:11:17Z" finished-at="2018-02-02T13:11:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setData -->
-        <test-method status="FAIL" signature="nonExistFunctionFailTest()[pri:0, instance:simpleTests.FallTest@f57b3d]" name="nonExistFunctionFailTest" duration-ms="1482" started-at="2018-02-02T12:26:49Z" description="Call non-exist function" finished-at="2018-02-02T12:26:50Z">
+        <test-method status="FAIL" signature="nonExistFunctionFailTest()[pri:0, instance:simpleTests.FallTest@75c20c]" name="nonExistFunctionFailTest" duration-ms="1485" started-at="2018-02-02T13:11:18Z" description="Call non-exist function" finished-at="2018-02-02T13:11:20Z">
           <exception class="exeptions.BaseException">
             <message>
               <![CDATA[get non-existent function]]>
