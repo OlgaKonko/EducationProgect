@@ -7,7 +7,7 @@ import static com.jayway.restassured.RestAssured.given;
 import static constants.Appenders.Store;
 import static constants.EndpointConstants.BASE_URL;
 import static constants.EndpointConstants.TEST_URL;
-import static logger.LoggerCather.catchLog;
+import static logger.LoggerCatcher.catchLog;
 
 public class TestClient extends HttpClient {
     private static final Logger log = Logger.getLogger(Store.getDefaultName());

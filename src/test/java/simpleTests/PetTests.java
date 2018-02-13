@@ -18,7 +18,6 @@ import org.testng.annotations.Test;
 import static constants.Appenders.Pet;
 
 @Feature("Pet")
-@Test
 @LogAppender(Pet)
 public class PetTests extends BaseTest {
     private Pet pet;
@@ -30,18 +29,21 @@ public class PetTests extends BaseTest {
 
     @BeforeMethod
     public void setData() {
-        this.pet = PetGenerator.testPet();
+        // this.pet = PetGenerator.testPet();
+        //logger().info("create pet with id"+pet.getId());
         this.petBO = new PetBO();
     }
 
     @Severity(SeverityLevel.BLOCKER)
     @Story("Operations with user pet")
-    @Test(testName = "create and delete pet", description = "Create pet and delete it")
+    //  @Test(testName = "create and delete pet", description = "Create pet and delete it")
+    @Test(testName = "create and delete pet", description = "Create pet and delete it", invocationCount = 2, threadPoolSize = 2)
     public void simplePet() {
+        Pet pet = PetGenerator.testPet();
         petBO.createPet(pet);
         petBO.deletePet(pet);
     }
-
+/*
     @Story("Operations with user pet")
     @Test(testName = "update pet", description = "Create pet and update its name and tags")
     public void updatePet() {
@@ -72,5 +74,5 @@ public class PetTests extends BaseTest {
     @Test(testName = "get available pets", description = "Get available pets")
     public void getPets() {
         petBO.getPetsByStatus();
-    }
+    }*/
 }

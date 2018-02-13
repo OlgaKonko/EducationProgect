@@ -9,10 +9,8 @@ import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 import logger.LogAppender;
 import model.user.User;
-import org.apache.log4j.Logger;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 
 import static data.RandomGenerator.randomString;
 

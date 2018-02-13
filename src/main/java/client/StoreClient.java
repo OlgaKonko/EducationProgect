@@ -6,14 +6,14 @@ import org.apache.log4j.Logger;
 import static com.jayway.restassured.RestAssured.given;
 import static constants.Appenders.Store;
 import static constants.EndpointConstants.*;
-import static logger.LoggerCather.catchLog;
+import static logger.LoggerCatcher.catchLog;
 
 public class StoreClient extends HttpClient {
     private static final Logger log = Logger.getLogger(Store.getDefaultName());
 
     public StoreClient() {
         super(STORE_URL);
-        log.info("connecting to " + BASE_URL + USER_URL);
+        log.info("connecting to " + BASE_URL + STORE_URL);
         catchLog(log, defaultRequest);
     }
 

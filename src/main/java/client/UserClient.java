@@ -9,7 +9,7 @@ import java.util.List;
 import static com.jayway.restassured.RestAssured.given;
 import static constants.Appenders.User;
 import static constants.EndpointConstants.*;
-import static logger.LoggerCather.catchLog;
+import static logger.LoggerCatcher.catchLog;
 
 public class UserClient extends HttpClient {
     private static final Logger log = Logger.getLogger(User.getDefaultName());

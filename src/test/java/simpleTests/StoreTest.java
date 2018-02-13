@@ -2,7 +2,6 @@ package simpleTests;
 
 import business.OrderBO;
 import business.StoreBO;
-import constants.Appenders;
 import data.OrderGenerator;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
@@ -10,10 +9,8 @@ import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 import logger.LogAppender;
 import model.order.Order;
-import org.apache.log4j.Logger;
 import org.testng.annotations.Test;
 
-import static constants.Appenders.Pet;
 import static constants.Appenders.Store;
 
 @Feature("Store")

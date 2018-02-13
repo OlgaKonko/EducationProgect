@@ -1,20 +1,17 @@
 package simpleTests;
 
 import business.UsersBO;
-import constants.Appenders;
 import data.UserGenerator;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import logger.LogAppender;
 import model.user.User;
-import org.apache.log4j.Logger;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static constants.Appenders.Pet;
 import static constants.Appenders.User;
 
 @LogAppender(User)
