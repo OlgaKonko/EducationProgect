@@ -1,9 +1,6 @@
 package simpleTests;
 
 import business.PetBO;
-import constants.Appenders;
-import constants.DefaultTags;
-import constants.PetStatus;
 import data.PetGenerator;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
@@ -11,37 +8,34 @@ import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 import logger.LogAppender;
 import model.pet.Pet;
-import org.apache.log4j.Logger;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import static constants.Appenders.Pet;
 
 @Feature("Pet")
 @LogAppender(Pet)
 public class PetTests extends BaseTest {
-    private Pet pet;
-    private PetBO petBO;
-
-    public Logger logger() {
-        return Logger.getLogger(Appenders.Pet.getDefaultName());
-    }
+    private Map<Long, PetBO> petBOs = new HashMap<>();
 
     @BeforeMethod
     public void setData() {
         // this.pet = PetGenerator.testPet();
         //logger().info("create pet with id"+pet.getId());
-        this.petBO = new PetBO();
+        this.petBOs.put(Thread.currentThread().getId(), new PetBO());
     }
 
     @Severity(SeverityLevel.BLOCKER)
     @Story("Operations with user pet")
-    //  @Test(testName = "create and delete pet", description = "Create pet and delete it")
-    @Test(testName = "create and delete pet", description = "Create pet and delete it", invocationCount = 2, threadPoolSize = 2)
+    @Test(testName = "create and delete pet", description = "Create pet and delete it")
+    //  @Test(testName = "create and delete pet", description = "Create pet and delete it", invocationCount = 2, threadPoolSize = 2)
     public void simplePet() {
         Pet pet = PetGenerator.testPet();
-        petBO.createPet(pet);
-        petBO.deletePet(pet);
+        petBOs.get(Thread.currentThread().getId()).createPet(pet);
+        petBOs.get(Thread.currentThread().getId()).deletePet(pet);
     }
 /*
     @Story("Operations with user pet")

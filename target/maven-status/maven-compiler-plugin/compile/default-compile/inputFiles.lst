@@ -1,6 +1,7 @@
-D:\Project\EducationProgect\src\main\java\logger\LoggerCather.java
+D:\Project\EducationProgect\src\main\java\logger\LoggerCatcher.java
 D:\Project\EducationProgect\src\main\java\assertions\AssertStatusCode.java
 D:\Project\EducationProgect\src\main\java\exeptions\BaseException.java
+D:\Project\EducationProgect\src\main\java\logger\ThreadLoggingFilter.java
 D:\Project\EducationProgect\src\main\java\client\StoreClient.java
 D:\Project\EducationProgect\src\main\java\logger\RequestPrintStream.java
 D:\Project\EducationProgect\src\main\java\exeptions\StoreException.java
@@ -11,6 +12,8 @@ D:\Project\EducationProgect\src\main\java\exeptions\UserException.java
 D:\Project\EducationProgect\src\main\java\model\pet\ApiResponse.java
 D:\Project\EducationProgect\src\main\java\client\OrderClient.java
 D:\Project\EducationProgect\src\main\java\client\UserClient.java
+D:\Project\EducationProgect\src\main\java\constants\LoggerLayout.java
+D:\Project\EducationProgect\src\main\java\logger\LayoutManager.java
 D:\Project\EducationProgect\src\main\java\model\user\User.java
 D:\Project\EducationProgect\src\main\java\assertions\AssertDetails.java
 D:\Project\EducationProgect\src\main\java\constants\EndpointConstants.java

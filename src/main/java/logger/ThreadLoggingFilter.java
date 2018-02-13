@@ -1,6 +1,7 @@
 package logger;
 
-import org.apache.log4j.spi.*;
+import org.apache.log4j.spi.Filter;
+import org.apache.log4j.spi.LoggingEvent;
 
 
 public class ThreadLoggingFilter extends Filter {

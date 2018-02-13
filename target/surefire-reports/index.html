@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">13 methods, 1 failed,   12 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -131,22 +131,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test" title="simpleTests.StoreTest" hash-for-method="createOrder">createOrder</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test" title="simpleTests.PetTests" hash-for-method="getPets">getPets</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Test" title="simpleTests.UserTests" hash-for-method="login">login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test" title="simpleTests.PetTests" hash-for-method="simplePet">simplePet</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -156,22 +141,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test" title="simpleTests.PetTests" hash-for-method="updatePet">updatePet</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test" title="simpleTests.PetTests" hash-for-method="updatePetStatus">updatePetStatus</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Test" title="simpleTests.UserTests" hash-for-method="updateUser">updateUser</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test" title="simpleTests.PetTests" hash-for-method="uploadPetPhoto">uploadPetPhoto</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Test -->
@@ -202,7 +172,10 @@
 	at business.TestBO$AjcClosure1.run(TestBO.java:1)
 	at io.qameta.allure.aspects.StepsAspects.step(StepsAspects.java:46)
 	at business.TestBO.callNonExistentFunction(TestBO.java:25)
-	at simpleTests.FallTest.nonExistFunctionFailTest(FallTest.java:32)
+	at simpleTests.FallTest.nonExistFunctionFailTest(FallTest.java:26)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
 Caused by: java.lang.AssertionError: 1 expectation failed.
 Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;404&gt;.
 
@@ -211,7 +184,7 @@ Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;404&g
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
 	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$5.call(Unknown Source)
 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
@@ -230,8 +203,8 @@ Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;404&g
 	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
 	at assertions.AssertStatusCode.assertStatusCodeIsOk(AssertStatusCode.java:11)
 	at business.TestBO.callNonExistentFunction_aroundBody0(TestBO.java:27)
-	... 33 more
-... Removed 39 stack frames
+	... 18 more
+... Removed 21 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Call non-exist function)                  </em>
@@ -239,6 +212,23 @@ Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;404&g
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Test-class-failed -->
+          <div class="suite-Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">simpleTests.StoreTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkInventory">
+                  </a> <!-- checkInventory -->
+                  <span class="method-name">checkInventory</span>
+                  <em>
+(Get store inventory)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test-class-passed -->
           <div class="suite-Test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -300,85 +290,6 @@ Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;404&g
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Test-class-passed -->
-          <div class="suite-Test-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">simpleTests.PetTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getPets">
-                  </a> <!-- getPets -->
-                  <span class="method-name">getPets</span>
-                  <em>
-(Get available pets)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="simplePet">
-                  </a> <!-- simplePet -->
-                  <span class="method-name">simplePet</span>
-                  <em>
-(Create pet and delete it)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="updatePet">
-                  </a> <!-- updatePet -->
-                  <span class="method-name">updatePet</span>
-                  <em>
-(Create pet and update its name and tags)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="updatePetStatus">
-                  </a> <!-- updatePetStatus -->
-                  <span class="method-name">updatePetStatus</span>
-                  <em>
-(Create pet and update his status)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="uploadPetPhoto">
-                  </a> <!-- uploadPetPhoto -->
-                  <span class="method-name">uploadPetPhoto</span>
-                  <em>
-(Create pet and upload image to it)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test-class-passed -->
-          <div class="suite-Test-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">simpleTests.StoreTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkInventory">
-                  </a> <!-- checkInventory -->
-                  <span class="method-name">checkInventory</span>
-                  <em>
-(Get store inventory)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="createOrder">
-                  </a> <!-- createOrder -->
-                  <span class="method-name">createOrder</span>
-                  <em>
-(Create order and delete it)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test-class-passed -->
         </div> <!-- panel Test -->
         <div panel-name="test-xml-Test" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -389,7 +300,7 @@ Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;404&g
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;-1&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
-  &lt;test verbose=&quot;0&quot; name=&quot;All tests&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; verbose=&quot;0&quot; name=&quot;All tests&quot; parallel=&quot;methods&quot;&gt;
     &lt;packages&gt;
       &lt;package name=&quot;simpleTests&quot;/&gt;
     &lt;/packages&gt;
@@ -439,64 +350,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(13);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getPets')
-data.setCell(0, 2, 'simpleTests.PetTests')
-data.setCell(0, 3, 20053);
+data.setCell(0, 1, 'createNewUsersWithList')
+data.setCell(0, 2, 'simpleTests.UsersTest')
+data.setCell(0, 3, 6458);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'createNewUsersWithArray')
 data.setCell(1, 2, 'simpleTests.UsersTest')
-data.setCell(1, 3, 8310);
+data.setCell(1, 3, 5388);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'createNewUsersWithList')
-data.setCell(2, 2, 'simpleTests.UsersTest')
-data.setCell(2, 3, 6665);
+data.setCell(2, 1, 'updateUser')
+data.setCell(2, 2, 'simpleTests.UserTests')
+data.setCell(2, 3, 3465);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'updateUser')
+data.setCell(3, 1, 'login')
 data.setCell(3, 2, 'simpleTests.UserTests')
-data.setCell(3, 3, 3483);
+data.setCell(3, 3, 2565);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'updatePetStatus')
-data.setCell(4, 2, 'simpleTests.PetTests')
-data.setCell(4, 3, 3448);
+data.setCell(4, 1, 'simpleUser')
+data.setCell(4, 2, 'simpleTests.UserTests')
+data.setCell(4, 3, 2355);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'updatePet')
-data.setCell(5, 2, 'simpleTests.PetTests')
-data.setCell(5, 3, 3191);
+data.setCell(5, 1, 'checkInventory')
+data.setCell(5, 2, 'simpleTests.StoreTest')
+data.setCell(5, 3, 2273);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'login')
-data.setCell(6, 2, 'simpleTests.UserTests')
-data.setCell(6, 3, 2690);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'uploadPetPhoto')
-data.setCell(7, 2, 'simpleTests.PetTests')
-data.setCell(7, 3, 2504);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'createOrder')
-data.setCell(8, 2, 'simpleTests.StoreTest')
-data.setCell(8, 3, 2288);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'simpleUser')
-data.setCell(9, 2, 'simpleTests.UserTests')
-data.setCell(9, 3, 2157);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'simplePet')
-data.setCell(10, 2, 'simpleTests.PetTests')
-data.setCell(10, 3, 1804);
-data.setCell(11, 0, 11)
-data.setCell(11, 1, 'nonExistFunctionFailTest')
-data.setCell(11, 2, 'simpleTests.FallTest')
-data.setCell(11, 3, 1485);
-data.setCell(12, 0, 12)
-data.setCell(12, 1, 'checkInventory')
-data.setCell(12, 2, 'simpleTests.StoreTest')
-data.setCell(12, 3, 633);
+data.setCell(6, 1, 'nonExistFunctionFailTest')
+data.setCell(6, 2, 'simpleTests.FallTest')
+data.setCell(6, 3, 1265);
 window.suiteTableData['Test']= { tableData: data, tableDiv: 'times-div-Test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 58 seconds</span>
+              <span class="suite-total-time">Total running time: 23 seconds</span>
               <div id="times-div-Test">
               </div> <!-- times-div-Test -->
             </div> <!-- times-div -->
@@ -527,111 +414,88 @@ return data;
                 <span class="method-name">setData</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">nonExistFunctionFailTest</span>
-                <span class="method-start">871 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">simpleTests.PetTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setData</span>
-                <span class="method-start">2406 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getPets</span>
-                <span class="method-start">2490 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setData</span>
-                <span class="method-start">22596 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">simplePet</span>
-                <span class="method-start">22596 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setData</span>
-                <span class="method-start">24400 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">updatePet</span>
-                <span class="method-start">24415 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setData</span>
-                <span class="method-start">27606 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">updatePetStatus</span>
-                <span class="method-start">27622 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setData</span>
-                <span class="method-start">31086 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">uploadPetPhoto</span>
-                <span class="method-start">31103 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">simpleTests.StoreTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">checkInventory</span>
-                <span class="method-start">33610 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">simpleTests.PetTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">simplePet</span>
+                <span class="method-start">855 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">simpleTests.FallTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">nonExistFunctionFailTest</span>
+                <span class="method-start">855 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">simpleTests.StoreTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">createOrder</span>
-                <span class="method-start">34259 ms</span>
+                <span class="method-start">2173 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">simpleTests.UsersTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">createUsers</span>
-                <span class="method-start">36563 ms</span>
+                <span class="method-start">2289 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createNewUsersWithArray</span>
-                <span class="method-start">36563 ms</span>
+                <span class="method-start">2289 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">createUsers</span>
-                <span class="method-start">44873 ms</span>
+                <span class="method-start">3621 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createNewUsersWithList</span>
-                <span class="method-start">44889 ms</span>
+                <span class="method-start">3621 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">simpleTests.UserTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">createNewUser</span>
-                <span class="method-start">51569 ms</span>
+                <span class="method-start">5143 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">51585 ms</span>
+                <span class="method-start">5159 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">createNewUser</span>
-                <span class="method-start">54275 ms</span>
+                <span class="method-start">7693 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">simpleUser</span>
-                <span class="method-start">54290 ms</span>
+                <span class="method-start">7693 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">createNewUser</span>
-                <span class="method-start">56448 ms</span>
+                <span class="method-start">7742 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">updateUser</span>
-                <span class="method-start">56448 ms</span>
+                <span class="method-start">7745 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

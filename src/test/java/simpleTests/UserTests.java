@@ -12,26 +12,31 @@ import model.user.User;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import static data.RandomGenerator.randomString;
 
 @Feature("User")
 @LogAppender(Appenders.User)
 public class UserTests extends BaseTest {
-    private User user;
-    private UserBO userBO;
+    private Map<Long, UserBO> userBOs = new HashMap<>();
+    // private User user;
+    //  private UserBO userBO;
 
     @BeforeMethod
     public void createNewUser() {
-        this.user = UserGenerator.testUser();
-        this.userBO = new UserBO(user);
+        User user = UserGenerator.testUser();
+        this.userBOs.put(Thread.currentThread().getId(), new UserBO(user));
+        // this.userBO = new UserBO(user);
     }
 
     @Severity(SeverityLevel.BLOCKER)
     @Story("Operations with user")
     @Test(testName = "create and delete user", description = "Create user and delete him")
     public void simpleUser() {
-        userBO.createUser();
-        userBO.deleteUser();
+        userBOs.get(Thread.currentThread().getId()).createUser();
+        userBOs.get(Thread.currentThread().getId()).deleteUser();
 
     }
 
@@ -39,22 +44,23 @@ public class UserTests extends BaseTest {
     @Story("Operations with user")
     @Test(testName = "login and logout", description = "Login and logout to created user")
     public void login() {
-        userBO.createUser();
-        userBO.logIn();
-        userBO.logOut();
-        userBO.deleteUser();
+        userBOs.get(Thread.currentThread().getId()).createUser();
+        userBOs.get(Thread.currentThread().getId()).logIn();
+        userBOs.get(Thread.currentThread().getId()).logOut();
+        userBOs.get(Thread.currentThread().getId()).deleteUser();
     }
 
     @Story("Operations with user")
     @Test(testName = "update user", description = "Update user name and phone")
     public void updateUser() {
-        userBO.createUser();
-        userBO.logIn();
-        user.setPhone(randomString());
-        user.setLastName(randomString());
-        userBO.updateUser(user);
-        userBO.logOut();
-        userBO.deleteUser();
+        userBOs.get(Thread.currentThread().getId()).createUser();
+        userBOs.get(Thread.currentThread().getId()).logIn();
+        User newUser = userBOs.get(Thread.currentThread().getId()).getUser();
+        newUser.setPhone(randomString());
+        newUser.setLastName(randomString());
+        userBOs.get(Thread.currentThread().getId()).updateUser(newUser);
+        userBOs.get(Thread.currentThread().getId()).logOut();
+        userBOs.get(Thread.currentThread().getId()).deleteUser();
     }
 
 }

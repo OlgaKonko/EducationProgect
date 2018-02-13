@@ -6,7 +6,9 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintStream;
 
-import static constants.Appenders.changeAppender;
+import static constants.LoggerLayout.AssureLayout;
+import static constants.LoggerLayout.GeneralLayout;
+import static logger.LayoutManager.changeLayout;
 
 public class ResponsePrintStream {
     Logger log;
@@ -15,7 +17,8 @@ public class ResponsePrintStream {
 
     public ResponsePrintStream(Logger logger) {
         super();
-        log = Logger.getLogger(changeAppender(logger.getName()));
+        log = logger;
+        //log = Logger.getLogger(changeAppender(logger.getName()));
     }
 
     public PrintStream getPrintStream() {
@@ -43,9 +46,12 @@ public class ResponsePrintStream {
 
 
     private void writeLogMessage(StringBuilder myStringBuilder) {
+        //changeLayout(log, AssureLayout);
+
         logMessage = myStringBuilder.toString().replaceAll("\n$|\r\n$", "");
         if (!logMessage.isEmpty()) {
             log.info("Response body: \n" + logMessage);
         }
+        //changeLayout(log, GeneralLayout);
     }
 }

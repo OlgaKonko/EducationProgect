@@ -1,16 +1,14 @@
 package logger;
 
-import org.apache.log4j.Appender;
 import org.apache.log4j.Logger;
-import org.apache.log4j.PatternLayout;
-import org.apache.log4j.RollingFileAppender;
 
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintStream;
-import java.util.Enumeration;
 
-import static constants.Appenders.changeAppender;
+import static constants.LoggerLayout.AssureLayout;
+import static constants.LoggerLayout.GeneralLayout;
+import static logger.LayoutManager.changeLayout;
 
 public class RequestPrintStream {
     Logger log;
@@ -19,8 +17,8 @@ public class RequestPrintStream {
 
     public RequestPrintStream(Logger logger) throws IOException {
         super();
-        //log = logger;
-        log = Logger.getLogger(changeAppender(logger.getName()));
+        log = logger;
+        // log = Logger.getLogger(changeAppender(logger.getName()));
 
     }
 
@@ -50,9 +48,7 @@ public class RequestPrintStream {
 
     private void writeLogMessage(StringBuilder myStringBuilder) {
 
-     /*   Enumeration appenders = log.getAllAppenders();
-        while (appenders.hasMoreElements()) {
-            ((Appender) appenders.nextElement()).setLayout(new PatternLayout("%m%n"));}*/
+        //changeLayout(log, AssureLayout);
         logMessage = myStringBuilder.toString().replaceAll("\n$|\r\n$", " ");
         if (!logMessage.isEmpty() && !logMessage.endsWith(">") && !logMessage.endsWith("}")) {
             logMessage = logMessage.substring(0, logMessage.length() - 1);
@@ -61,8 +57,6 @@ public class RequestPrintStream {
 
             log.info(logMessage);
         }
-      /*  appenders = log.getAllAppenders();
-        while (appenders.hasMoreElements()) {
-            ((Appender) appenders.nextElement()).setLayout(new PatternLayout("%d{ABSOLUTE} %5p %C{1}:%M:%L:%t - %m%n"));}*/
+        //  changeLayout(log, GeneralLayout);
     }
 }
