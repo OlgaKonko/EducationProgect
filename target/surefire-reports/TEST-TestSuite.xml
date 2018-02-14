@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="12.459" tests="7" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="13.664" tests="9" errors="0" skipped="0" failures="1">
   <properties>
     <property name="idea.version" value="2017.2.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -61,7 +61,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase name="nonExistFunctionFailTest" classname="simpleTests.FallTest" time="1.318">
+  <testcase name="nonExistFunctionFailTest" classname="simpleTests.FallTest" time="1.387">
     <failure message="get non-existent function" type="exeptions.BaseException"><![CDATA[exeptions.BaseException: get non-existent function
 	at simpleTests.FallTest.nonExistFunctionFailTest(FallTest.java:26)
 Caused by: java.lang.AssertionError: 
@@ -72,52 +72,55 @@ Expected status code <200> doesn't match actual status code <404>.
 ]]></failure>
     <system-out><![CDATA[!!! 0main
 !!! 1 TestNG-test=All tests-1 simpleTests.FallTest
-!!! 1 TestNG-test=All tests-3 simpleTests.StoreTest
 !!! 1 TestNG-test=All tests-2 simpleTests.PetTests
+!!! 1 TestNG-test=All tests-3 simpleTests.StoreTest
 !!! 3 13
-17:57:57,119  INFO LogListener:onTestStart:60:TestNG-test=All tests-3 - start checkInventory test
+!!! a3a add appender allureAppendercheckInventoryThread13 to logger storeLog
+15:00:55,364  INFO LogListener:onTestStart:64:TestNG-test=All tests-3 - start checkInventory test
 !!! 2 TestNG-test=All tests-2
 !!! 2 TestNG-test=All tests-1
 !!! 2 TestNG-test=All tests-3
-17:57:57,836  INFO PetClient:<init>:22:TestNG-test=All tests-2 - connecting to http://petstore.swagger.io/v2/user
-17:57:57,836  INFO StoreClient:<init>:16:TestNG-test=All tests-3 - connecting to http://petstore.swagger.io/v2/store
-17:57:57,836  INFO TestClient:<init>:17:TestNG-test=All tests-1 - connecting to http://petstore.swagger.io/v2/test
-17:57:57,874  INFO StoreBO:getInventory_aroundBody0:26:TestNG-test=All tests-3 - start getting inventory
-17:57:57,874  INFO StoreClient:getInventory:21:TestNG-test=All tests-3 - send request to get inventory
+15:00:56,118  INFO TestClient:<init>:17:TestNG-test=All tests-1 - connecting to http://petstore.swagger.io/v2/test
+15:00:56,118  INFO PetClient:<init>:22:TestNG-test=All tests-2 - connecting to http://petstore.swagger.io/v2/user
+15:00:56,118  INFO StoreClient:<init>:16:TestNG-test=All tests-3 - connecting to http://petstore.swagger.io/v2/store
+15:00:56,165  INFO StoreBO:getInventory_aroundBody0:26:TestNG-test=All tests-3 - start getting inventory
+15:00:56,165  INFO StoreClient:getInventory:21:TestNG-test=All tests-3 - send request to get inventory
 !!! 4 12
+!!! 3 12
 !!! 4 11
 !!! 3 11
-!!! 3 12
-17:57:57,974  INFO LogListener:onTestStart:60:TestNG-test=All tests-2 - start simplePet test
-17:57:57,974  INFO LogListener:onTestStart:60:TestNG-test=All tests-1 - start nonExistFunctionFailTest test
+!!! a3a add appender allureAppendersimplePetThread12 to logger storeLog
+15:00:56,250  INFO LogListener:onTestStart:64:TestNG-test=All tests-2 - start simplePet test
+!!! a3a add appender allureAppendernonExistFunctionFailTestThread11 to logger storeLog
+15:00:56,250  INFO LogListener:onTestStart:64:TestNG-test=All tests-1 - start nonExistFunctionFailTest test
 !!! 2 TestNG-test=All tests-2
 !!! 2 TestNG-test=All tests-1
-17:57:57,974  INFO TestBO:callNonExistentFunction_aroundBody0:25:TestNG-test=All tests-1 - start calling non-existent function
-17:57:57,974  INFO TestClient:nonExistentFunction:22:TestNG-test=All tests-1 - send request non-existent function
-17:57:57,974  INFO PetBO:createPet_aroundBody0:33:TestNG-test=All tests-2 - start creating pet, pet id : 81
-17:57:57,990  INFO PetBO:isPetExist_aroundBody4:70:TestNG-test=All tests-2 - start checking pet, pet id : 81
-17:57:57,990  INFO PetClient:getPet:48:TestNG-test=All tests-2 - send request to get pet
-17:57:58,222  INFO RequestPrintStream:writeLogMessage:58:TestNG-test=All tests-3 - Request path:	http://petstore.swagger.io/v2/store/inventory
-17:57:58,222  INFO RequestPrintStream:writeLogMessage:58:TestNG-test=All tests-2 - Request path:	http://petstore.swagger.io/v2/pet/81
-17:57:58,222  INFO RequestPrintStream:writeLogMessage:58:TestNG-test=All tests-1 - Request path:	http://petstore.swagger.io/v2/test
-17:57:58,222  INFO RequestPrintStream:writeLogMessage:58:TestNG-test=All tests-3 - Request method:	GET
-17:57:58,222  INFO RequestPrintStream:writeLogMessage:58:TestNG-test=All tests-2 - Request method:	GET
-17:57:58,222  INFO RequestPrintStream:writeLogMessage:58:TestNG-test=All tests-1 - Request method:	GET
-17:57:59,176  INFO ResponsePrintStream:writeLogMessage:53:TestNG-test=All tests-2 - Response body: 
-{
-    "code": 1,
-    "type": "error",
-    "message": "Pet not found"
-}
-17:57:59,176  INFO ResponsePrintStream:writeLogMessage:53:TestNG-test=All tests-1 - Response body: 
+15:00:56,250  INFO TestBO:callNonExistentFunction_aroundBody0:25:TestNG-test=All tests-1 - start calling non-existent function
+15:00:56,250  INFO TestClient:nonExistentFunction:22:TestNG-test=All tests-1 - send request non-existent function
+15:00:56,250  INFO PetBO:createPet_aroundBody0:33:TestNG-test=All tests-2 - start creating pet, pet id : 84
+15:00:56,250  INFO PetBO:isPetExist_aroundBody4:70:TestNG-test=All tests-2 - start checking pet, pet id : 84
+15:00:56,250  INFO PetClient:getPet:48:TestNG-test=All tests-2 - send request to get pet
+Request path:	http://petstore.swagger.io/v2/pet/84
+15:00:56,466  INFO RequestPrintStream:writeLogMessage:58:TestNG-test=All tests-3 - Request path:	http://petstore.swagger.io/v2/store/inventory
+15:00:56,466  INFO RequestPrintStream:writeLogMessage:58:TestNG-test=All tests-1 - Request path:	http://petstore.swagger.io/v2/test
+Request method:	GET
+Request method:	GET
+Request method:	GET
+Response body: 
 {
     "code": 404,
     "type": "unknown",
     "message": "null for uri: http://petstore.swagger.io/v2/test"
 }
-17:57:59,176  INFO PetBO:isPetExist_aroundBody4:76:TestNG-test=All tests-2 - pet with id :81 is not exist
-17:57:59,176  INFO PetClient:createPet:27:TestNG-test=All tests-2 - send request to create pet
-17:57:59,223  INFO ResponsePrintStream:writeLogMessage:53:TestNG-test=All tests-3 - Response body: 
+15:00:57,505  INFO ResponsePrintStream:writeLogMessage:53:TestNG-test=All tests-2 - Response body: 
+{
+    "code": 1,
+    "type": "error",
+    "message": "Pet not found"
+}
+15:00:57,505  INFO PetBO:isPetExist_aroundBody4:76:TestNG-test=All tests-2 - pet with id :84 is not exist
+15:00:57,521  INFO PetClient:createPet:27:TestNG-test=All tests-2 - send request to create pet
+Response body: 
 {
     "available%')) RLIKE SLEEP(4) AND (('%'='": 1,
     "available') PROCEDURE ANALYSE(EXTRACTVALUE(5426,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x654b6b4b))))),1)#": 1,
@@ -125,6 +128,7 @@ Expected status code <200> doesn't match actual status code <404>.
     "available`) WHERE 3578=3578 RLIKE SLEEP(4)-- tLbf": 1,
     "status de test": 2,
     "unavailable": 12,
+    "Duis enim quis": 1,
     "'--": 1,
     "available` WHERE 1179=1179 AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-- pjBw": 1,
     "available' WAITFOR DELAY '0:0:4'-- MrOc": 1,
@@ -132,6 +136,7 @@ Expected status code <200> doesn't match actual status code <404>.
     "available,(SELECT (CASE WHEN (8635=8635) THEN (SELECT BENCHMARK(4000000,MD5(0x74586779))) ELSE 8635*(SELECT 8635 FROM mysql.db) END))": 1,
     "test? UNION select 1, @@version, 1, 1;?": 1,
     "available'||(SELECT 'UfOH' WHERE 1124=1124 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP))||'": 1,
+    "sdfsdf": 1,
     "available;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3": 1,
     "available' RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
     "available WHERE 5424=5424 AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-- zOgJ": 1,
@@ -145,6 +150,7 @@ Expected status code <200> doesn't match actual status code <404>.
     "available'||(SELECT 'leRN' WHERE 7766=7766 AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
     "1'": 1,
     "available\" RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
+    "34234234": 2,
     "available'||(SELECT 'VgVA' FROM DUAL WHERE 9167=9167;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3)||'": 1,
     "available') RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
     "(SELECT (CASE WHEN (7343=7343) THEN DBMS_PIPE.RECEIVE_MESSAGE(CHR(98)||CHR(73)||CHR(98)||CHR(103),4) ELSE 7343 END) FROM DUAL)": 1,
@@ -159,11 +165,12 @@ Expected status code <200> doesn't match actual status code <404>.
     "available) RLIKE SLEEP(4)#": 1,
     "available' WHERE 6039=6039 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)-- FiUP": 1,
     "available AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)# DENYALLtjqz": 1,
-    "0": 1,
+    "0": 5,
     "1": 3,
     "(SELECT (CASE WHEN (8249=8249) THEN (SELECT COUNT(*) FROM sysusers AS sys1,sysusers AS sys2,sysusers AS sys3,sysusers AS sys4,sysusers AS sys5,sysusers AS sys6,sysusers AS sys7) ELSE 8249 END))": 1,
     "123": 2,
     "available\" RLIKE SLEEP(4) AND \"DENYALLqLwb\"=\"DENYALLqLwb": 1,
+    "4": 1,
     "available' AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-- QRcG": 1,
     "reserved": 1,
     "available'+(SELECT ntuv WHERE 1027=1027 RLIKE SLEEP(4))+'": 1,
@@ -189,6 +196,7 @@ Expected status code <200> doesn't match actual status code <404>.
     "available%')) RLIKE SLEEP(4)#": 1,
     "S": 15,
     "2324": 1,
+    "1234": 1,
     "available'+(SELECT bwsK WHERE 2907=2907 WAITFOR DELAY '0:0:4'--": 1,
     "taken": 1,
     "available'+(SELECT emgY WHERE 5512=5512 WAITFOR DELAY '0:0:4')+'": 1,
@@ -225,14 +233,14 @@ Expected status code <200> doesn't match actual status code <404>.
     "45": 1,
     "avaulable": 5,
     "available'||(SELECT 'FEGB' WHERE 6912=6912 RLIKE SLEEP(4)#": 1,
-    "available": 12432,
+    "available": 12800,
     "qwerty": 1,
     "available%')) WAITFOR DELAY '0:0:4' AND (('%'='": 1,
     "available RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
     "test?%20UNION%20select%201,%20@@version,%201,%201;?": 1,
-    "available'+(SELECT 'nCau' WHERE 1275=1275;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYS
-17:57:59,223  INFO ResponsePrintStream:writeLogMessage:53:TestNG-test=All tests-3 - Response body: 
-TABLES AS T2,SYSIBM.SYSTABLES AS T3)+'": 1,
+    "availabl
+Response body: 
+e'+(SELECT 'nCau' WHERE 1275=1275;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3)+'": 1,
     "available')) AS DENYALLIqya WHERE 5175=5175 WAITFOR DELAY '0:0:4'-- hwEW": 1,
     "soldX": 2,
     "available') RLIKE SLEEP(4) AND ('DENYALLLdZF' LIKE 'DENYALLLdZF": 1,
@@ -270,12 +278,12 @@ TABLES AS T2,SYSIBM.SYSTABLES AS T3)+'": 1,
     "jhghjgjgj": 1,
     "available)) AS DENYALLOMCt WHERE 6528=6528 WAITFOR DELAY '0:0:4'--": 1,
     "available) WHERE 1077=1077 RLIKE SLEEP(4)-- RBqx": 1,
-    "string": 19016,
+    "string": 19563,
     "available\";SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3 AND \"DENYALLeOQj\"=\"DENYALLeOQj": 1,
     "available` WHERE 4104=4104;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3-- kSQB": 1,
     "available'||(SELECT 'pSmH' FROM DUAL WHERE 6152=6152 WAITFOR DELAY '0:0:4'--": 1,
     "boom": 1,
-    "pending": 312,
+    "pending": 322,
     "available;pending;sold": 1,
     "available') WHERE 5169=5169 AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-- MrYR": 1,
     "available') AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
@@ -311,7 +319,6 @@ TABLES AS T2,SYSIBM.SYSTABLES AS T3)+'": 1,
     "placed": 2,
     "(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)": 1,
     "available'+(SELECT FXHV WHERE 5601=5601 AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR))+'": 1,
-    "dolor paria": 1,
     "avaliable": 2,
     "available' IN BOOLEAN MODE) RLIKE SLEEP(4)#": 1,
     "Available": 2,
@@ -329,9 +336,7 @@ TABLES AS T2,SYSIBM.SYSTABLES AS T3)+'": 1,
     "availables": 3,
     "available') WHERE 8126=8126;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3-- GcEp": 1,
     "available'+(SELECT oLSu WHERE 8735=8735;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3)+'": 1,
-    "velit": 1,
     "available');SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3 AND ('DENYALLUaFP' LIKE 'DENYALLUaFP": 1,
-    "voluptate commo": 1,
     "available')) AS DENYALLMCXS WHERE 7985=7985 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)-- BnKg": 1,
     "available' WHERE 6887=6887;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3-- VlBv": 1,
     "available%')) PROCEDURE ANALYSE(EXTRACTVALUE(2199,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x576f6658))))),1) AND (('%'='": 1,
@@ -340,9 +345,9 @@ TABLES AS T2,SYSIBM.SYSTABLES AS T3)+'": 1,
     "available RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)# DENYALLrqqb": 1,
     "available) WHERE 8867=8867 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
     "available) WAITFOR DELAY '0:0:4'--": 1,
-    "available'||(SELECT 'hWsk' FROM DUAL WHERE 5341=5341 RL
-17:57:59,223  INFO ResponsePrintStream:writeLogMessage:53:TestNG-test=All tests-3 - Response body: 
-IKE SLEEP(4))||'": 1,
+    "available'||(SELECT 'hWsk' FROM
+Response body: 
+ DUAL WHERE 5341=5341 RLIKE SLEEP(4))||'": 1,
     "available` WHERE 1485=1485 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)-- XdoU": 1,
     "avai": 1,
     "available) WHERE 6590=6590;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3-- iLgk": 1,
@@ -356,7 +361,7 @@ IKE SLEEP(4))||'": 1,
     "available')) AS DENYALLRKra WHERE 7493=7493 RLIKE SLEEP(4)#": 1,
     "available' AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR) AND 'DENYALLkmNb' LIKE 'DENYALLkmNb": 1,
     "available RLIKE SLEEP(4)": 1,
-    "status": 156,
+    "status": 160,
     "available WHERE 1777=1777 RLIKE SLEEP(4)#": 1,
     "available\") AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR) AND (\"DENYALLoZzm\"=\"DENYALLoZzm": 1,
     "available'||(SELECT 'evYN' FROM DUAL WHERE 2974=2974 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
@@ -367,7 +372,6 @@ IKE SLEEP(4))||'": 1,
     "available WAITFOR DELAY '0:0:4'--": 1,
     "(CASE WHEN (7812=7812) THEN (SELECT BENCHMARK(4000000,MD5(0x42515842))) ELSE 7812)": 1,
     "available') RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP) AND ('DENYALLeCcy' LIKE 'DENYALLeCcy": 1,
-    "dolor pro": 1,
     "avadddele": 1,
     "available' WAITFOR DELAY '0:0:4' AND 'DENYALLUAwF' LIKE 'DENYALLUAwF": 1,
     "available' RLIKE SLEEP(4)#": 1,
@@ -399,6 +403,7 @@ IKE SLEEP(4))||'": 1,
     "available'+(SELECT 'FpBg' WHERE 4815=4815 RLIKE SLEEP(4)#": 1,
     "available PROCEDURE ANALYSE(EXTRACTVALUE(2199,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x576f6658))))),1)# DENYALLecGq": 1,
     "available\" AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR) AND \"DENYALLHJFK\"=\"DENYALLHJFK": 1,
+    "?????": 1,
     "available');SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3 AND ('DENYALLMAyN' LIKE 'DENYALLMAyN": 1,
     "available'+(SELECT JdYp WHERE 3688=3688 RLIKE SLEEP(4)#": 1,
     "xxx": 1,
@@ -413,8 +418,9 @@ IKE SLEEP(4))||'": 1,
     "available' WAITFOR DELAY '0:0:4'--": 1,
     "available`) WHERE 3589=3589 AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
     "Operated": 3,
-    "amet dolor U": 1,
+    "je moje": 1,
     "available',(SELECT (CASE WHEN (4591=4591) THEN SLEEP(4) ELSE 4591 END))-- qSdR": 1,
+    "afff": 1,
     "available PROCEDURE ANALYSE(EXTRACTVALUE(2199,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x576f6658))))),1)-- DWSN": 1,
     "available)) AS DENYALLsVSe WHERE 7540=7540 PROCEDURE ANALYSE(EXTRACTVALUE(5426,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x654b6b4b))))),1)#": 1,
     "available'||(SELECT 'uEyp' FROM DUAL WHERE 1352=1352 AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
@@ -454,9 +460,9 @@ IKE SLEEP(4))||'": 1,
     "available`) WHERE 2389=2389 AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-- VuKc": 1,
     "available WHERE 6898=6898 WAITFOR DELAY '0:0:4'-- IwXf": 1,
     "nonsense": 2,
-    "available'||(SELECT 'Ntdi' FROM DUAL WHERE 6563=6563;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTA
-17:57:59,223  INFO ResponsePrintStream:writeLogMessage:53:TestNG-test=All tests-3 - Response body: 
-BLES AS T3)||'": 1,
+    "available'||(SELECT 'Ntdi' FROM DUAL WHERE 6563=6563;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIB
+Response body: 
+M.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3)||'": 1,
     "1/0": 1,
     "' and 1=2 --": 1,
     "available' IN BOOLEAN MODE) WAITFOR DELAY '0:0:4'#": 1,
@@ -493,22 +499,26 @@ BLES AS T3)||'": 1,
     "available' WHERE 6833=6833 RLIKE SLEEP(4)-- vBWx": 1,
     "available) WHERE 2425=2425 WAITFOR DELAY '0:0:4'--": 1
 }
-17:57:59,223  INFO StoreBO:getInventory_aroundBody0:29:TestNG-test=All tests-3 - inventory has been gotten
-17:57:59,239 ERROR TestBO:callNonExistentFunction_aroundBody0:31:TestNG-test=All tests-1 - non-existent function can't be got
+15:00:57,552  INFO StoreBO:getInventory_aroundBody0:29:TestNG-test=All tests-3 - inventory has been gotten
+15:00:57,568 ERROR TestBO:callNonExistentFunction_aroundBody0:31:TestNG-test=All tests-1 - non-existent function can't be got
 !!! 4 11
 !!! 5f11
-17:57:59,239  INFO LogListener:onTestFailure:80:TestNG-test=All tests-1 - nonExistFunctionFailTest finish and fail
-!!!! target/logs/nonExistFunctionFailTestThread11.log
+!!! a5a try to delete appender allureAppendernonExistFunctionFailTestThread11 from logger storeLog
+!!! a5b appender allureAppendernonExistFunctionFailTestThread11 from logger storeLog is closed 
+!!!! target/logs/allure/nonExistFunctionFailTestThread11.log
+!!! 5fend11
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="checkInventory" classname="simpleTests.StoreTest" time="0.1"/>
-  <testcase name="createNewUsersWithArray" classname="simpleTests.UsersTest" time="2.534"/>
-  <testcase name="login" classname="simpleTests.UserTests" time="0.033"/>
-  <testcase name="simpleUser" classname="simpleTests.UserTests" time="2.318"/>
-  <testcase name="createNewUsersWithList" classname="simpleTests.UsersTest" time="2.349"/>
-  <testcase name="updateUser" classname="simpleTests.UserTests" time="3.48"/>
+  <testcase name="checkInventory" classname="simpleTests.StoreTest" time="0.116"/>
+  <testcase name="simplePet" classname="simpleTests.PetTests" time="1.316"/>
+  <testcase name="createOrder" classname="simpleTests.StoreTest" time="0.201"/>
+  <testcase name="login" classname="simpleTests.UserTests" time="2.619"/>
+  <testcase name="simpleUser" classname="simpleTests.UserTests" time="1.887"/>
+  <testcase name="createNewUsersWithArray" classname="simpleTests.UsersTest" time="0"/>
+  <testcase name="createNewUsersWithList" classname="simpleTests.UsersTest" time="0.301"/>
+  <testcase name="updateUser" classname="simpleTests.UserTests" time="3.916"/>
 </testsuite>

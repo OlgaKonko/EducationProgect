@@ -17,6 +17,7 @@ public class LogListener implements ITestListener, IClassListener, IInvokedMetho
 
     @Override
     public void onStart(ITestContext context) {
+        //  this.log = Logger.getRootLogger();
         System.out.println("!!! 0" + Thread.currentThread().getName());
         try {
             Class invokedClass = context.getAllTestMethods()[0].getRealClass();
@@ -56,7 +57,8 @@ public class LogListener implements ITestListener, IClassListener, IInvokedMetho
         allureAppender.setName("allureAppender" + result.getName() + "Thread" + Thread.currentThread().getId());
         ThreadLoggingFilter threadLogFilter = new ThreadLoggingFilter(Thread.currentThread().getName());
         allureAppender.addFilter(threadLogFilter);
-        log.addAppender(allureAppender);
+        Logger.getRootLogger().addAppender(allureAppender);
+        System.out.println("!!! a3a add appender " + allureAppender.getName() + " to logger " + log.getName());
         log.info("start " + result.getName() + " test");
     }
 
@@ -69,7 +71,12 @@ public class LogListener implements ITestListener, IClassListener, IInvokedMetho
     public void onTestSuccess(ITestResult iTestResult) {
         System.out.println("!!! 5s " + Thread.currentThread().getId());
         log.info(iTestResult.getName() + " finish and success");
-        log.getAppender("allureAppender" + iTestResult.getName() + "Thread" + Thread.currentThread().getId()).close();
+        String appenderName = "allureAppender" + iTestResult.getName() + "Thread" + Thread.currentThread().getId();
+        RollingFileAppender appender = (RollingFileAppender) Logger.getRootLogger().getAppender(appenderName);
+        System.out.println("!!! a5a try to delete appender " + appender.getName() + " from logger " + log.getName());
+        appender.close();
+        Logger.getRootLogger().removeAppender("allureAppender" + iTestResult.getName() + "Thread" + Thread.currentThread().getId());
+
         attachTextLog(getFileName(iTestResult));
         //  log.removeAppender("allureAppender" + iTestResult.getName() + "Thread" + Thread.currentThread().getId());
     }
@@ -77,27 +84,33 @@ public class LogListener implements ITestListener, IClassListener, IInvokedMetho
     @Override
     public void onTestFailure(ITestResult iTestResult) {
         System.out.println("!!! 5f" + Thread.currentThread().getId());
-        log.info(iTestResult.getName() + " finish and fail");
-        log.getAppender("allureAppender" + iTestResult.getName() + "Thread" + Thread.currentThread().getId()).close();
+        String appenderName = "allureAppender" + iTestResult.getName() + "Thread" + Thread.currentThread().getId();
+        RollingFileAppender appender = (RollingFileAppender) Logger.getRootLogger().getAppender(appenderName);
+        System.out.println("!!! a5a try to delete appender " + appender.getName() + " from logger " + log.getName());
+        appender.finalize();
+        System.out.println("!!! a5b appender " + appender.getName() + " from logger " + log.getName() + " is closed ");
+        Logger.getRootLogger().removeAppender("allureAppender" + iTestResult.getName() + "Thread" + Thread.currentThread().getId());
+
         attachTextLog(getFileName(iTestResult));
-        // log.removeAppender("allureAppender" + iTestResult.getName() + "Thread" + Thread.currentThread().getId());
+        //  log.removeAppender("allureAppender" + iTestResult.getName() + "Thread" + Thread.currentThread().getId());
+        System.out.println("!!! 5fend" + Thread.currentThread().getId());
     }
 
     @Override
     public void onTestSkipped(ITestResult result) {
         System.out.println("!!! 5sk" + Thread.currentThread().getId());
-        log.info(result.getName() + " skipped");
-        log.getAppender("allureAppender" + result.getName() + "Thread" + Thread.currentThread().getId()).close();
-        attachTextLog(getFileName(result));
+        // log.info(result.getName() + " skipped");
+        //log.getAppender("allureAppender" + result.getName() + "Thread" + Thread.currentThread().getId()).close();
+        // attachTextLog(getFileName(result));
         //  log.removeAppender("allureAppender" + result.getName() + "Thread" + Thread.currentThread().getId());
     }
 
     @Override
     public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
         System.out.println("!!! 5fs" + Thread.currentThread().getId());
-        log.info(result.getName() + " failed but within success percentage");
-        log.getAppender("allureAppender" + result.getName() + "Thread" + Thread.currentThread().getId()).close();
-        attachTextLog(getFileName(result));
+        //  log.info(result.getName() + " failed but within success percentage");
+        //  log.getAppender("allureAppender" + result.getName() + "Thread" + Thread.currentThread().getId()).close();
+        //  attachTextLog(getFileName(result));
         // log.removeAppender("allureAppender" + result.getName() + "Thread" + Thread.currentThread().getId());
 
     }
@@ -109,7 +122,12 @@ public class LogListener implements ITestListener, IClassListener, IInvokedMetho
     }
     @Override
     public void onFinish(ITestContext context) {
-        System.out.println("!!! 7" + Thread.currentThread().getId());
+        System.out.println("!!! 7" + Thread.currentThread().getName());
+        try {
+            FileUtils.deleteDirectory(new File("target/logs/allure/"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Attachment(value = "{0}", type = "text/plain")
@@ -130,6 +148,6 @@ public class LogListener implements ITestListener, IClassListener, IInvokedMetho
     }
 
     private String getFileName(ITestResult iTestResult) {
-        return "target/logs/" + iTestResult.getName() + "Thread" + Thread.currentThread().getId() + ".log";
+        return "target/logs/allure/" + iTestResult.getName() + "Thread" + Thread.currentThread().getId() + ".log";
     }
 }

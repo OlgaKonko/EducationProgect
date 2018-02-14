@@ -46,12 +46,12 @@ public class ResponsePrintStream {
 
 
     private void writeLogMessage(StringBuilder myStringBuilder) {
-        //changeLayout(log, AssureLayout);
+        changeLayout(log, AssureLayout);
 
         logMessage = myStringBuilder.toString().replaceAll("\n$|\r\n$", "");
         if (!logMessage.isEmpty()) {
             log.info("Response body: \n" + logMessage);
         }
-        //changeLayout(log, GeneralLayout);
+        changeLayout(log, GeneralLayout);
     }
 }

@@ -48,7 +48,7 @@ public class RequestPrintStream {
 
     private void writeLogMessage(StringBuilder myStringBuilder) {
 
-        //changeLayout(log, AssureLayout);
+        changeLayout(log, AssureLayout);
         logMessage = myStringBuilder.toString().replaceAll("\n$|\r\n$", " ");
         if (!logMessage.isEmpty() && !logMessage.endsWith(">") && !logMessage.endsWith("}")) {
             logMessage = logMessage.substring(0, logMessage.length() - 1);
@@ -57,6 +57,6 @@ public class RequestPrintStream {
 
             log.info(logMessage);
         }
-        //  changeLayout(log, GeneralLayout);
+        changeLayout(log, GeneralLayout);
     }
 }
