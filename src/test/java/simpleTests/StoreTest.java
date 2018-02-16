@@ -19,7 +19,7 @@ public class StoreTest extends BaseTest {
 
     @Severity(SeverityLevel.BLOCKER)
     @Story("Operations with orders")
-    @Test(testName = "create and delete order", description = "Create order and delete it")
+    @Test(groups = {"smoke"}, testName = "create and delete order", description = "Create order and delete it")
     public void createOrder() {
         Order order = OrderGenerator.testOrder();
         OrderBO orderBO = new OrderBO();

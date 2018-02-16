@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Test">
-                    <span>0 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods, 1 failed,   8 passed</span>
+                    <span class="method-stats">12 methods, 1 failed,  3 skipped,  8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -106,6 +106,30 @@
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Test -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Test" class="hide-methods skipped suite-Test"> (hide)</a> <!-- hide-methods skipped suite-Test -->
+                      <a href="#" panel-name="suite-Test" class="show-methods skipped suite-Test"> (show)</a> <!-- show-methods skipped suite-Test -->
+                    </span>
+                    <div class="method-list-content skipped suite-Test">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test" title="simpleTests.FallTest" hash-for-method="nonExistFunctionFailTest">nonExistFunctionFailTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test" title="simpleTests.FallTest" hash-for-method="nonExistFunctionFailTest">nonExistFunctionFailTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test" title="simpleTests.FallTest" hash-for-method="nonExistFunctionFailTest">nonExistFunctionFailTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Test -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -178,11 +202,95 @@
                   </a> <!-- nonExistFunctionFailTest -->
                   <span class="method-name">nonExistFunctionFailTest</span>
                   <div class="stack-trace">exeptions.BaseException: get non-existent function
-	at business.TestBO.callNonExistentFunction_aroundBody0(TestBO.java:32)
+	at business.TestBO.callNonExistentFunction_aroundBody0(TestBO.java:34)
 	at business.TestBO$AjcClosure1.run(TestBO.java:1)
 	at io.qameta.allure.aspects.StepsAspects.step(StepsAspects.java:46)
-	at business.TestBO.callNonExistentFunction(TestBO.java:25)
-	at simpleTests.FallTest.nonExistFunctionFailTest(FallTest.java:26)
+	at business.TestBO.callNonExistentFunction(TestBO.java:27)
+	at simpleTests.FallTest.nonExistFunctionFailTest(FallTest.java:25)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;404&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$5.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:760)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)
+	at com.jayway.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+	at assertions.AssertStatusCode.assertStatusCodeIsOk(AssertStatusCode.java:11)
+	at business.TestBO.callNonExistentFunction_aroundBody0(TestBO.java:29)
+	... 18 more
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Call non-exist function)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test-class-failed -->
+          <div class="suite-Test-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">simpleTests.FallTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="nonExistFunctionFailTest">
+                  </a> <!-- nonExistFunctionFailTest -->
+                  <span class="method-name">nonExistFunctionFailTest</span>
+                  <div class="stack-trace">exeptions.BaseException: get non-existent function
+	at business.TestBO.callNonExistentFunction_aroundBody0(TestBO.java:34)
+	at business.TestBO$AjcClosure1.run(TestBO.java:1)
+	at io.qameta.allure.aspects.StepsAspects.step(StepsAspects.java:46)
+	at business.TestBO.callNonExistentFunction(TestBO.java:27)
+	at simpleTests.FallTest.nonExistFunctionFailTest(FallTest.java:25)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;404&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$5.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:760)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)
+	at com.jayway.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+	at assertions.AssertStatusCode.assertStatusCodeIsOk(AssertStatusCode.java:11)
+	at business.TestBO.callNonExistentFunction_aroundBody0(TestBO.java:29)
+	... 18 more
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Call non-exist function)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="nonExistFunctionFailTest">
+                  </a> <!-- nonExistFunctionFailTest -->
+                  <span class="method-name">nonExistFunctionFailTest</span>
+                  <div class="stack-trace">exeptions.BaseException: get non-existent function
+	at business.TestBO.callNonExistentFunction_aroundBody0(TestBO.java:34)
+	at business.TestBO$AjcClosure1.run(TestBO.java:1)
+	at io.qameta.allure.aspects.StepsAspects.step(StepsAspects.java:46)
+	at business.TestBO.callNonExistentFunction(TestBO.java:27)
+	at simpleTests.FallTest.nonExistFunctionFailTest(FallTest.java:25)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
@@ -194,7 +302,10 @@ Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;404&g
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
 	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$6.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$5.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
 	at com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:760)
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
@@ -208,7 +319,45 @@ Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;404&g
 	at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
 	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
 	at assertions.AssertStatusCode.assertStatusCodeIsOk(AssertStatusCode.java:11)
-	at business.TestBO.callNonExistentFunction_aroundBody0(TestBO.java:27)
+	at business.TestBO.callNonExistentFunction_aroundBody0(TestBO.java:29)
+	... 18 more
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Call non-exist function)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="nonExistFunctionFailTest">
+                  </a> <!-- nonExistFunctionFailTest -->
+                  <span class="method-name">nonExistFunctionFailTest</span>
+                  <div class="stack-trace">exeptions.BaseException: get non-existent function
+	at business.TestBO.callNonExistentFunction_aroundBody0(TestBO.java:34)
+	at business.TestBO$AjcClosure1.run(TestBO.java:1)
+	at io.qameta.allure.aspects.StepsAspects.step(StepsAspects.java:46)
+	at business.TestBO.callNonExistentFunction(TestBO.java:27)
+	at simpleTests.FallTest.nonExistFunctionFailTest(FallTest.java:25)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;404&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$5.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:760)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)
+	at com.jayway.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+	at assertions.AssertStatusCode.assertStatusCodeIsOk(AssertStatusCode.java:11)
+	at business.TestBO.callNonExistentFunction_aroundBody0(TestBO.java:29)
 	... 18 more
 ... Removed 21 stack frames
 </div> <!-- stack-trace -->
@@ -217,7 +366,7 @@ Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;404&g
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test-class-failed -->
+          </div> <!-- suite-Test-class-skipped -->
           <div class="suite-Test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -240,6 +389,41 @@ Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;404&g
                   <span class="method-name">createNewUsersWithList</span>
                   <em>
 (Create and delete users from list)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test-class-passed -->
+          <div class="suite-Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">simpleTests.UserTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                  <em>
+(Login and logout to created user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="simpleUser">
+                  </a> <!-- simpleUser -->
+                  <span class="method-name">simpleUser</span>
+                  <em>
+(Create user and delete him)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUser">
+                  </a> <!-- updateUser -->
+                  <span class="method-name">updateUser</span>
+                  <em>
+(Update user name and phone)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -287,41 +471,6 @@ Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;404&g
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Test-class-passed -->
-          <div class="suite-Test-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">simpleTests.UserTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="login">
-                  </a> <!-- login -->
-                  <span class="method-name">login</span>
-                  <em>
-(Login and logout to created user)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="simpleUser">
-                  </a> <!-- simpleUser -->
-                  <span class="method-name">simpleUser</span>
-                  <em>
-(Create user and delete him)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="updateUser">
-                  </a> <!-- updateUser -->
-                  <span class="method-name">updateUser</span>
-                  <em>
-(Update user name and phone)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test-class-passed -->
         </div> <!-- panel Test -->
         <div panel-name="test-xml-Test" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -331,7 +480,7 @@ Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;404&g
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;-1&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
   &lt;test thread-count=&quot;3&quot; verbose=&quot;0&quot; name=&quot;All tests&quot; parallel=&quot;methods&quot;&gt;
     &lt;packages&gt;
       &lt;package name=&quot;simpleTests&quot;/&gt;
@@ -366,6 +515,30 @@ Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;404&g
             <span class="header-content">Groups for Test</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">fail</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">nonExistFunctionFailTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">createOrder</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">simplePet</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">simpleUser</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Test" class="panel">
@@ -382,48 +555,60 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createNewUsersWithArray')
-data.setCell(0, 2, 'simpleTests.UsersTest')
-data.setCell(0, 3, 6091);
+data.setCell(0, 1, 'checkInventory')
+data.setCell(0, 2, 'simpleTests.StoreTest')
+data.setCell(0, 3, 12588);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'createNewUsersWithList')
-data.setCell(1, 2, 'simpleTests.UsersTest')
-data.setCell(1, 3, 5042);
+data.setCell(1, 1, 'updateUser')
+data.setCell(1, 2, 'simpleTests.UserTests')
+data.setCell(1, 3, 6497);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'updateUser')
-data.setCell(2, 2, 'simpleTests.UserTests')
-data.setCell(2, 3, 3901);
+data.setCell(2, 1, 'createNewUsersWithArray')
+data.setCell(2, 2, 'simpleTests.UsersTest')
+data.setCell(2, 3, 5171);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'simplePet')
-data.setCell(3, 2, 'simpleTests.PetTests')
-data.setCell(3, 3, 2819);
+data.setCell(3, 1, 'createNewUsersWithList')
+data.setCell(3, 2, 'simpleTests.UsersTest')
+data.setCell(3, 3, 5101);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'login')
-data.setCell(4, 2, 'simpleTests.UserTests')
-data.setCell(4, 3, 2604);
+data.setCell(4, 1, 'simplePet')
+data.setCell(4, 2, 'simpleTests.PetTests')
+data.setCell(4, 3, 2921);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'checkInventory')
-data.setCell(5, 2, 'simpleTests.StoreTest')
-data.setCell(5, 3, 2389);
+data.setCell(5, 1, 'login')
+data.setCell(5, 2, 'simpleTests.UserTests')
+data.setCell(5, 3, 2615);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'simpleUser')
 data.setCell(6, 2, 'simpleTests.UserTests')
-data.setCell(6, 3, 1903);
+data.setCell(6, 3, 1886);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'createOrder')
 data.setCell(7, 2, 'simpleTests.StoreTest')
-data.setCell(7, 3, 1653);
+data.setCell(7, 3, 1633);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'nonExistFunctionFailTest')
 data.setCell(8, 2, 'simpleTests.FallTest')
-data.setCell(8, 3, 1318);
+data.setCell(8, 3, 1403);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'nonExistFunctionFailTest')
+data.setCell(9, 2, 'simpleTests.FallTest')
+data.setCell(9, 3, 316);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'nonExistFunctionFailTest')
+data.setCell(10, 2, 'simpleTests.FallTest')
+data.setCell(10, 3, 316);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'nonExistFunctionFailTest')
+data.setCell(11, 2, 'simpleTests.FallTest')
+data.setCell(11, 3, 306);
 window.suiteTableData['Test']= { tableData: data, tableDiv: 'times-div-Test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 40 seconds</span>
               <div id="times-div-Test">
               </div> <!-- times-div-Test -->
             </div> <!-- times-div -->
@@ -449,14 +634,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">simpleTests.FallTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">simpleTests.PetTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setData</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">simpleTests.PetTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">simpleTests.FallTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setData</span>
                 <span class="method-start">0 ms</span>
@@ -473,69 +658,96 @@ return data;
               <div class="chronological-class-name">simpleTests.PetTests</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">simplePet</span>
-                <span class="method-start">902 ms</span>
+                <span class="method-start">11000 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">simpleTests.FallTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">nonExistFunctionFailTest</span>
-                <span class="method-start">902 ms</span>
+                <span class="method-start">11016 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setData</span>
+                <span class="method-start">12488 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">nonExistFunctionFailTest</span>
+                <span class="method-start">12488 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">simpleTests.StoreTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">createOrder</span>
-                <span class="method-start">2289 ms</span>
+                <span class="method-start">12588 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">simpleTests.FallTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setData</span>
+                <span class="method-start">12835 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">nonExistFunctionFailTest</span>
+                <span class="method-start">12835 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setData</span>
+                <span class="method-start">13166 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">nonExistFunctionFailTest</span>
+                <span class="method-start">13183 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">simpleTests.UsersTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">createUsers</span>
-                <span class="method-start">2405 ms</span>
+                <span class="method-start">13505 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createNewUsersWithArray</span>
-                <span class="method-start">2405 ms</span>
+                <span class="method-start">13521 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">createUsers</span>
-                <span class="method-start">3721 ms</span>
+                <span class="method-start">13921 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createNewUsersWithList</span>
-                <span class="method-start">3739 ms</span>
+                <span class="method-start">13921 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">simpleTests.UserTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">createNewUser</span>
-                <span class="method-start">3943 ms</span>
+                <span class="method-start">14237 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">3959 ms</span>
+                <span class="method-start">14237 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">createNewUser</span>
-                <span class="method-start">6578 ms</span>
+                <span class="method-start">16868 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">simpleUser</span>
-                <span class="method-start">6578 ms</span>
+                <span class="method-start">16868 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">createNewUser</span>
-                <span class="method-start">8481 ms</span>
+                <span class="method-start">18723 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">updateUser</span>
-                <span class="method-start">8496 ms</span>
+                <span class="method-start">18723 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

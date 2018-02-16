@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="13.664" tests="9" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="26.556" tests="12" errors="0" skipped="3" failures="1">
   <properties>
     <property name="idea.version" value="2017.2.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -61,65 +61,59 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase name="nonExistFunctionFailTest" classname="simpleTests.FallTest" time="1.387">
-    <failure message="get non-existent function" type="exeptions.BaseException"><![CDATA[exeptions.BaseException: get non-existent function
-	at simpleTests.FallTest.nonExistFunctionFailTest(FallTest.java:26)
-Caused by: java.lang.AssertionError: 
-1 expectation failed.
-Expected status code <200> doesn't match actual status code <404>.
-
-	at simpleTests.FallTest.nonExistFunctionFailTest(FallTest.java:26)
-]]></failure>
-    <system-out><![CDATA[!!! 0main
-!!! 1 TestNG-test=All tests-1 simpleTests.FallTest
-!!! 1 TestNG-test=All tests-2 simpleTests.PetTests
-!!! 1 TestNG-test=All tests-3 simpleTests.StoreTest
-!!! 3 13
-!!! a3a add appender allureAppendercheckInventoryThread13 to logger storeLog
-15:00:55,364  INFO LogListener:onTestStart:64:TestNG-test=All tests-3 - start checkInventory test
-!!! 2 TestNG-test=All tests-2
-!!! 2 TestNG-test=All tests-1
-!!! 2 TestNG-test=All tests-3
-15:00:56,118  INFO TestClient:<init>:17:TestNG-test=All tests-1 - connecting to http://petstore.swagger.io/v2/test
-15:00:56,118  INFO PetClient:<init>:22:TestNG-test=All tests-2 - connecting to http://petstore.swagger.io/v2/user
-15:00:56,118  INFO StoreClient:<init>:16:TestNG-test=All tests-3 - connecting to http://petstore.swagger.io/v2/store
-15:00:56,165  INFO StoreBO:getInventory_aroundBody0:26:TestNG-test=All tests-3 - start getting inventory
-15:00:56,165  INFO StoreClient:getInventory:21:TestNG-test=All tests-3 - send request to get inventory
-!!! 4 12
-!!! 3 12
-!!! 4 11
-!!! 3 11
-!!! a3a add appender allureAppendersimplePetThread12 to logger storeLog
-15:00:56,250  INFO LogListener:onTestStart:64:TestNG-test=All tests-2 - start simplePet test
-!!! a3a add appender allureAppendernonExistFunctionFailTestThread11 to logger storeLog
-15:00:56,250  INFO LogListener:onTestStart:64:TestNG-test=All tests-1 - start nonExistFunctionFailTest test
-!!! 2 TestNG-test=All tests-2
-!!! 2 TestNG-test=All tests-1
-15:00:56,250  INFO TestBO:callNonExistentFunction_aroundBody0:25:TestNG-test=All tests-1 - start calling non-existent function
-15:00:56,250  INFO TestClient:nonExistentFunction:22:TestNG-test=All tests-1 - send request non-existent function
-15:00:56,250  INFO PetBO:createPet_aroundBody0:33:TestNG-test=All tests-2 - start creating pet, pet id : 84
-15:00:56,250  INFO PetBO:isPetExist_aroundBody4:70:TestNG-test=All tests-2 - start checking pet, pet id : 84
-15:00:56,250  INFO PetClient:getPet:48:TestNG-test=All tests-2 - send request to get pet
-Request path:	http://petstore.swagger.io/v2/pet/84
-15:00:56,466  INFO RequestPrintStream:writeLogMessage:58:TestNG-test=All tests-3 - Request path:	http://petstore.swagger.io/v2/store/inventory
-15:00:56,466  INFO RequestPrintStream:writeLogMessage:58:TestNG-test=All tests-1 - Request path:	http://petstore.swagger.io/v2/test
+  <testcase name="nonExistFunctionFailTest" classname="simpleTests.FallTest" time="0">
+    <skipped message="get non-existent function"/>
+    <system-out><![CDATA[17:27:27,546  INFO LogListener:onTestStart:57:TestNG-test=All tests-3 - start checkInventory test
+17:27:38,347  INFO PetClient:<init>:22:TestNG-test=All tests-2 - connecting to http://petstore.swagger.io/v2/user
+17:27:38,347  INFO StoreClient:<init>:16:TestNG-test=All tests-3 - connecting to http://petstore.swagger.io/v2/store
+17:27:38,347  INFO TestClient:<init>:17:TestNG-test=All tests-1 - connecting to http://petstore.swagger.io/v2/test
+17:27:38,378  INFO StoreBO:getInventory_aroundBody0:28:TestNG-test=All tests-3 - start getting inventory
+17:27:38,378  INFO StoreClient:getInventory:21:TestNG-test=All tests-3 - send request to get inventory
+17:27:38,547  INFO LogListener:onTestStart:57:TestNG-test=All tests-2 - start simplePet test
+17:27:38,547  INFO LogListener:onTestStart:57:TestNG-test=All tests-1 - start nonExistFunctionFailTest test
+17:27:38,547  INFO TestBO:callNonExistentFunction_aroundBody0:27:TestNG-test=All tests-1 - start calling non-existent function
+17:27:38,547  INFO TestClient:nonExistentFunction:22:TestNG-test=All tests-1 - send request non-existent function
+17:27:38,547  INFO PetBO:createPet_aroundBody0:35:TestNG-test=All tests-2 - start creating pet, pet id : 83
+17:27:38,562  INFO PetBO:isPetExist_aroundBody4:72:TestNG-test=All tests-2 - start checking pet, pet id : 83
+17:27:38,562  INFO PetClient:getPet:48:TestNG-test=All tests-2 - send request to get pet
+Request path:	http://petstore.swagger.io/v2/test
+Request path:	http://petstore.swagger.io/v2/store/inventory
+Request path:	http://petstore.swagger.io/v2/pet/83
+Request method:	GET
+17:27:38,747  INFO RequestPrintStream:writeLogMessage:58:TestNG-test=All tests-2 - Request method:	GET
+Request method:	GET
+Request path:	http://petstore.swagger.io/v2/test
+Request path:	http://petstore.swagger.io/v2/store/inventory
+Request path:	http://petstore.swagger.io/v2/pet/83
 Request method:	GET
 Request method:	GET
-Request method:	GET
+17:27:38,747  INFO RequestPrintStream:writeLogMessage:58:TestNG-test=All tests-3 - Request method:	GET
+Response body: 
+{
+    "code": 1,
+    "type": "error",
+    "message": "Pet not found"
+}
+17:27:39,865  INFO ResponsePrintStream:writeLogMessage:53:TestNG-test=All tests-1 - Response body: 
+{
+    "code": 404,
+    "type": "unknown",
+    "message": "null for uri: http://petstore.swagger.io/v2/test"
+}
 Response body: 
 {
     "code": 404,
     "type": "unknown",
     "message": "null for uri: http://petstore.swagger.io/v2/test"
 }
-15:00:57,505  INFO ResponsePrintStream:writeLogMessage:53:TestNG-test=All tests-2 - Response body: 
+Response body: 
 {
     "code": 1,
     "type": "error",
     "message": "Pet not found"
 }
-15:00:57,505  INFO PetBO:isPetExist_aroundBody4:76:TestNG-test=All tests-2 - pet with id :84 is not exist
-15:00:57,521  INFO PetClient:createPet:27:TestNG-test=All tests-2 - send request to create pet
+17:27:39,865  INFO PetBO:isPetExist_aroundBody4:78:TestNG-test=All tests-2 - pet with id :83 is not exist
+send request to create pet
 Response body: 
 {
     "available%')) RLIKE SLEEP(4) AND (('%'='": 1,
@@ -136,7 +130,6 @@ Response body:
     "available,(SELECT (CASE WHEN (8635=8635) THEN (SELECT BENCHMARK(4000000,MD5(0x74586779))) ELSE 8635*(SELECT 8635 FROM mysql.db) END))": 1,
     "test? UNION select 1, @@version, 1, 1;?": 1,
     "available'||(SELECT 'UfOH' WHERE 1124=1124 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP))||'": 1,
-    "sdfsdf": 1,
     "available;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3": 1,
     "available' RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
     "available WHERE 5424=5424 AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-- zOgJ": 1,
@@ -144,7 +137,6 @@ Response body:
     "available\");SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3 AND (\"DENYALLsavR\"=\"DENYALLsavR": 1,
     "available%')) PROCEDURE ANALYSE(EXTRACTVALUE(5426,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x654b6b4b))))),1)#": 1,
     "sss": 1,
-    "approved": 1,
     "available` WHERE 6514=6514 PROCEDURE ANALYSE(EXTRACTVALUE(5426,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x654b6b4b))))),1)#": 1,
     "available`) WHERE 4729=4729;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3-- wHuV": 1,
     "available'||(SELECT 'leRN' WHERE 7766=7766 AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
@@ -165,14 +157,12 @@ Response body:
     "available) RLIKE SLEEP(4)#": 1,
     "available' WHERE 6039=6039 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)-- FiUP": 1,
     "available AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)# DENYALLtjqz": 1,
-    "0": 5,
+    "0": 32,
     "1": 3,
     "(SELECT (CASE WHEN (8249=8249) THEN (SELECT COUNT(*) FROM sysusers AS sys1,sysusers AS sys2,sysusers AS sys3,sysusers AS sys4,sysusers AS sys5,sysusers AS sys6,sysusers AS sys7) ELSE 8249 END))": 1,
     "123": 2,
     "available\" RLIKE SLEEP(4) AND \"DENYALLqLwb\"=\"DENYALLqLwb": 1,
-    "4": 1,
     "available' AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-- QRcG": 1,
-    "reserved": 1,
     "available'+(SELECT ntuv WHERE 1027=1027 RLIKE SLEEP(4))+'": 1,
     "available WHERE 9942=9942 AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
     "available' WHERE 6048=6048;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3-- BrXl": 1,
@@ -187,6 +177,7 @@ Response body:
     "available tomorrow": 1,
     "available') WHERE 3935=3935 RLIKE SLEEP(4)-- igzq": 1,
     "available`) WHERE 1722=1722 PROCEDURE ANALYSE(EXTRACTVALUE(2199,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x576f6658))))),1)-- QjNv": 1,
+    "dead": 1,
     "available WAITFOR DELAY '0:0:4'# DENYALLbIEX": 1,
     "available)) AS DENYALLCBOC WHERE 4282=4282 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)-- SlxR": 1,
     "available)) AS DENYALLYZhd WHERE 9244=9244 AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
@@ -196,7 +187,6 @@ Response body:
     "available%')) RLIKE SLEEP(4)#": 1,
     "S": 15,
     "2324": 1,
-    "1234": 1,
     "available'+(SELECT bwsK WHERE 2907=2907 WAITFOR DELAY '0:0:4'--": 1,
     "taken": 1,
     "available'+(SELECT emgY WHERE 5512=5512 WAITFOR DELAY '0:0:4')+'": 1,
@@ -231,16 +221,19 @@ Response body:
     "' or '1'='1": 1,
     "tt": 2,
     "45": 1,
+    "eiusmod cupidata": 1,
     "avaulable": 5,
+    "etsed": 1,
     "available'||(SELECT 'FEGB' WHERE 6912=6912 RLIKE SLEEP(4)#": 1,
-    "available": 12800,
+    "available": 13776,
     "qwerty": 1,
     "available%')) WAITFOR DELAY '0:0:4' AND (('%'='": 1,
     "available RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
+    "occaecat exercitation Du": 1,
     "test?%20UNION%20select%201,%20@@version,%201,%201;?": 1,
-    "availabl
+ 
 Response body: 
-e'+(SELECT 'nCau' WHERE 1275=1275;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3)+'": 1,
+   "available'+(SELECT 'nCau' WHERE 1275=1275;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3)+'": 1,
     "available')) AS DENYALLIqya WHERE 5175=5175 WAITFOR DELAY '0:0:4'-- hwEW": 1,
     "soldX": 2,
     "available') RLIKE SLEEP(4) AND ('DENYALLLdZF' LIKE 'DENYALLLdZF": 1,
@@ -251,6 +244,7 @@ e'+(SELECT 'nCau' WHERE 1275=1275;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SY
     "available' WHERE 9440=9440 WAITFOR DELAY '0:0:4'-- yVbG": 1,
     "available',(SELECT (CASE WHEN (8860=8860) THEN (SELECT 8860 FROM PG_SLEEP(4)) ELSE 1/(SELECT 0) END))-- Ohro": 1,
     "available AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
+    "voluptate velit non a": 1,
     "available';SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3 AND 'DENYALLNcfU' LIKE 'DENYALLNcfU": 1,
     "available') WHERE 7197=7197 WAITFOR DELAY '0:0:4'--": 1,
     "available'+(SELECT 'tiqj' WHERE 1596=1596 AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR))+'": 1,
@@ -278,38 +272,41 @@ e'+(SELECT 'nCau' WHERE 1275=1275;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SY
     "jhghjgjgj": 1,
     "available)) AS DENYALLOMCt WHERE 6528=6528 WAITFOR DELAY '0:0:4'--": 1,
     "available) WHERE 1077=1077 RLIKE SLEEP(4)-- RBqx": 1,
-    "string": 19563,
+    "string": 20875,
     "available\";SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3 AND \"DENYALLeOQj\"=\"DENYALLeOQj": 1,
     "available` WHERE 4104=4104;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3-- kSQB": 1,
     "available'||(SELECT 'pSmH' FROM DUAL WHERE 6152=6152 WAITFOR DELAY '0:0:4'--": 1,
     "boom": 1,
-    "pending": 322,
-    "available;pending;sold": 1,
+    "pending": 343,
     "available') WHERE 5169=5169 AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-- MrYR": 1,
     "available') AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
     "/*!10000%201/0%20*/": 1,
     "available' RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP) AND 'DENYALLXYDr' LIKE 'DENYALLXYDr": 1,
     "available' WHERE 8804=8804 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
     "(SELECT (CASE WHEN (2558=2558) THEN (SELECT COUNT(*) FROM ALL_USERS T1,ALL_USERS T2,ALL_USERS T3,ALL_USERS T4,ALL_USERS T5) ELSE 2558 END) FROM DUAL)": 1,
+    "ex voluptate": 1,
     "available WHERE 9898=9898;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3-- aFRi": 1,
     "available RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)": 1,
     "available WAITFOR DELAY '0:0:4'-- gGOH": 1,
-    "Sold": 5,
+    "Sold": 4,
     "available';SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3 AND 'DENYALLlqgR' LIKE 'DENYALLlqgR": 1,
     "available' IN BOOLEAN MODE) PROCEDURE ANALYSE(EXTRACTVALUE(5426,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x654b6b4b))))),1)#": 1,
     "available'||(SELECT 'wmLx' FROM DUAL WHERE 6246=6246 WAITFOR DELAY '0:0:4')||'": 1,
-    "sold": 173,
+    "elit labore ea magn": 1,
+    "sold": 178,
     "venta": 1,
     "available' RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)-- AVYF": 1,
     "available);SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3-- iWWw": 1,
     "sola": 1,
     "available) WHERE 2347=2347 AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-- yoqN": 1,
+    "pariatur tempor": 1,
     "availabl": 1,
     "available' PROCEDURE ANALYSE(EXTRACTVALUE(5426,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x654b6b4b))))),1)#": 1,
     "AVAILABLE": 3,
     "available) WAITFOR DELAY '0:0:4'-- vGIx": 1,
     "available') WHERE 8364=8364 WAITFOR DELAY '0:0:4'-- nQKu": 1,
     "available`) WHERE 5001=5001 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)-- PAfb": 1,
+    "aeewwvailable": 1,
     "available') WAITFOR DELAY '0:0:4'-- LJUA": 1,
     "available') RLIKE SLEEP(4)#": 1,
     "available' IN BOOLEAN MODE) PROCEDURE ANALYSE(EXTRACTVALUE(2199,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x576f6658))))),1)#": 1,
@@ -317,6 +314,7 @@ e'+(SELECT 'nCau' WHERE 1275=1275;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SY
     "'%20and%201=2%20--": 1,
     "available'||(SELECT 'CvXZ' WHERE 7980=7980 AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR))||'": 1,
     "placed": 2,
+    "tempor": 1,
     "(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)": 1,
     "available'+(SELECT FXHV WHERE 5601=5601 AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR))+'": 1,
     "avaliable": 2,
@@ -326,6 +324,7 @@ e'+(SELECT 'nCau' WHERE 1275=1275;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SY
     "available;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3# DENYALLiFUl": 1,
     "areffsdsgdsgsdf": 1,
     "available%'));SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3 AND (('%'='": 1,
+    "ut cillum": 1,
     "UnAvailable": 1,
     "available' RLIKE SLEEP(4) AND 'DENYALLvIpa' LIKE 'DENYALLvIpa": 1,
     "available'+(SELECT 'FFXe' WHERE 8827=8827 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
@@ -343,11 +342,11 @@ e'+(SELECT 'nCau' WHERE 1275=1275;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SY
     "Offline": 1,
     "available'||(SELECT 'DPLj' WHERE 3541=3541;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3)||'": 1,
     "available RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)# DENYALLrqqb": 1,
-    "available) WHERE 8867=8867 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
-    "available) WAITFOR DELAY '0:0:4'--": 1,
-    "available'||(SELECT 'hWsk' FROM
+    "availabl
 Response body: 
- DUAL WHERE 5341=5341 RLIKE SLEEP(4))||'": 1,
+e) WHERE 8867=8867 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
+    "available) WAITFOR DELAY '0:0:4'--": 1,
+    "available'||(SELECT 'hWsk' FROM DUAL WHERE 5341=5341 RLIKE SLEEP(4))||'": 1,
     "available` WHERE 1485=1485 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)-- XdoU": 1,
     "avai": 1,
     "available) WHERE 6590=6590;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3-- iLgk": 1,
@@ -359,6 +358,7 @@ Response body:
     "available';SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3-- MDhv": 1,
     "available'+(SELECT 'MUYX' WHERE 4522=4522 AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
     "available')) AS DENYALLRKra WHERE 7493=7493 RLIKE SLEEP(4)#": 1,
+    "dolore exercitation ipsum": 1,
     "available' AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR) AND 'DENYALLkmNb' LIKE 'DENYALLkmNb": 1,
     "available RLIKE SLEEP(4)": 1,
     "status": 160,
@@ -375,6 +375,7 @@ Response body:
     "avadddele": 1,
     "available' WAITFOR DELAY '0:0:4' AND 'DENYALLUAwF' LIKE 'DENYALLUAwF": 1,
     "available' RLIKE SLEEP(4)#": 1,
+    "dolor": 1,
     "available'+(SELECT 'DGOd' WHERE 5630=5630 WAITFOR DELAY '0:0:4'--": 1,
     "Nice": 1,
     "available\" WAITFOR DELAY '0:0:4' AND \"DENYALLNkjb\"=\"DENYALLNkjb": 1,
@@ -457,13 +458,14 @@ Response body:
     "available')) AS DENYALLpNQx WHERE 6213=6213;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3-- SWrj": 1,
     "available AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)": 1,
     "Not-Operated": 11,
-    "available`) WHERE 2389=2389 AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-- VuKc": 1,
+    "available`) WHERE 2389=2389 AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-
+Response body: 
+- VuKc": 1,
     "available WHERE 6898=6898 WAITFOR DELAY '0:0:4'-- IwXf": 1,
     "nonsense": 2,
-    "available'||(SELECT 'Ntdi' FROM DUAL WHERE 6563=6563;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIB
-Response body: 
-M.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3)||'": 1,
+    "available'||(SELECT 'Ntdi' FROM DUAL WHERE 6563=6563;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3)||'": 1,
     "1/0": 1,
+    "Ut aliqua": 1,
     "' and 1=2 --": 1,
     "available' IN BOOLEAN MODE) WAITFOR DELAY '0:0:4'#": 1,
     "noneed": 1,
@@ -474,6 +476,7 @@ M.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3)||'": 1,
     "available) PROCEDURE ANALYSE(EXTRACTVALUE(5426,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x654b6b4b))))),1)#": 1,
     "ok": 1,
     "OK": 1,
+    "availableASD": 1,
     "available) WHERE 9346=9346 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)-- NpyP": 1,
     "available) WHERE 7146=7146;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3-- Gzii": 1,
     "available\" PROCEDURE ANALYSE(EXTRACTVALUE(2199,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x576f6658))))),1) AND \"DENYALLavUX\"=\"DENYALLavUX": 1,
@@ -483,6 +486,7 @@ M.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3)||'": 1,
     "available'+(SELECT qwSf WHERE 5190=5190;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3)+'": 1,
     "available` WHERE 5978=5978 AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
     "available'+(SELECT DqCl WHERE 9507=9507 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP))+'": 1,
+    "veniam deserunt": 2,
     "available' RLIKE SLEEP(4)-- pbEr": 1,
     "available%')) RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
     "available)) AS DENYALLVnlA WHERE 8656=8656 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
@@ -491,6 +495,7 @@ M.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3)||'": 1,
     "available) WHERE 2711=2711 AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
     "available');SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3-- OXYZ": 1,
     "available' IN BOOLEAN MODE) RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)#": 1,
+    "occaecat sed in Lorem": 1,
     "available') WHERE 3479=3479 AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
     "available\" RLIKE SLEEP(4)#": 1,
     "available)) AS DENYALLbIMl WHERE 3462=3462;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3-- iGHm": 1,
@@ -499,26 +504,679 @@ M.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3)||'": 1,
     "available' WHERE 6833=6833 RLIKE SLEEP(4)-- vBWx": 1,
     "available) WHERE 2425=2425 WAITFOR DELAY '0:0:4'--": 1
 }
-15:00:57,552  INFO StoreBO:getInventory_aroundBody0:29:TestNG-test=All tests-3 - inventory has been gotten
-15:00:57,568 ERROR TestBO:callNonExistentFunction_aroundBody0:31:TestNG-test=All tests-1 - non-existent function can't be got
-!!! 4 11
-!!! 5f11
-!!! a5a try to delete appender allureAppendernonExistFunctionFailTestThread11 from logger storeLog
-!!! a5b appender allureAppendernonExistFunctionFailTestThread11 from logger storeLog is closed 
-!!!! target/logs/allure/nonExistFunctionFailTestThread11.log
-!!! 5fend11
+Response body: 
+{
+    "available%')) RLIKE SLEEP(4) AND (('%'='": 1,
+    "available') PROCEDURE ANALYSE(EXTRACTVALUE(5426,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x654b6b4b))))),1)#": 1,
+    "available' WHERE 9212=9212 RLIKE SLEEP(4)#": 1,
+    "available`) WHERE 3578=3578 RLIKE SLEEP(4)-- tLbf": 1,
+    "status de test": 2,
+    "unavailable": 12,
+    "Duis enim quis": 1,
+    "'--": 1,
+    "available` WHERE 1179=1179 AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-- pjBw": 1,
+    "available' WAITFOR DELAY '0:0:4'-- MrOc": 1,
+    "available') WHERE 6110=6110 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)-- fZDH": 1,
+    "available,(SELECT (CASE WHEN (8635=8635) THEN (SELECT BENCHMARK(4000000,MD5(0x74586779))) ELSE 8635*(SELECT 8635 FROM mysql.db) END))": 1,
+    "test? UNION select 1, @@version, 1, 1;?": 1,
+    "available'||(SELECT 'UfOH' WHERE 1124=1124 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP))||'": 1,
+    "available;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3": 1,
+    "available' RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
+    "available WHERE 5424=5424 AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-- zOgJ": 1,
+    "available' IN BOOLEAN MODE) WAITFOR DELAY '0:0:4'--": 1,
+    "available\");SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3 AND (\"DENYALLsavR\"=\"DENYALLsavR": 1,
+    "available%')) PROCEDURE ANALYSE(EXTRACTVALUE(5426,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x654b6b4b))))),1)#": 1,
+    "sss": 1,
+    "available` WHERE 6514=6514 PROCEDURE ANALYSE(EXTRACTVALUE(5426,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x654b6b4b))))),1)#": 1,
+    "available`) WHERE 4729=4729;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3-- wHuV": 1,
+    "available'||(SELECT 'leRN' WHERE 7766=7766 AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
+    "1'": 1,
+    "available\" RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
+    "34234234": 2,
+    "available'||(SELECT 'VgVA' FROM DUAL WHERE 9167=9167;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3)||'": 1,
+    "available') RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
+    "(SELECT (CASE WHEN (7343=7343) THEN DBMS_PIPE.RECEIVE_MESSAGE(CHR(98)||CHR(73)||CHR(98)||CHR(103),4) ELSE 7343 END) FROM DUAL)": 1,
+    "/*!10000 1/0 */": 1,
+    "available'||(SELECT 'oxpM' WHERE 7761=7761;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3)||'": 1,
+    "available')) AS DENYALLRPNL WHERE 6581=6581 PROCEDURE ANALYSE(EXTRACTVALUE(5426,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x654b6b4b))))),1)#": 1,
+    "available)) AS DENYALLQspq WHERE 2145=2145 PROCEDURE ANALYSE(EXTRACTVALUE(2199,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x576f6658))))),1)-- oQaj": 1,
+    "available) AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-- Jbql": 1,
+    "available`) WHERE 3581=3581 WAITFOR DELAY '0:0:4'-- wXZJ": 1,
+    "(SELECT COUNT(*) FROM GENERATE_SERIES(1,4000000))": 1,
+    "available') RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)-- njOu": 1,
+    "available) RLIKE SLEEP(4)#": 1,
+    "available' WHERE 6039=6039 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)-- FiUP": 1,
+    "available AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)# DENYALLtjqz": 1,
+    "0": 32,
+    "1": 3,
+    "(SELECT (CASE WHEN (8249=8249) THEN (SELECT COUNT(*) FROM sysusers AS sys1,sysusers AS sys2,sysusers AS sys3,sysusers AS sys4,sysusers AS sys5,sysusers AS sys6,sysusers AS sys7) ELSE 8249 END))": 1,
+    "123": 2,
+    "available\" RLIKE SLEEP(4) AND \"DENYALLqLwb\"=\"DENYALLqLwb": 1,
+    "available' AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-- QRcG": 1,
+    "available'+(SELECT ntuv WHERE 1027=1027 RLIKE SLEEP(4))+'": 1,
+    "available WHERE 9942=9942 AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
+    "available' WHERE 6048=6048;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3-- BrXl": 1,
+    "available' WHERE 5632=5632 WAITFOR DELAY '0:0:4'--": 1,
+    ";": 1,
+    "available RLIKE SLEEP(4)-- TGVN": 1,
+    "available WAITFOR DELAY '0:0:4'": 1,
+    "available\" RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP) AND \"DENYALLxqeK\"=\"DENYALLxqeK": 1,
+    "' o/**/r 1/0 --": 1,
+    "available'||(SELECT 'tkkF' FROM DUAL WHERE 7570=7570 AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR))||'": 1,
+    "available\" AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
+    "available tomorrow": 1,
+    "available') WHERE 3935=3935 RLIKE SLEEP(4)-- igzq": 1,
+    "available`) WHERE 1722=1722 PROCEDURE ANALYSE(EXTRACTVALUE(2199,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x576f6658))))),1)-- QjNv": 1,
+    "dead": 1,
+    "available WAITFOR DELAY '0:0:4'# DENYALLbIEX": 1,
+    "available)) AS DENYALLCBOC WHERE 4282=4282 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)-- SlxR": 1,
+    "available)) AS DENYALLYZhd WHERE 9244=9244 AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
+    "rolling": 1,
+    "notavailable": 2,
+    "available`) WHERE 4680=4680;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3-- dUMD": 1,
+    "available%')) RLIKE SLEEP(4)#": 1,
+    "S": 15,
+    "2324": 1,
+    "available'+(SELECT bwsK WHERE 2907=2907 WAITFOR DELAY '0:0:4'--": 1,
+    "taken": 1,
+    "available'+(SELECT emgY WHERE 5512=5512 WAITFOR DELAY '0:0:4')+'": 1,
+    "available,(SELECT (CASE WHEN (5984=5984) THEN DBMS_PIPE.RECEIVE_MESSAGE(CHR(97)||CHR(117)||CHR(110)||CHR(88),4) ELSE 1/(SELECT 0 FROM DUAL) END) FROM DUAL)": 1,
+    "disponivel": 27,
+    "available') AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR) AND ('DENYALLqttG' LIKE 'DENYALLqttG": 1,
+    "available') WHERE 5364=5364;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3-- wUOT": 1,
+    "available) RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)-- UsqD": 1,
+    "available AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-- KakM": 1,
+    "available') WHERE 7878=7878 RLIKE SLEEP(4)#": 1,
+    "a": 1,
+    "available';SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3-- mxgR": 1,
+    "available\") RLIKE SLEEP(4)#": 1,
+    "admin'--": 1,
+    "available;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3": 1,
+    "available' WHERE 3327=3327 AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-- kMIK": 1,
+    "available')) AS DENYALLVLzb WHERE 2084=2084 AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-- dCWy": 1,
+    "available') PROCEDURE ANALYSE(EXTRACTVALUE(2199,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x576f6658))))),1) AND ('DENYALLUJTi' LIKE 'DENYALLUJTi": 1,
+    "available) WHERE 3193=3193 WAITFOR DELAY '0:0:4'-- NgOS": 1,
+    "available PROCEDURE ANALYSE(EXTRACTVALUE(5426,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x654b6b4b))))),1)#": 1,
+    "available`) WHERE 4950=4950 WAITFOR DELAY '0:0:4'--": 1,
+    "available'||(SELECT 'OEIG' WHERE 6285=6285 WAITFOR DELAY '0:0:4')||'": 1,
+    "available`) WHERE 6508=6508 RLIKE SLEEP(4)#": 1,
+    "s": 21,
+    "available'||(SELECT 'BmaJ' FROM DUAL WHERE 9021=9021 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP))||'": 1,
+    "available)) AS DENYALLYMQz WHERE 9317=9317 WAITFOR DELAY '0:0:4'-- GUIQ": 1,
+    "available\" PROCEDURE ANALYSE(EXTRACTVALUE(5426,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x654b6b4b))))),1)#": 1,
+    "available');SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3-- zOJS": 1,
+    "available\") AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
+    "available\") PROCEDURE ANALYSE(EXTRACTVALUE(5426,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x654b6b4b))))),1)#": 1,
+    "available)) AS DENYALLEnBa WHERE 3716=3716 AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-- DtHv": 1,
+    "' or '1'='1": 1,
+    "tt": 2,
+    "45": 1,
+    "eiusmod cupidata": 1,
+    "avaulable": 5,
+    "etsed": 1,
+    "available'||(SELECT 'FEGB' WHERE 6912=6912 RLIKE SLEEP(4)#": 1,
+    "available": 13776,
+    "qwerty": 1,
+    "available%')) WAITFOR DELAY '0:0:4' AND (('%'='": 1,
+    "available RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
+    "occaecat exercitation Du": 1,
+    "test?%20UNION%20select%201,%20@@version,%201,%201;?": 1,
+ 
+Response body: 
+   "available'+(SELECT 'nCau' WHERE 1275=1275;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3)+'": 1,
+    "available')) AS DENYALLIqya WHERE 5175=5175 WAITFOR DELAY '0:0:4'-- hwEW": 1,
+    "soldX": 2,
+    "available') RLIKE SLEEP(4) AND ('DENYALLLdZF' LIKE 'DENYALLLdZF": 1,
+    "available WHERE 9707=9707 WAITFOR DELAY '0:0:4'--": 1,
+    "available\") RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
+    "available') WHERE 7061=7061 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
+    "availakble": 1,
+    "available' WHERE 9440=9440 WAITFOR DELAY '0:0:4'-- yVbG": 1,
+    "available',(SELECT (CASE WHEN (8860=8860) THEN (SELECT 8860 FROM PG_SLEEP(4)) ELSE 1/(SELECT 0) END))-- Ohro": 1,
+    "available AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
+    "voluptate velit non a": 1,
+    "available';SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3 AND 'DENYALLNcfU' LIKE 'DENYALLNcfU": 1,
+    "available') WHERE 7197=7197 WAITFOR DELAY '0:0:4'--": 1,
+    "available'+(SELECT 'tiqj' WHERE 1596=1596 AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR))+'": 1,
+    "Not available": 1,
+    "available' IN BOOLEAN MODE) AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)#": 1,
+    "available\";SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3 AND \"DENYALLbWbX\"=\"DENYALLbWbX": 1,
+    "test": 3,
+    "available%'));SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3 AND (('%'='": 1,
+    "available'||(SELECT 'nyml' WHERE 3576=3576 RLIKE SLEEP(4))||'": 1,
+    "available PROCEDURE ANALYSE(EXTRACTVALUE(2199,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x576f6658))))),1)": 1,
+    "available')) AS DENYALLPHLg WHERE 3415=3415;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3-- YMYW": 1,
+    "available` WHERE 9545=9545;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3-- TyFN": 1,
+    "available;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3-- HXMo": 1,
+    "available'+(SELECT Iase WHERE 8365=8365 AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
+    "available')) AS DENYALLNLIh WHERE 6760=6760 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
+    "xzcxz": 1,
+    "available` WHERE 4868=4868 WAITFOR DELAY '0:0:4'--": 1,
+    "available)) AS DENYALLMyZT WHERE 5736=5736;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3-- saFI": 1,
+    "available RLIKE SLEEP(4)#": 1,
+    "available WHERE 6796=6796;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3-- RavE": 1,
+    "available\") RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP) AND (\"DENYALLrkmG\"=\"DENYALLrkmG": 1,
+    "available') AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-- zjeZ": 1,
+    "available' PROCEDURE ANALYSE(EXTRACTVALUE(2199,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x576f6658))))),1) AND 'DENYALLQSJM' LIKE 'DENYALLQSJM": 1,
+    "available'||(SELECT 'hUKQ' WHERE 7569=7569 WAITFOR DELAY '0:0:4'--": 1,
+    "jhghjgjgj": 1,
+    "available)) AS DENYALLOMCt WHERE 6528=6528 WAITFOR DELAY '0:0:4'--": 1,
+    "available) WHERE 1077=1077 RLIKE SLEEP(4)-- RBqx": 1,
+    "string": 20875,
+    "available\";SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3 AND \"DENYALLeOQj\"=\"DENYALLeOQj": 1,
+    "available` WHERE 4104=4104;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3-- kSQB": 1,
+    "available'||(SELECT 'pSmH' FROM DUAL WHERE 6152=6152 WAITFOR DELAY '0:0:4'--": 1,
+    "boom": 1,
+    "pending": 343,
+    "available') WHERE 5169=5169 AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-- MrYR": 1,
+    "available') AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
+    "/*!10000%201/0%20*/": 1,
+    "available' RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP) AND 'DENYALLXYDr' LIKE 'DENYALLXYDr": 1,
+    "available' WHERE 8804=8804 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
+    "(SELECT (CASE WHEN (2558=2558) THEN (SELECT COUNT(*) FROM ALL_USERS T1,ALL_USERS T2,ALL_USERS T3,ALL_USERS T4,ALL_USERS T5) ELSE 2558 END) FROM DUAL)": 1,
+    "ex voluptate": 1,
+    "available WHERE 9898=9898;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3-- aFRi": 1,
+    "available RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)": 1,
+    "available WAITFOR DELAY '0:0:4'-- gGOH": 1,
+    "Sold": 4,
+    "available';SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3 AND 'DENYALLlqgR' LIKE 'DENYALLlqgR": 1,
+    "available' IN BOOLEAN MODE) PROCEDURE ANALYSE(EXTRACTVALUE(5426,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x654b6b4b))))),1)#": 1,
+    "available'||(SELECT 'wmLx' FROM DUAL WHERE 6246=6246 WAITFOR DELAY '0:0:4')||'": 1,
+    "elit labore ea magn": 1,
+    "sold": 178,
+    "venta": 1,
+    "available' RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)-- AVYF": 1,
+    "available);SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3-- iWWw": 1,
+    "sola": 1,
+    "available) WHERE 2347=2347 AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-- yoqN": 1,
+    "pariatur tempor": 1,
+    "availabl": 1,
+    "available' PROCEDURE ANALYSE(EXTRACTVALUE(5426,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x654b6b4b))))),1)#": 1,
+    "AVAILABLE": 3,
+    "available) WAITFOR DELAY '0:0:4'-- vGIx": 1,
+    "available') WHERE 8364=8364 WAITFOR DELAY '0:0:4'-- nQKu": 1,
+    "available`) WHERE 5001=5001 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)-- PAfb": 1,
+    "aeewwvailable": 1,
+    "available') WAITFOR DELAY '0:0:4'-- LJUA": 1,
+    "available') RLIKE SLEEP(4)#": 1,
+    "available' IN BOOLEAN MODE) PROCEDURE ANALYSE(EXTRACTVALUE(2199,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x576f6658))))),1)#": 1,
+    "availa3": 1,
+    "'%20and%201=2%20--": 1,
+    "available'||(SELECT 'CvXZ' WHERE 7980=7980 AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR))||'": 1,
+    "placed": 2,
+    "tempor": 1,
+    "(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)": 1,
+    "available'+(SELECT FXHV WHERE 5601=5601 AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR))+'": 1,
+    "avaliable": 2,
+    "available' IN BOOLEAN MODE) RLIKE SLEEP(4)#": 1,
+    "Available": 2,
+    "StringValue": 1,
+    "available;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3# DENYALLiFUl": 1,
+    "areffsdsgdsgsdf": 1,
+    "available%'));SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3 AND (('%'='": 1,
+    "ut cillum": 1,
+    "UnAvailable": 1,
+    "available' RLIKE SLEEP(4) AND 'DENYALLvIpa' LIKE 'DENYALLvIpa": 1,
+    "available'+(SELECT 'FFXe' WHERE 8827=8827 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
+    "available')) AS DENYALLCKKa WHERE 1272=1272 PROCEDURE ANALYSE(EXTRACTVALUE(2199,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x576f6658))))),1)-- Lwnc": 1,
+    "(CASE WHEN (9548=9548) THEN SLEEP(4) ELSE 9548 END)": 1,
+    "availableee": 1,
+    "available RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)-- EmpA": 1,
+    "availables": 3,
+    "available') WHERE 8126=8126;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3-- GcEp": 1,
+    "available'+(SELECT oLSu WHERE 8735=8735;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3)+'": 1,
+    "available');SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3 AND ('DENYALLUaFP' LIKE 'DENYALLUaFP": 1,
+    "available')) AS DENYALLMCXS WHERE 7985=7985 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)-- BnKg": 1,
+    "available' WHERE 6887=6887;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3-- VlBv": 1,
+    "available%')) PROCEDURE ANALYSE(EXTRACTVALUE(2199,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x576f6658))))),1) AND (('%'='": 1,
+    "Offline": 1,
+    "available'||(SELECT 'DPLj' WHERE 3541=3541;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3)||'": 1,
+    "available RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)# DENYALLrqqb": 1,
+    "availabl
+Response body: 
+e) WHERE 8867=8867 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
+    "available) WAITFOR DELAY '0:0:4'--": 1,
+    "available'||(SELECT 'hWsk' FROM DUAL WHERE 5341=5341 RLIKE SLEEP(4))||'": 1,
+    "available` WHERE 1485=1485 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)-- XdoU": 1,
+    "avai": 1,
+    "available) WHERE 6590=6590;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3-- iLgk": 1,
+    "available' IN BOOLEAN MODE);SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3#": 1,
+    "available\") WAITFOR DELAY '0:0:4'--": 1,
+    "available')) AS DENYALLuiPp WHERE 2871=2871 WAITFOR DELAY '0:0:4'--": 1,
+    "fail": 2,
+    "available'||(SELECT 'yoJY' FROM DUAL WHERE 4636=4636 RLIKE SLEEP(4)#": 1,
+    "available';SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3-- MDhv": 1,
+    "available'+(SELECT 'MUYX' WHERE 4522=4522 AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
+    "available')) AS DENYALLRKra WHERE 7493=7493 RLIKE SLEEP(4)#": 1,
+    "dolore exercitation ipsum": 1,
+    "available' AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR) AND 'DENYALLkmNb' LIKE 'DENYALLkmNb": 1,
+    "available RLIKE SLEEP(4)": 1,
+    "status": 160,
+    "available WHERE 1777=1777 RLIKE SLEEP(4)#": 1,
+    "available\") AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR) AND (\"DENYALLoZzm\"=\"DENYALLoZzm": 1,
+    "available'||(SELECT 'evYN' FROM DUAL WHERE 2974=2974 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
+    "available` WHERE 4546=4546 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
+    "available%')) AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR) AND (('%'='": 1,
+    "available',(SELECT (CASE WHEN (5316=5316) THEN (SELECT COUNT(*) FROM GENERATE_SERIES(1,4000000)) ELSE 1/(SELECT 0) END))-- fzAg": 1,
+    "available,(SELECT (CASE WHEN (4591=4591) THEN SLEEP(4) ELSE 4591 END))": 1,
+    "available WAITFOR DELAY '0:0:4'--": 1,
+    "(CASE WHEN (7812=7812) THEN (SELECT BENCHMARK(4000000,MD5(0x42515842))) ELSE 7812)": 1,
+    "available') RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP) AND ('DENYALLeCcy' LIKE 'DENYALLeCcy": 1,
+    "avadddele": 1,
+    "available' WAITFOR DELAY '0:0:4' AND 'DENYALLUAwF' LIKE 'DENYALLUAwF": 1,
+    "available' RLIKE SLEEP(4)#": 1,
+    "dolor": 1,
+    "available'+(SELECT 'DGOd' WHERE 5630=5630 WAITFOR DELAY '0:0:4'--": 1,
+    "Nice": 1,
+    "available\" WAITFOR DELAY '0:0:4' AND \"DENYALLNkjb\"=\"DENYALLNkjb": 1,
+    "available`) WHERE 2328=2328 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
+    "available' WHERE 1501=1501 AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
+    "vendido": 8,
+    "available) AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
+    "available333": 5,
+    "available' IN BOOLEAN MODE);SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3#": 1,
+    "available'+(SELECT 'PKhC' WHERE 7766=7766 RLIKE SLEEP(4))+'": 1,
+    "available' AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
+    "'%20o/**/r%201/0%20--": 1,
+    "available\") WAITFOR DELAY '0:0:4' AND (\"DENYALLxyQB\"=\"DENYALLxyQB": 1,
+    "available1": 2,
+    "cool": 7,
+    "available` WHERE 5448=5448 RLIKE SLEEP(4)#": 1,
+    "avalible": 1,
+    "available)) AS DENYALLLHht WHERE 1382=1382 RLIKE SLEEP(4)#": 1,
+    "aaaaaa": 2,
+    "available%')) RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP) AND (('%'='": 1,
+    "available'+(SELECT 'kXzk' WHERE 2218=2218 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP))+'": 1,
+    "available);SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3-- Jmzj": 1,
+    "available;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3# DENYALLauAj": 1,
+    "available` WHERE 2156=2156 PROCEDURE ANALYSE(EXTRACTVALUE(2199,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x576f6658))))),1)-- IObS": 1,
+    "available`) WHERE 7690=7690 PROCEDURE ANALYSE(EXTRACTVALUE(5426,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x654b6b4b))))),1)#": 1,
+    "available'+(SELECT 'FpBg' WHERE 4815=4815 RLIKE SLEEP(4)#": 1,
+    "available PROCEDURE ANALYSE(EXTRACTVALUE(2199,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x576f6658))))),1)# DENYALLecGq": 1,
+    "available\" AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR) AND \"DENYALLHJFK\"=\"DENYALLHJFK": 1,
+    "?????": 1,
+    "available');SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3 AND ('DENYALLMAyN' LIKE 'DENYALLMAyN": 1,
+    "available'+(SELECT JdYp WHERE 3688=3688 RLIKE SLEEP(4)#": 1,
+    "xxx": 1,
+    "available' IN BOOLEAN MODE) AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
+    "available WHERE 4568=4568 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
+    "available,(SELECT (CASE WHEN (5316=5316) THEN (SELECT COUNT(*) FROM GENERATE_SERIES(1,4000000)) ELSE 1/(SELECT 0) END))": 1,
+    "available WHERE 3190=3190 RLIKE SLEEP(4)-- PkSC": 1,
+    "available) RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
+    "available' PROCEDURE ANALYSE(EXTRACTVALUE(2199,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x576f6658))))),1)-- DAuR": 1,
+    "New": 1,
+    "ruler of all": 1,
+    "available' WAITFOR DELAY '0:0:4'--": 1,
+    "available`) WHERE 3589=3589 AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
+    "Operated": 3,
+    "je moje": 1,
+    "available',(SELECT (CASE WHEN (4591=4591) THEN SLEEP(4) ELSE 4591 END))-- qSdR": 1,
+    "afff": 1,
+    "available PROCEDURE ANALYSE(EXTRACTVALUE(2199,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x576f6658))))),1)-- DWSN": 1,
+    "available)) AS DENYALLsVSe WHERE 7540=7540 PROCEDURE ANALYSE(EXTRACTVALUE(5426,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x654b6b4b))))),1)#": 1,
+    "available'||(SELECT 'uEyp' FROM DUAL WHERE 1352=1352 AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
+    "available%')) WAITFOR DELAY '0:0:4'--": 1,
+    "available')) AS DENYALLLeNB WHERE 2119=2119 AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
+    "Unavailable": 3,
+    "available'+(SELECT cvbh WHERE 4294=4294 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
+    "available') WAITFOR DELAY '0:0:4'--": 1,
+    "available,(SELECT (CASE WHEN (8860=8860) THEN (SELECT 8860 FROM PG_SLEEP(4)) ELSE 1/(SELECT 0) END))": 1,
+    "available'||(SELECT 'gnmT' WHERE 6255=6255 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
+    "available) PROCEDURE ANALYSE(EXTRACTVALUE(2199,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x576f6658))))),1)-- XyOi": 1,
+    "available') PROCEDURE ANALYSE(EXTRACTVALUE(2199,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x576f6658))))),1)-- zCjZ": 1,
+    "huahua": 1,
+    "available\") RLIKE SLEEP(4) AND (\"DENYALLoOYi\"=\"DENYALLoOYi": 1,
+    "(SELECT 3978 FROM PG_SLEEP(4))": 1,
+    "new": 5,
+    "test_status": 1,
+    "NULL": 1,
+    "available'+(SELECT 'DKYE' WHERE 4683=4683;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3)+'": 1,
+    "1111111": 1,
+    "available\" WAITFOR DELAY '0:0:4'--": 1,
+    "available` WHERE 9353=9353 WAITFOR DELAY '0:0:4'-- prQU": 1,
+    "available;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3-- PYeY": 1,
+    "available\");SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3 AND (\"DENYALLTgzs\"=\"DENYALLTgzs": 1,
+    "available',(SELECT (CASE WHEN (5984=5984) THEN DBMS_PIPE.RECEIVE_MESSAGE(CHR(97)||CHR(117)||CHR(110)||CHR(88),4) ELSE 1/(SELECT 0 FROM DUAL) END) FROM DUAL)-- Epku": 1,
+    "available' IN BOOLEAN MODE) RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
+    "na": 1,
+    "null": 2,
+    "stillavailable": 1,
+    "available WHERE 1015=1015 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)-- XaAk": 1,
+    "available` WHERE 4581=4581 RLIKE SLEEP(4)-- jAkb": 1,
+    "available') WAITFOR DELAY '0:0:4' AND ('DENYALLoJxj' LIKE 'DENYALLoJxj": 1,
+    "(SELECT * FROM (SELECT(SLEEP(4)))zKso)": 1,
+    "available')) AS DENYALLpNQx WHERE 6213=6213;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3-- SWrj": 1,
+    "available AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)": 1,
+    "Not-Operated": 11,
+    "available`) WHERE 2389=2389 AND 1125=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)-
+Response body: 
+- VuKc": 1,
+    "available WHERE 6898=6898 WAITFOR DELAY '0:0:4'-- IwXf": 1,
+    "nonsense": 2,
+    "available'||(SELECT 'Ntdi' FROM DUAL WHERE 6563=6563;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3)||'": 1,
+    "1/0": 1,
+    "Ut aliqua": 1,
+    "' and 1=2 --": 1,
+    "available' IN BOOLEAN MODE) WAITFOR DELAY '0:0:4'#": 1,
+    "noneed": 1,
+    "available RLIKE SLEEP(4)# DENYALLXrlZ": 1,
+    "available) RLIKE SLEEP(4)-- xBJL": 1,
+    "available%')) AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
+    "available') RLIKE SLEEP(4)-- IDDG": 1,
+    "available) PROCEDURE ANALYSE(EXTRACTVALUE(5426,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x654b6b4b))))),1)#": 1,
+    "ok": 1,
+    "OK": 1,
+    "availableASD": 1,
+    "available) WHERE 9346=9346 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)-- NpyP": 1,
+    "available) WHERE 7146=7146;SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3-- Gzii": 1,
+    "available\" PROCEDURE ANALYSE(EXTRACTVALUE(2199,CONCAT(0x5c,(BENCHMARK(4000000,MD5(0x576f6658))))),1) AND \"DENYALLavUX\"=\"DENYALLavUX": 1,
+    "available)) AS DENYALLxSZX WHERE 3180=3180 RLIKE SLEEP(4)-- tIfa": 1,
+    "available) WHERE 6481=6481 RLIKE SLEEP(4)#": 1,
+    "available'+(SELECT 'IEGg' WHERE 7558=7558 WAITFOR DELAY '0:0:4')+'": 1,
+    "available'+(SELECT qwSf WHERE 5190=5190;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3)+'": 1,
+    "available` WHERE 5978=5978 AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
+    "available'+(SELECT DqCl WHERE 9507=9507 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP))+'": 1,
+    "veniam deserunt": 2,
+    "available' RLIKE SLEEP(4)-- pbEr": 1,
+    "available%')) RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
+    "available)) AS DENYALLVnlA WHERE 8656=8656 RLIKE (SELECT * FROM (SELECT(SLEEP(4)))VcoS)#": 1,
+    "available',(SELECT (CASE WHEN (8635=8635) THEN (SELECT BENCHMARK(4000000,MD5(0x74586779))) ELSE 8635*(SELECT 8635 FROM mysql.db) END))-- IOpQ": 1,
+    "for_v_testing": 2,
+    "available) WHERE 2711=2711 AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
+    "available');SELECT COUNT(*) FROM SYSIBM.SYSTABLES AS T1,SYSIBM.SYSTABLES AS T2,SYSIBM.SYSTABLES AS T3-- OXYZ": 1,
+    "available' IN BOOLEAN MODE) RLIKE (SELECT * FROM (SELECT(SLEEP(4)))TCcP)#": 1,
+    "occaecat sed in Lorem": 1,
+    "available') WHERE 3479=3479 AND 8223=(SELECT COUNT(*) FROM SYSMASTER:SYSPAGHDR)--": 1,
+    "available\" RLIKE SLEEP(4)#": 1,
+    "available)) AS DENYALLbIMl WHERE 3462=3462;SELECT COUNT(*) FROM DOMAIN.DOMAINS AS T1,DOMAIN.COLUMNS AS T2,DOMAIN.TABLES AS T3-- iGHm": 1,
+    "available')) AS DENYALLcYfC WHERE 3501=3501 RLIKE SLEEP(4)-- prTk": 1,
+    "Pending": 3,
+    "available' WHERE 6833=6833 RLIKE SLEEP(4)-- vBWx": 1,
+    "available) WHERE 2425=2425 WAITFOR DELAY '0:0:4'--": 1
+}
+17:27:39,934  INFO StoreBO:getInventory_aroundBody0:31:TestNG-test=All tests-3 - inventory has been gotten
+17:27:39,950 ERROR TestBO:callNonExistentFunction_aroundBody0:33:TestNG-test=All tests-1 - non-existent function can't be got
+17:27:39,950  INFO CPUListener:writeCPULoad_aroundBody0:47:TestNG-test=All tests-1 - !!!!! load: 18.984%%
+!!!sk 
+17:27:39,950  INFO LogListener:onTestSkipped:89:TestNG-test=All tests-1 - nonExistFunctionFailTest skipped
+!!!attach
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="checkInventory" classname="simpleTests.StoreTest" time="0.116"/>
-  <testcase name="simplePet" classname="simpleTests.PetTests" time="1.316"/>
-  <testcase name="createOrder" classname="simpleTests.StoreTest" time="0.201"/>
-  <testcase name="login" classname="simpleTests.UserTests" time="2.619"/>
-  <testcase name="simpleUser" classname="simpleTests.UserTests" time="1.887"/>
-  <testcase name="createNewUsersWithArray" classname="simpleTests.UsersTest" time="0"/>
-  <testcase name="createNewUsersWithList" classname="simpleTests.UsersTest" time="0.301"/>
-  <testcase name="updateUser" classname="simpleTests.UserTests" time="3.916"/>
+  <testcase name="nonExistFunctionFailTest" classname="simpleTests.FallTest" time="0">
+    <skipped message="get non-existent function"/>
+    <system-out><![CDATA[17:27:40,119  INFO LogListener:onTestStart:57:TestNG-test=All tests-3 - start createOrder test
+17:27:40,135  INFO OrderClient:<init>:17:TestNG-test=All tests-3 - connecting to http://petstore.swagger.io/v2/store/order
+17:27:40,135  INFO OrderBO:createOrder_aroundBody0:30:TestNG-test=All tests-3 - start creating order, order id : 70
+17:27:40,135  INFO OrderBO:isOrderExist_aroundBody4:65:TestNG-test=All tests-3 - start checking order, order id : 70
+17:27:40,135  INFO OrderClient:getOrder:29:TestNG-test=All tests-3 - send request to get order
+Request path:	http://petstore.swagger.io/v2/store/order/70
+Request method:	GET
+Request path:	http://petstore.swagger.io/v2/store/order/70
+Request method:	GET
+Response body: 
+{
+    "code": 404,
+    "type": "unknown",
+    "message": "null for uri: http://petstore.swagger.io/v2/test"
+}
+Response body: 
+{
+    "code": 404,
+    "type": "unknown",
+    "message": "null for uri: http://petstore.swagger.io/v2/test"
+}
+17:27:40,335 ERROR TestBO:callNonExistentFunction_aroundBody0:33:TestNG-test=All tests-1 - non-existent function can't be got
+17:27:40,335  INFO CPUListener:writeCPULoad_aroundBody0:47:TestNG-test=All tests-1 - !!!!! load: -130.429%%
+!!!sk 
+17:27:40,335  INFO LogListener:onTestSkipped:89:TestNG-test=All tests-1 - nonExistFunctionFailTest skipped
+!!!attach
+]]></system-out>
+  </testcase>
+  <testcase name="nonExistFunctionFailTest" classname="simpleTests.FallTest" time="0">
+    <skipped message="get non-existent function"/>
+    <system-out><![CDATA[17:27:40,366  INFO TestClient:<init>:17:TestNG-test=All tests-1 - connecting to http://petstore.swagger.io/v2/test
+17:27:40,366  INFO LogListener:onTestStart:57:TestNG-test=All tests-1 - start nonExistFunctionFailTest test
+17:27:40,366  INFO TestBO:callNonExistentFunction_aroundBody0:27:TestNG-test=All tests-1 - start calling non-existent function
+17:27:40,366  INFO TestClient:nonExistentFunction:22:TestNG-test=All tests-1 - send request non-existent function
+Request path:	http://petstore.swagger.io/v2/test
+Request method:	GET
+Request path:	http://petstore.swagger.io/v2/test
+Request method:	GET
+Response body: 
+{
+    "id": 83,
+    "category": {
+        "id": 57,
+        "name": "kVVfYbSNev"
+    },
+    "name": "tYmsDXIbrc",
+    "photoUrls": [
+        "czMnQRVadI",
+        "oceKeYlNvH"
+    ],
+    "tags": [
+        {
+            "id": 45670,
+            "name": "small"
+        },
+        {
+            "id": 45672,
+            "name": "white"
+        }
+    ],
+    "status": "available"
+}
+Response body: 
+{
+    "id": 83,
+    "category": {
+        "id": 57,
+        "name": "kVVfYbSNev"
+    },
+    "name": "tYmsDXIbrc",
+    "photoUrls": [
+        "czMnQRVadI",
+        "oceKeYlNvH"
+    ],
+    "tags": [
+        {
+            "id": 45670,
+            "name": "small"
+        },
+        {
+            "id": 45672,
+            "name": "white"
+        }
+    ],
+    "status": "available"
+}
+17:27:40,419  INFO PetBO:getPet_aroundBody2:57:TestNG-test=All tests-2 - start getting pet, pet id : 83
+17:27:40,419  INFO PetClient:getPet:48:TestNG-test=All tests-2 - send request to get pet
+Request path:	http://petstore.swagger.io/v2/pet/83
+Request method:	GET
+Request path:	http://petstore.swagger.io/v2/pet/83
+Request method:	GET
+Response body: 
+{
+    "code": 1,
+    "type": "error",
+    "message": "Order not found"
+}
+Response body: 
+{
+    "code": 1,
+    "type": "error",
+    "message": "Order not found"
+}
+17:27:40,466  INFO OrderBO:isOrderExist_aroundBody4:70:TestNG-test=All tests-3 - order with id :70 is not exist
+17:27:40,466  INFO OrderClient:createOrder:22:TestNG-test=All tests-3 - send request to create order
+Request path:	http://petstore.swagger.io/v2/store/order
+Request method:	POST
+Body:
+{
+    "id": 70,
+    "petId": 7,
+    "quantity": 85,
+    "shipDate": "1970-01-09T07:42:19.228+0000",
+    "status": "Placed",
+    "complete": false
+}
+Request path:	http://petstore.swagger.io/v2/store/order
+Request method:	POST
+Body:
+{
+    "id": 70,
+    "petId": 7,
+    "quantity": 85,
+    "shipDate": "1970-01-09T07:42:19.228+0000",
+    "status": "Placed",
+    "complete": false
+}
+Response body: 
+{
+    "code": 404,
+    "type": "unknown",
+    "message": "null for uri: http://petstore.swagger.io/v2/test"
+}
+Response body: 
+{
+    "code": 404,
+    "type": "unknown",
+    "message": "null for uri: http://petstore.swagger.io/v2/test"
+}
+17:27:40,682 ERROR TestBO:callNonExistentFunction_aroundBody0:33:TestNG-test=All tests-1 - non-existent function can't be got
+17:27:40,682  INFO CPUListener:writeCPULoad_aroundBody0:47:TestNG-test=All tests-1 - !!!!! load: 5.026%%
+!!!sk 
+17:27:40,682  INFO LogListener:onTestSkipped:89:TestNG-test=All tests-1 - nonExistFunctionFailTest skipped
+!!!attach
+]]></system-out>
+  </testcase>
+  <testcase name="nonExistFunctionFailTest" classname="simpleTests.FallTest" time="0.32">
+    <failure message="get non-existent function" type="exeptions.BaseException"><![CDATA[exeptions.BaseException: get non-existent function
+	at simpleTests.FallTest.nonExistFunctionFailTest(FallTest.java:25)
+Caused by: java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> doesn't match actual status code <404>.
+
+	at simpleTests.FallTest.nonExistFunctionFailTest(FallTest.java:25)
+]]></failure>
+    <system-out><![CDATA[17:27:40,697  INFO TestClient:<init>:17:TestNG-test=All tests-1 - connecting to http://petstore.swagger.io/v2/test
+17:27:40,716  INFO LogListener:onTestStart:57:TestNG-test=All tests-1 - start nonExistFunctionFailTest test
+17:27:40,717  INFO TestBO:callNonExistentFunction_aroundBody0:27:TestNG-test=All tests-1 - start calling non-existent function
+17:27:40,717  INFO TestClient:nonExistentFunction:22:TestNG-test=All tests-1 - send request non-existent function
+Request path:	http://petstore.swagger.io/v2/test
+Request method:	GET
+Request path:	http://petstore.swagger.io/v2/test
+Request method:	GET
+Response body: 
+{
+    "id": 83,
+    "category": {
+        "id": 57,
+        "name": "kVVfYbSNev"
+    },
+    "name": "tYmsDXIbrc",
+    "photoUrls": [
+        "czMnQRVadI",
+        "oceKeYlNvH"
+    ],
+    "tags": [
+        {
+            "id": 45670,
+            "name": "small"
+        },
+        {
+            "id": 45672,
+            "name": "white"
+        }
+    ],
+    "status": "available"
+}
+Response body: 
+{
+    "id": 83,
+    "category": {
+        "id": 57,
+        "name": "kVVfYbSNev"
+    },
+    "name": "tYmsDXIbrc",
+    "photoUrls": [
+        "czMnQRVadI",
+        "oceKeYlNvH"
+    ],
+    "tags": [
+        {
+            "id": 45670,
+            "name": "small"
+        },
+        {
+            "id": 45672,
+            "name": "white"
+        }
+    ],
+    "status": "available"
+}
+17:27:40,720  INFO PetBO:getPet_aroundBody2:60:TestNG-test=All tests-2 - pet with id : 83 has been gotten
+Response body: 
+{
+    "id": 70,
+    "petId": 7,
+    "quantity": 85,
+    "shipDate": "1970-01-09T07:42:19.228+0000",
+    "status": "Placed",
+    "complete": false
+}
+Response body: 
+{
+    "id": 70,
+    "petId": 7,
+    "quantity": 85,
+    "shipDate": "1970-01-09T07:42:19.228+0000",
+    "status": "Placed",
+    "complete": false
+}
+17:27:40,814  INFO OrderBO:getOrder_aroundBody2:50:TestNG-test=All tests-3 - start getting order, order id : 70
+17:27:40,814  INFO OrderClient:getOrder:29:TestNG-test=All tests-3 - send request to get order
+Request path:	http://petstore.swagger.io/v2/store/order/70
+Request method:	GET
+Request path:	http://petstore.swagger.io/v2/store/order/70
+Request method:	GET
+17:27:40,820  INFO PetBO:createPet_aroundBody0:45:TestNG-test=All tests-2 - pet has been created, pet id : 83
+17:27:40,820  INFO PetBO:deletePet_aroundBody12:147:TestNG-test=All tests-2 - start deleting pet image, pet id : 83
+17:27:40,820  INFO PetClient:deletePet:62:TestNG-test=All tests-2 - send request to delete pet
+Request path:	http://petstore.swagger.io/v2/pet/83
+Request method:	DELETE
+Request path:	http://petstore.swagger.io/v2/pet/83
+Request method:	DELETE
+Response body: 
+{
+    "code": 404,
+    "type": "unknown",
+    "message": "null for uri: http://petstore.swagger.io/v2/test"
+}
+Response body: 
+{
+    "code": 404,
+    "type": "unknown",
+    "message": "null for uri: http://petstore.swagger.io/v2/test"
+}
+17:27:41,020 ERROR TestBO:callNonExistentFunction_aroundBody0:33:TestNG-test=All tests-1 - non-existent function can't be got
+17:27:41,020  INFO CPUListener:writeCPULoad_aroundBody0:47:TestNG-test=All tests-1 - !!!!! load: .000%%
+!!!f
+17:27:41,020  INFO LogListener:onTestFailure:78:TestNG-test=All tests-1 - nonExistFunctionFailTest finish and fail
+!!!attach
+]]></system-out>
+  </testcase>
+  <testcase name="checkInventory" classname="simpleTests.StoreTest" time="0.1"/>
+  <testcase name="simplePet" classname="simpleTests.PetTests" time="0.4"/>
+  <testcase name="createOrder" classname="simpleTests.StoreTest" time="0.284"/>
+  <testcase name="login" classname="simpleTests.UserTests" time="2.631"/>
+  <testcase name="createNewUsersWithArray" classname="simpleTests.UsersTest" time="1.839"/>
+  <testcase name="simpleUser" classname="simpleTests.UserTests" time="0.015"/>
+  <testcase name="createNewUsersWithList" classname="simpleTests.UsersTest" time="0.299"/>
+  <testcase name="updateUser" classname="simpleTests.UserTests" time="6.481"/>
 </testsuite>

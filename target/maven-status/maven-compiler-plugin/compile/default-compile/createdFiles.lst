@@ -12,6 +12,7 @@ constants\EndpointConstants.class
 exeptions\UserException.class
 logger\ResponsePrintStream.class
 logger\LogListener.class
+logger\RetryAnalyzer.class
 model\pet\ApiResponse.class
 constants\Appenders.class
 model\user\User.class
@@ -35,7 +36,9 @@ business\OrderBO.class
 constants\PetStatus.class
 data\UserGenerator.class
 constants\DefaultTags.class
+logger\CPUListener.class
 client\HttpClient.class
+logger\AnnotationTransformer.class
 logger\LoggerCatcher.class
 model\pet\Category.class
 logger\LogAppender.class

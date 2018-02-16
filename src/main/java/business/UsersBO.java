@@ -13,6 +13,7 @@ import java.util.List;
 import static assertions.AssertDetails.assertUserData;
 import static assertions.AssertStatusCode.assertStatusCodeIsOk;
 import static constants.Appenders.User;
+import static logger.LoggerCatcher.catchLog;
 
 public class UsersBO {
     private static final Logger log = Logger.getLogger(User.getDefaultName());
@@ -23,6 +24,7 @@ public class UsersBO {
     public UsersBO(List<User> users) {
         log.debug("set user client");
         this.userClient = new UserClient();
+        catchLog(log, userClient.defaultRequest);
         log.debug("create user BO");
         this.userBO = new UserBO();
         log.debug("set " + users.size() + " users");

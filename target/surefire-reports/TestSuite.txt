@@ -1,13 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 13.664 sec <<< FAILURE! - in TestSuite
-nonExistFunctionFailTest(simpleTests.FallTest)  Time elapsed: 1.387 sec  <<< FAILURE!
+Tests run: 12, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 26.556 sec <<< FAILURE! - in TestSuite
+nonExistFunctionFailTest(simpleTests.FallTest)  Time elapsed: 0.32 sec  <<< FAILURE!
 exeptions.BaseException: get non-existent function
-	at simpleTests.FallTest.nonExistFunctionFailTest(FallTest.java:26)
+	at simpleTests.FallTest.nonExistFunctionFailTest(FallTest.java:25)
 Caused by: java.lang.AssertionError: 
 1 expectation failed.
 Expected status code <200> doesn't match actual status code <404>.
 
-	at simpleTests.FallTest.nonExistFunctionFailTest(FallTest.java:26)
+	at simpleTests.FallTest.nonExistFunctionFailTest(FallTest.java:25)
 

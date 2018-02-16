@@ -8,6 +8,7 @@ import io.qameta.allure.Step;
 import org.apache.log4j.Logger;
 
 import static constants.Appenders.Default;
+import static logger.LoggerCatcher.catchLog;
 
 public class TestBO {
 
@@ -17,6 +18,7 @@ public class TestBO {
     public TestBO() {
         log.debug("create store BO and set client");
         this.testClient = new TestClient();
+        catchLog(log, testClient.defaultRequest);
     }
 
     @Step("call non-existent function")

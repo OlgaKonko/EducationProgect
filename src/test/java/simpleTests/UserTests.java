@@ -33,7 +33,7 @@ public class UserTests extends BaseTest {
 
     @Severity(SeverityLevel.BLOCKER)
     @Story("Operations with user")
-    @Test(testName = "create and delete user", description = "Create user and delete him")
+    @Test(groups = {"smoke"}, testName = "create and delete user", description = "Create user and delete him")
     public void simpleUser() {
         userBOs.get(Thread.currentThread().getId()).createUser();
         userBOs.get(Thread.currentThread().getId()).deleteUser();

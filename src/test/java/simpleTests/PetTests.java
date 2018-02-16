@@ -30,7 +30,7 @@ public class PetTests extends BaseTest {
 
     @Severity(SeverityLevel.BLOCKER)
     @Story("Operations with user pet")
-    @Test(testName = "create and delete pet", description = "Create pet and delete it")
+    @Test(groups = {"smoke"}, testName = "create and delete pet", description = "Create pet and delete it")
     //  @Test(testName = "create and delete pet", description = "Create pet and delete it", invocationCount = 2, threadPoolSize = 2)
     public void simplePet() {
         Pet pet = PetGenerator.testPet();

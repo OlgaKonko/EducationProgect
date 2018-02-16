@@ -17,6 +17,7 @@ import java.util.List;
 import static assertions.AssertDetails.assertPetData;
 import static assertions.AssertStatusCode.assertStatusCodeIsOk;
 import static constants.Appenders.Pet;
+import static logger.LoggerCatcher.catchLog;
 
 public class PetBO {
     private static final Logger log = Logger.getLogger(Pet.getDefaultName());
@@ -25,6 +26,7 @@ public class PetBO {
     public PetBO() {
         log.debug("create pet BO and set client");
         this.petClient = new PetClient();
+        catchLog(log, petClient.defaultRequest);
     }
 
     @Step("Create pet")

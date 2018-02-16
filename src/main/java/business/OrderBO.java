@@ -11,6 +11,7 @@ import org.apache.log4j.Logger;
 import static assertions.AssertDetails.assertOrderData;
 import static assertions.AssertStatusCode.assertStatusCodeIsOk;
 import static constants.Appenders.Store;
+import static logger.LoggerCatcher.catchLog;
 
 public class OrderBO {
     private static final Logger log = Logger.getLogger(Store.getDefaultName());
@@ -19,6 +20,8 @@ public class OrderBO {
     public OrderBO() {
         log.debug("create order BO and set client");
         this.orderClient = new OrderClient();
+        catchLog(log, orderClient.defaultRequest);
+
     }
 
     @Step("Create order")

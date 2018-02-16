@@ -12,6 +12,7 @@ import org.apache.log4j.Logger;
 import static assertions.AssertDetails.assertUserData;
 import static assertions.AssertStatusCode.assertStatusCodeIsOk;
 import static constants.Appenders.User;
+import static logger.LoggerCatcher.catchLog;
 
 public class UserBO {
     private static final Logger log = Logger.getLogger(User.getDefaultName());
@@ -21,6 +22,7 @@ public class UserBO {
     public UserBO() {
         log.debug("create user BO and set client");
         this.userClient = new UserClient();
+        catchLog(log, userClient.defaultRequest);
     }
 
     public UserBO(User user) {
