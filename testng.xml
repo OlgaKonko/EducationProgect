@@ -1,8 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Test" verbose="1">
-    <listeners>
-        <listener class-name="logger.AnnotationTransformer"/>
-    </listeners>
     <test name="All tests" parallel="methods" thread-count="3">
         <packages>
             <package name="simpleTests"/>
