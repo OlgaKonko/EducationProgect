@@ -1,19 +1,13 @@
 package logger;
 
-import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.RollingFileAppender;
 import org.testng.*;
-import org.testng.annotations.ITestAnnotation;
 
 import java.io.File;
 import java.io.IOException;
-import java.lang.management.ManagementFactory;
-import java.lang.management.ThreadMXBean;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
 
 import static constants.Appenders.Default;
 import static constants.LoggerLayout.GeneralLayout;
@@ -23,7 +17,7 @@ public class LogListener implements ITestListener, IClassListener, IInvokedMetho
 
     @Override
     public void onStart(ITestContext context) {
-            this.log = Logger.getLogger(Default.getDefaultName());
+        this.log = Logger.getLogger(Default.getDefaultName());
     }
 
     @Override

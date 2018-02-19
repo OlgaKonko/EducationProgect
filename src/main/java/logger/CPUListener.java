@@ -6,38 +6,28 @@ import org.testng.IInvokedMethod;
 import org.testng.IInvokedMethodListener;
 import org.testng.ITestResult;
 
-import java.lang.management.ManagementFactory;
-import java.lang.management.ThreadMXBean;
 import java.text.DecimalFormat;
+import java.util.HashMap;
+import java.util.Map;
 
 public class CPUListener implements IInvokedMethodListener {
-    ThreadMXBean threadMXBean;
-    long start;
-    long base_cpu;
+    private Map<Long, ThreadTime> threadTimes = new HashMap<>();
 
     @Override
-    public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
+    public synchronized void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
         if (method.isTestMethod()) {
-            threadMXBean =
-                    ManagementFactory.getThreadMXBean();
-            if (!threadMXBean.isCurrentThreadCpuTimeSupported()) {
-                System.out.println("CPU Usage monitoring is not avaliable!");
-            } else {
-                threadMXBean.setThreadCpuTimeEnabled(true);
-            }
-            start = System.nanoTime();
-            base_cpu = threadMXBean.getCurrentThreadUserTime();
+            threadTimes.put(Thread.currentThread().getId(), new ThreadTime());
         }
     }
 
     @Override
-    public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
+    public synchronized void afterInvocation(IInvokedMethod method, ITestResult testResult) {
         if (method.isTestMethod()) {
-            long time = System.nanoTime();
-            long cpu = threadMXBean.getCurrentThreadUserTime();
-
+            ThreadTime threadTime = threadTimes.get(Thread.currentThread().getId());
+            long currentTime = System.nanoTime();
+            long currentCPU = threadTime.threadMXBean.getCurrentThreadUserTime();
             DecimalFormat df = new DecimalFormat("#.000");
-            String cpuLoadPercent = df.format((cpu - base_cpu) * 100.0 / (time - start)) + "%";
+            String cpuLoadPercent = df.format((currentCPU - threadTime.baseCPU) * 100.0 / (currentTime - threadTime.startTime)) + "%";
             writeCPULoad(cpuLoadPercent);
 
         }
