@@ -24,7 +24,7 @@ public class UserTests extends BaseTest {
     // private User user;
     //  private UserBO userBO;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void createNewUser() {
         User user = UserGenerator.testUser();
         this.userBOs.put(Thread.currentThread().getId(), new UserBO(user));

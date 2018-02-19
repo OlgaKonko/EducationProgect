@@ -45,7 +45,7 @@ public class CPUListener implements IInvokedMethodListener {
 
     @Step("CPU load is {cpuLoadPercent}")
     private void writeCPULoad(String cpuLoadPercent) {
-        Logger.getRootLogger().info("!!!!! load: " +
+        Logger.getRootLogger().info("load: " +
                 cpuLoadPercent + "%");
     }
 }

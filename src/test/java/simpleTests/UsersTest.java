@@ -19,7 +19,7 @@ import static constants.Appenders.User;
 public class UsersTest extends BaseTest {
     private List<User> users;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void createUsers() {
         users = new ArrayList<>();
         users.add(UserGenerator.testUser());

@@ -21,7 +21,7 @@ import static constants.Appenders.Pet;
 public class PetTests extends BaseTest {
     private Map<Long, PetBO> petBOs = new HashMap<>();
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setData() {
         // this.pet = PetGenerator.testPet();
         //logger().info("create pet with id"+pet.getId());

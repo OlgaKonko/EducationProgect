@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 public class FallTest extends BaseTest {
     private TestBO testBO;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setData() {
         this.testBO = new TestBO();
 
