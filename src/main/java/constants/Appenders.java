@@ -1,33 +1,18 @@
 package constants;
 
 public enum Appenders {
-    Pet("petLog", "petLogRQ"),
-    User("userLog", "userLogRQ"),
-    Store("storeLog", "storeLogRQ"),
-    Default("", "");
+    Pet("petLog"),
+    User("userLog"),
+    Store("storeLog"),
+    Default("defaultLog");
 
     String defaultName;
-    String changedName;
 
-    Appenders(String defaultName, String changedName) {
+    Appenders(String defaultName) {
         this.defaultName = defaultName;
-        this.changedName = changedName;
-    }
-
-    public static String changeAppender(String name) {
-        for (Appenders appender : Appenders.values()) {
-            if (appender.defaultName.equalsIgnoreCase(name)) {
-                return appender.changedName;
-            }
-        }
-        return "";
     }
 
     public String getDefaultName() {
         return defaultName;
-    }
-
-    public String getChangedName() {
-        return changedName;
     }
 }

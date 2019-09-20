@@ -1,48 +1,46 @@
 package simpleTests;
 
 import business.PetBO;
-import constants.Appenders;
-import constants.DefaultTags;
-import constants.PetStatus;
 import data.PetGenerator;
-import logger.LogListener;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+import logger.LogAppender;
 import model.pet.Pet;
-import org.apache.log4j.Logger;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Listeners;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import ru.yandex.qatools.allure.annotations.*;
-import ru.yandex.qatools.allure.model.SeverityLevel;
 
-@Features("Pet")
-@Title("Test with pets")
-@Description("Test pet api operations")
+import java.util.HashMap;
+import java.util.Map;
+
+import static constants.Appenders.Pet;
+
+@Feature("Pet")
+@LogAppender(Pet)
 public class PetTests extends BaseTest {
-    private static final Logger log = Logger.getLogger(Appenders.Pet.getDefaultName());
-    private Pet pet;
-    private PetBO petBO;
+    private Map<Long, PetBO> petBOs = new HashMap<>();
 
-    @BeforeTest
+    @BeforeMethod(alwaysRun = true)
     public void setData() {
-        this.pet = PetGenerator.testPet();
-        this.petBO = new PetBO();
+        // this.pet = PetGenerator.testPet();
+        //logger().info("create pet with id"+pet.getId());
+        this.petBOs.put(Thread.currentThread().getId(), new PetBO());
     }
 
     @Severity(SeverityLevel.BLOCKER)
-    @Stories("Operations with user pet")
-    @Title("Pet create and delete")
-    @Test(description = "Create pet and delete it")
+    @Story("Operations with user pet")
+    @Test(groups = {"smoke"}, testName = "create and delete pet", description = "Create pet and delete it")
+    //  @Test(testName = "create and delete pet", description = "Create pet and delete it", invocationCount = 2, threadPoolSize = 2)
     public void simplePet() {
-        log.info("start simple pet test");
-        petBO.createPet(pet);
-        petBO.deletePet(pet);
+        Pet pet = PetGenerator.testPet();
+        petBOs.get(Thread.currentThread().getId()).createPet(pet);
+        petBOs.get(Thread.currentThread().getId()).deletePet(pet);
     }
-
-    @Title("Pet update")
-    @Stories("Operations with user pet")
-    @Test(description = "Create pet and update his name and tags")
+/*
+    @Story("Operations with user pet")
+    @Test(testName = "update pet", description = "Create pet and update its name and tags")
     public void updatePet() {
-        log.info("start update pet test");
         petBO.createPet(pet);
         pet.setName("Blacky");
         pet.getTags().add(DefaultTags.Black.getTag());
@@ -50,31 +48,25 @@ public class PetTests extends BaseTest {
         petBO.deletePet(pet);
     }
 
-    @Title("Pet status update")
-    @Stories("Operations with user pet")
-    @Test(description = "Create pet and update his status")
+    @Story("Operations with user pet")
+    @Test(testName = "update pet status", description = "Create pet and update his status")
     public void updatePetStatus() {
-        log.info("start update pet status test");
         petBO.createPet(pet);
         petBO.updatePetStatus(pet, PetStatus.Sold);
         petBO.deletePet(pet);
     }
 
-    @Title("Pet's photo upload")
-    @Stories("Operations with user pet")
-    @Test(description = "Create pet and upload image to it")
+    @Story("Operations with user pet")
+    @Test(testName = "upload pet photo", description = "Create pet and upload image to it")
     public void uploadPetPhoto() {
-        log.info("start upload pet photo test");
         petBO.createPet(pet);
         petBO.uploadPetImage("cat.jpg", pet.getId());
         petBO.deletePet(pet);
     }
 
-    @Title("Get pets")
-    @Stories("Operations with existing pets data")
-    @Test(description = "Get available pets")
+    @Story("Operations with existing pets data")
+    @Test(testName = "get available pets", description = "Get available pets")
     public void getPets() {
-        log.info("start get pets test");
         petBO.getPetsByStatus();
-    }
+    }*/
 }

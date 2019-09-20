@@ -3,68 +3,64 @@ package simpleTests;
 import business.UserBO;
 import constants.Appenders;
 import data.UserGenerator;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+import logger.LogAppender;
 import model.user.User;
-import org.apache.log4j.Logger;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import ru.yandex.qatools.allure.annotations.*;
-import ru.yandex.qatools.allure.model.SeverityLevel;
 
-import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Map;
 
 import static data.RandomGenerator.randomString;
 
-@Features("User")
-@Title("Test with user")
-@Description("Test user api operations")
+@Feature("User")
+@LogAppender(Appenders.User)
 public class UserTests extends BaseTest {
-    private static final Logger log = Logger.getLogger(Appenders.User.getDefaultName());
-    private User user;
-    private UserBO userBO;
+    private Map<Long, UserBO> userBOs = new HashMap<>();
+    // private User user;
+    //  private UserBO userBO;
 
-    @BeforeMethod
-    public void createNewUser(Method method) {
-        this.user = UserGenerator.testUser();
-        this.userBO = new UserBO(user);
-        Test test = method.getAnnotation(Test.class);
-        log.info("start test that" + test.description());
+    @BeforeMethod(alwaysRun = true)
+    public void createNewUser() {
+        User user = UserGenerator.testUser();
+        this.userBOs.put(Thread.currentThread().getId(), new UserBO(user));
+        // this.userBO = new UserBO(user);
     }
 
     @Severity(SeverityLevel.BLOCKER)
-    @Stories("Operations with user")
-    @Title("User create and delete")
-    @Test(description = "Create user and delete him")
+    @Story("Operations with user")
+    @Test(groups = {"smoke"}, testName = "create and delete user", description = "Create user and delete him")
     public void simpleUser() {
-        userBO.createUser();
-        userBO.logIn();
-        userBO.deleteUser();
+        userBOs.get(Thread.currentThread().getId()).createUser();
+        userBOs.get(Thread.currentThread().getId()).deleteUser();
 
     }
 
     @Severity(SeverityLevel.BLOCKER)
-    @Stories("Operations with user")
-    @Title("Login and logout")
-    @Test(description = "Login and logout to created user")
+    @Story("Operations with user")
+    @Test(testName = "login and logout", description = "Login and logout to created user")
     public void login() {
-        userBO.createUser();
-        userBO.logIn();
-        userBO.logOut();
-        userBO.logIn();
-        userBO.deleteUser();
+        userBOs.get(Thread.currentThread().getId()).createUser();
+        userBOs.get(Thread.currentThread().getId()).logIn();
+        userBOs.get(Thread.currentThread().getId()).logOut();
+        userBOs.get(Thread.currentThread().getId()).deleteUser();
     }
 
-    @Stories("Operations with user")
-    @Title("Update user")
-    @Test(description = "Update user name and phone")
+    @Story("Operations with user")
+    @Test(testName = "update user", description = "Update user name and phone")
     public void updateUser() {
-        userBO.createUser();
-        userBO.logIn();
-        user.setPhone(randomString());
-        user.setLastName(randomString());
-        userBO.updateUser(user);
-        userBO.logOut();
-        userBO.logIn();
-        userBO.deleteUser();
+        userBOs.get(Thread.currentThread().getId()).createUser();
+        userBOs.get(Thread.currentThread().getId()).logIn();
+        User newUser = userBOs.get(Thread.currentThread().getId()).getUser();
+        newUser.setPhone(randomString());
+        newUser.setLastName(randomString());
+        userBOs.get(Thread.currentThread().getId()).updateUser(newUser);
+        userBOs.get(Thread.currentThread().getId()).logOut();
+        userBOs.get(Thread.currentThread().getId()).deleteUser();
     }
 
 }

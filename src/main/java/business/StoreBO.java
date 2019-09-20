@@ -4,12 +4,13 @@ import assertions.AssertStatusCode;
 import client.StoreClient;
 import com.jayway.restassured.response.Response;
 import exeptions.StoreException;
+import io.qameta.allure.Step;
 import org.apache.log4j.Logger;
-import ru.yandex.qatools.allure.annotations.Step;
 
 import java.util.Map;
 
 import static constants.Appenders.Store;
+import static logger.LoggerCatcher.catchLog;
 
 public class StoreBO {
     private static final Logger log = Logger.getLogger(Store.getDefaultName());
@@ -18,6 +19,7 @@ public class StoreBO {
     public StoreBO() {
         log.debug("create store BO and set client");
         this.storeClient = new StoreClient();
+        catchLog(log, storeClient.defaultRequest);
     }
 
     @Step("Get inventory")

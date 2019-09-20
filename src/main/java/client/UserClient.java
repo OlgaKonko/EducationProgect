@@ -3,14 +3,13 @@ package client;
 import com.jayway.restassured.response.Response;
 import model.user.User;
 import org.apache.log4j.Logger;
-import ru.yandex.qatools.allure.annotations.Step;
 
 import java.util.List;
 
 import static com.jayway.restassured.RestAssured.given;
 import static constants.Appenders.User;
 import static constants.EndpointConstants.*;
-import static logger.LoggerCather.catchLog;
+import static logger.LoggerCatcher.catchLog;
 
 public class UserClient extends HttpClient {
     private static final Logger log = Logger.getLogger(User.getDefaultName());
@@ -21,7 +20,6 @@ public class UserClient extends HttpClient {
         catchLog(log, defaultRequest);
     }
 
-    @Step
     public Response createUser(User user) {
         log.info("send request to create user");
         return given(defaultRequest)
@@ -55,7 +53,6 @@ public class UserClient extends HttpClient {
                 get(USER_LOGOUT_URL);
     }
 
-    @Step("get user")
     public Response getUser(String username) {
         log.info("send request to get user");
         return given(defaultRequest).

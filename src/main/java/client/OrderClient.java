@@ -7,14 +7,14 @@ import org.apache.log4j.Logger;
 import static com.jayway.restassured.RestAssured.given;
 import static constants.Appenders.Store;
 import static constants.EndpointConstants.*;
-import static logger.LoggerCather.catchLog;
+import static logger.LoggerCatcher.catchLog;
 
 public class OrderClient extends HttpClient {
     private static final Logger log = Logger.getLogger(Store.getDefaultName());
 
     public OrderClient() {
         super(ORDER_URL);
-        log.info("connecting to " + BASE_URL + USER_URL);
+        log.info("connecting to " + BASE_URL + ORDER_URL);
         catchLog(log, defaultRequest);
     }
 

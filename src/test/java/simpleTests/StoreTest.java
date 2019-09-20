@@ -3,26 +3,24 @@ package simpleTests;
 import business.OrderBO;
 import business.StoreBO;
 import data.OrderGenerator;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+import logger.LogAppender;
 import model.order.Order;
-import org.apache.log4j.Logger;
 import org.testng.annotations.Test;
-import ru.yandex.qatools.allure.annotations.*;
-import ru.yandex.qatools.allure.model.SeverityLevel;
 
 import static constants.Appenders.Store;
 
-@Features("Store")
-@Title("Test with store")
-@Description("Test store api operations")
+@Feature("Store")
+@LogAppender(Store)
 public class StoreTest extends BaseTest {
-    private static final Logger log = Logger.getLogger(Store.getDefaultName());
 
     @Severity(SeverityLevel.BLOCKER)
-    @Stories("Operations with orders")
-    @Title("Order create and delete")
-    @Test(description = "Create order and delete it")
+    @Story("Operations with orders")
+    @Test(groups = {"smoke"}, testName = "create and delete order", description = "Create order and delete it")
     public void createOrder() {
-        log.info("start create order test");
         Order order = OrderGenerator.testOrder();
         OrderBO orderBO = new OrderBO();
         orderBO.createOrder(order);
@@ -30,11 +28,9 @@ public class StoreTest extends BaseTest {
 
     }
 
-    @Stories("Operations with store")
-    @Title("Get inventory")
-    @Test(description = "Get store inventory")
+    @Story("Operations with store")
+    @Test(testName = "check inventory", description = "Get store inventory")
     public void checkInventory() {
-        log.info("start check inventory test");
         StoreBO storeBO = new StoreBO();
         storeBO.getInventory();
     }

@@ -3,6 +3,7 @@ package business;
 import client.UserClient;
 import com.jayway.restassured.response.Response;
 import exeptions.UserException;
+import io.qameta.allure.Step;
 import model.user.User;
 import org.apache.log4j.Logger;
 
@@ -12,6 +13,7 @@ import java.util.List;
 import static assertions.AssertDetails.assertUserData;
 import static assertions.AssertStatusCode.assertStatusCodeIsOk;
 import static constants.Appenders.User;
+import static logger.LoggerCatcher.catchLog;
 
 public class UsersBO {
     private static final Logger log = Logger.getLogger(User.getDefaultName());
@@ -22,12 +24,14 @@ public class UsersBO {
     public UsersBO(List<User> users) {
         log.debug("set user client");
         this.userClient = new UserClient();
+        catchLog(log, userClient.defaultRequest);
         log.debug("create user BO");
         this.userBO = new UserBO();
         log.debug("set " + users.size() + " users");
         this.users = users;
     }
 
+    @Step("Create users")
     public List<User> createUsersWithArray() {
         try {
             log.info("start creating " + users.size() + " users");
@@ -54,6 +58,7 @@ public class UsersBO {
 
     }
 
+    @Step("Create users")
     public List<User> createUsersWithList() {
         try {
             users.forEach(user -> {
@@ -77,6 +82,7 @@ public class UsersBO {
 
     }
 
+    @Step("Create users")
     public void deleteUsers() {
         try {
             log.info("start deleting " + users.size() + " users");

@@ -9,7 +9,7 @@ import org.apache.log4j.Logger;
 import static constants.EndpointConstants.BASE_URL;
 
 public abstract class HttpClient {
-    RequestSpecification defaultRequest;
+    public RequestSpecification defaultRequest;
 
     HttpClient(String URL) {
         defaultRequest = new RequestSpecBuilder().
